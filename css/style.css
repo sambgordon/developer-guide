@@ -100,9 +100,7 @@ html,body{
       margin-left:0px;
       margin-top:270px;
     }
-    #main-doc section {
-  /*     padding-top: 240px; */
-    }
+
   }
   @media only screen and (max-width: 400px) {
     #main-doc{
@@ -117,3 +115,5 @@ html,body{
       min-width:233px;
     }
   }
+
+  
