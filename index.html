@@ -23,7 +23,7 @@
                   <a class="nav-link" href="#DevTools" rel="internal"><li>Chrome DevTools</li></a>
                   <a class="nav-link" href="#DOM" rel="internal"><li>DOM</li></a>
                   <a class="nav-link" href="#UX" rel="internal"><li>UX</li></a>
-
+                  <a class="nav-link" href="#Sass" rel="internal"><li>Sass/SCSS</li></a>
 <!--split-->
                   
                   <a class="nav-link" href="#Terminal" rel="internal"><li>Terminal Commands</li></a>
@@ -35,6 +35,9 @@
                   <a class="nav-link" href="#Ajax" rel="internal"><li>Ajax</li></a>
                   <a class="nav-link" href="#Cloud" rel="internal"><li>Cloud Basics</li></a>
                   <a class="nav-link" href="#Sessions" rel="internal"><li>Sessions & Cookies</li></a>
+                  <a class="nav-link" href="#Git" rel="internal"><li>Git</li></a>
+                  <a class="nav-link" href="#Express" rel="internal"><li>ExpressJS</li></a>
+
                   <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
                 </ul>
               </nav>
@@ -57,15 +60,423 @@
                   <section class="main-section" id="Javascript">
                   <header>Javascript Fundamentals</header>
                   <article>
-                  </article>
+
+                      <h3>JS Editions: </h3>
+                      <li> 5th Edition (2009) </li>
+                      <li> 6th Edition - ECMAScript 2015 </li>
+                      <li> 7th Edition - ECMAScript 2016 </li>
+                      <li> 8th Edition - ECMAScript 2017 </li>
+                      <li> 9th Edition - ECMAScript 2018 </li>
+                      <li> ES.Next - Dynamic name referring to whatever the next version is at the time of writing. <br />
+                      (ESNext feautres are actually referred to as proposals since they haven't happened yet.)
+
+                      <h3>CALLBACK FUNCTIONS:</h3>
+                          A function which is:
+                          <li>Passed as an ARGUMENT to another function, and </li>
+                          <li>Is invoked after some kind of event (so callback is the child function of a parent almost but not bound to scope) </li>
+                          
+                        <p>  A callback is a function you provide to another piece of code, allowing it to be called by that code. To "call back" means to pass a function to other function or other 			  code. So it's passed into another function as an argument, which is then invoked inside the "outer function" to complete something. And once a callback function's parent function completes, the function passed as an argument is then called.</p>
+                       <p> Callback functions are also called higher-order functions.</p>
+                          
+                          
+                        Example of a callback:
+			<code>
+                          XMLHttpRequest.onreadystatechange = callback;
+			</code>
+                         This is just a function passed almost like the parameters for another function, that is then also called when that "parent function" is triggered. So you run the parent one and it calls back whatever then gets filled in.
+                          
+
+
+                         <h3>CROSS-BROWSER ISSUES:</h3>
+
+                         <p>JS in different browsers:</p>
+                         <p>This originates in the 90s when there were IE and Netscape - Netscape had JS and IE had Jscript and VBScript
+                         Things like jQuery were created to abstract away differences in brower implementations</p>
+                         
+                         <p>JS compatibility issues happen when:</p>
+                         <li>Bad code in regards to feature detection browser sniffing etc blocks browsers from rnnng otherwise fine code</li>
+                         <li>When new features are used in code but not supported in older browsers.</li>
+                         
+                         
+                         <h3>CURRYING:</h3>
+
+                         <p>
+                         Currying provides a way for working with functions that take multiple arguments, and using them in frameworks where functions might take only one argument.
+                         An example would be situations where some analytical techniques can only be applied to functions with a single argument.
+                         In theoretical work it provides a way to study functions with multiple arguments in a simpler theoretical model that provides only one argument.</p>
+                         
+                         <p>Currying can equal returning a bunch of things or also like how php template tags let you "repeat" things easier than with html across pages.</p>
+                          
+
+
+
+                     
+                         <h3>CLOSURES:</h3>
+
+
+                         <p>Closures are important because: <br />
+                         1. A scope is at the function level, not the block level<br />
+                         2. Much of what you do in hs is async / event-driven<br />
+                         3. They make event-driven code a lot easier to write
+                         <p>
+                         A closure is an inner function that has access to the outer (enclosing) function's variables and parameters.
+                         The inner function then has access to the outer function's variables and parameters.
+                         Even after the outer function has returned, the inner function still has access to the outer function's variables.
+                         So, you can call the inner function later in your program.
+                         </p>
+                         <p>
+                         A closure is a function that returns a function - so it's the whole thing and not just the inner function being the closure.
+                         The function that is returned (the inner function) is created inside the called function (the outer).
+                         Due to the scoping rules we’ve seen, the inner has access to the variables and arguments of the outer. <br /><br />
+                         Functions created in a particular scope retain access to vars in the scope even if they are called outside of it, because there's 1. create and 2. call with functions.<br /><br />
+                         Example of a closure:
+                         </p>
+                         <code>
+                         function one(a, b){
+                           function two(){
+                           return "foo";
+                           }
+                           var variable;
+                           return variable;
+                         }
+                         two();
+                         </code>
+                         <p>
+                         So, even though two is called outside of the function one because it's created inside of one, it has access to one's scope.<br />
+                         two() can access one's params (a and b), and var variable / the return statement since it's in one's body and therefore scope.
+                         </p>
+
+                         <h3>Debugging:</h3>
+                         <p>Can be done via:</p>
+                         
+                         <li>Console in browser</li>
+                         <li>JS Validator AKA LINTING - Checks to make sure code is valid and follows syntax of language (LINTING)</li>
+                         <li>JS Debugging app <a href="http://www.hacksrus.com/~ginda/venkman/" target="blank">hacksrus.com/~ginda/venkman/</a></li><br />
+                         
+                         <p>Linting can go through source code and find:</p>
+                         <li>Non-adherence to coding standards</li>
+                         <li>Pinpointing possible logical errors in program</li>
+                         
+                         <p>
+                         ESLint - <br />
+                         Javascript linter that requires node.js.<br />
+                         JSHint - <br />
+                         Online linter.<br />
+                         </p>
+                         
+                         <h3>FEATURE DETECTION:</h3>
+
+                         <p>Feature detection is working out whether a browser supports a certain block of code, and running different code dependent on whether it does or doesn't so a browser can always provide a working experience rather than crashing/erroring in some browsers.<br />
+                         
+                         An example would be testing flexbox support in a browser. <br />
+                         
+                         
+                         Modernizr is the industry standard for feature detection tests. Feature detection is made easy in CSS with the @supports @ rule.
+                         </p>
+                         <p>
+                         Do not confuse feature detection w browser sniffing: <br /><br />
+                         feature detection = good<br />
+                         browser sniffing = bad<br /><br />
+                         
+                         Browser sniffing is bad because it's an error prone process - the only real use is fixing a bug for a very specific version of a particular browser.
+                         </p>
+                         
+                         Example of feature detection:
+                         <code>
+                         if("geolocation" in navigator){
+                           navigator.geolocation.getCurrentPosition(etc…)
+                           //show location on a map
+                         }else{
+                           //give user choice of static maps instead
+                         }
+                         </code>
+                         
+                         
+                         
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Hoisting - Vars declared w/ var are “hoisted” to “top” scope aka can’t be declared twice I think
+Basically why when you have an if else statement, you can’t declare the same variable twice using “var” or it will get an “___ already defined” error
+Technically you could have an if/else statement referencing “action” and define “var action” after them-->
+
+
+<!--IIFE (parentheses bs)
+
+-Allows you to control variable scope - vars inside an IIFE aren’t available outside-->
+
+                        <!--IMAGE MAPS
+
+YOU CAN MAKE IMG MAPS IN JS W T F https://www.tutorialspoint.com/javascript/javascript_image_map.htm
+An image map = clickable areas - you can also define coordinates
+-->
+
+<!--METHODS - 
+
+map() - 
+Creates a new array with the results calling a provided function on every element in the array
+so it "maps" a function to each elem in array and creates that as a new array kind of like a for each loop
+
+List of JS methods-->
+
+<!--NULL VS UNDEFINED VS NaN - 
+
+Null = Can be assigned to a variable as a representation of no value.
+Undefined = A variable that has not been assigned a value.
+
+typeof null = object
+typeof undefined = it's already a type - undefined lol
+
+UNDEFINED IS A TYPE ITSELF,
+WHILE NULL IS AN OBJECT U CAN INTERACT WITH ("EMPTY")
+
+Undefined = a var hasn't been assigned a val yet for ex.
+
+So null can be some empty placeholder thing ex.:
+
+null + 3
+= 3
+
+undefined + 3
+= undefined or NaN or some shit
+
+If arithmetic makes no sense, JS yields special Numbers:
+Infinity or NaN(Not a Number).
+console.log(5 / 0);
+//->Infinity-->
+
+<!--Properties vs. Methods - 
+
+Data is represented as PROPERTIES of the object, and
+Behavior is the methods
+
+Method- 
+ In OOP, it's a procedure associated with A. A message (i guess almost like an HTTP header lol) and B. an Object.
+
+THATS WHAT AN OBJECT IS AND THATS WHAT OBJECT ORIENTED IS IS E V E R Y T H I N G INCLUDING DOM ELEMENTS HAS THEIR A. PROPERTIES (IF AVAILABBLE) AND B. METHODS (IF AVAILABLE)  THATS WHAT ALL THIS SHIT IS DAWG ALL THE OBJECT.FUCKU.TITS CAN BE APPLIED TO EVERYTHING AND IS! 
+
+Ex. a Window object would have methods such as open and close, THATS WHAT IT MEANS BY PROCEDURAL IS THE METHOD IS A PROCEDURE TO BE CARRIED OUT AS A MESSAGE TO THE OBJECT  TO ENACT SUM SHIT
+While its state is a property 
+
+Open and close ie procedures ie imperatives are methods or things you can perform on/with the object
+State or value in an array or key-value pair shit or even like location are P R O P E R T IE S
+
+METHODS ARE LIKE MINI ALGORITHMS lol
+PROPERTIES ARE CHARACTERISTICS - 
+
+METHODS LET U FUK W THE PROPERTIES OF AN OBJECT <<<<<<<<<<<<<<<<
+This is also what people mean wen they say E N C A P S U LA T I O N
+
+The name:values pairs (in JavaScript objects) are called properties.
+Methods are actions that can be performed on objects.
+
+-->
+
+
+<!--Prototypes - 
+
+Every JS object has a prototype.
+The prototype is also an object.
+All JS objects inherit their properties and methods from their prototype.
+
+Objects created with new Object() inherit from a prototype called Object.prototype.
+
+Object.protoype is at the top of the chain - so all objects inherit from this shit.
+
+new keyword - 
+new constructor[(arguments)]
+constructor - Special method for creating an object within a class.
+Ohhh so JS DOES have classes but they were only introduced in ECMA 2015 ( so constructors are kind of new w JS)
+
+class-based = constructors & factory method pattern
+prototypal = prototype design pattern. Each instance of an object created from the prototype is just a copy
+
+The prototype pattern creates new objects, but rather than creating non-initialized objects, it retuns objects that are initialized w the values copied from the prototype object.
+
+So there's
+
+1. The prototype (sample)
+2. The clone
+3. The creation of that clone
+ex.:
+
+1. function CustomerPrototype(proto){} - //the prototype
+2. function Customer(first, last, dicksize){} - //The cloned objects being created
+3. function run(){} - //creates new object by asking prototype to clone itself
+
+
+Classical inheritance - Aka class inheritance "instances" inherit from classes, like a blueprint (PHP).
+These are usually instantiated via constructor functions using the new keyword (PHP)
+Class inheritance may or may not use the "class" keyword.
+
+Prototypal inheritance - Aka "instances" inherit directly from other objects aka "prototypes".
+They're usually instantiated via "factory functions" or ex. object.create().
+Prototypal inheritance is simpler and more flexible than class inheritance.
+Prototypal inheritance = objects WITHOUT CLASSES, OLOO
+
+Javascript = multi-paradigm: 1. OOP with prototypal inheritance, 2. Functional programming, 3. Imperative/procedural programming
+
+When you ask for a property of an object, JS looks for that property - if it doesnt find it, it follows the prototype chain until it finds the property, or returns undefined.
+
+
+
+-->
+
+
+<!--RECURSION - 
+
+Function that calls itself
+Each time the function is called, a new local scope is created
+
+Recursion = A function invoking itself again and again until it reaches the final return condition at which point IT RETURNS THE SHIT-->
+
+
+<!--TYPES 
+
+Polymorphism - A type whose operations can be applied to values of some other type or types (ex. int and variables or some shit)
+
+JS PRIMITIVE TYPES:
+Boolean - Null - Undefined - Number - String - Symbol(new in ES6)
+
+NON-PRIMITIVE:
+Object
+
+(7 total data types)
+
+All types except object define immutable values, incapable of being changed.
+
+Subtypes -
+Ex. cat is a subtype of animal. So, an expression of type cat can be used anywhere that type animal is used.
+
+Every "thing" in JS - including primitive data types and other shit - ex. 
+Date Object
+String Object
+Number Object
+Math Object
+Array Object
+Boolean Object
+Error Object
+RegExp Object
+
+These are all OBJECTS - as in they have specific PROPERTIES and then METHODS.
+
+M A T H I S A N O B J E C T T O O
+
+Type Theory -  
+When with math shit they write f: X —> Y, X is the old type, Y is the new type being built from the old, and the arrod is a type constructor that i guess designates this.
+
+FUNCTION = PRIMITIVE TYPE
+OBJECT = COMPLEX TYPE-->
+
+<!--PURE FUNCTIONS - 
+
+function where the return val. is only determined by its input vals w/o side-effects.
+ex.: math.cos(x). Computing this does not change "x" - doesn't ask for input or change state.
+So pure = stateless for the most part.-->
+
+<!--RETURN STATEMENTS - 
+
+Return - a and b are a function’s parameters, and the value it returns is signified by the return keyword. The return keyword also stops execution of the code in the function; nothing after it will be run.
+
+FUNCTIONS WITHOUT A RETURN, AKA “RETURNING NOTHING”, WILL END UP BEING “UNDEFINED”.
+Every function is going to return “Undefined” UNLESS you give it a return value.
+
+A function's return val can be passed to another function as a parameter
+
+If you have two returns, for example:
+	return first+second;
+	return “Weinerboy McGay”;
+
+Nothing will happen beyond the 1st return. As soon as the return happens, this function is finished.
+What happens after that first return never happens - Javascript is finished
+-->
+
+<!--SELECTORS - 
+
+Use a selector to grab an element, ex.:
+var numOne = document.getElementById(“num-one”)
+-->
+
+<!--SIDE EFFECTS - 
+
+ side-effects - Any app state change that is observable (aka opposite of pure functions). Side effects are avoided in functional programming (see above)
+ex.: Writing to a file, triggering any external process, logging to the console.
+-->
+
+<!--STATE - 
+
+State- Information about something held in memory. The set values that something's attributes have at any given moment (things saved to memory).
+Shared state - aka shared mutability. Can be bad because code isn't like containerized or separated or whatever, so it can be a mess.
+
+State - 
+10, or "HELLO"= By itself is stateless - does not represent any state. (aka pure values)
+There's a state when these "pure values" are associated to some kind of entities, for ex. objects.
+Ex.:
+var car = ("color", "blue"); = properties of "car". Since car has properties it has a state.
+It's associated to an "entity" (i.e. class/object i think), but ALSO to a point in time.
+So if today car = color, blue but tomorrow it's color, black, then black is the new state of that car object.s
+PROPERTIES = STATES.
+WHEN THE PROPERTIES CHANGE, THE STATES CHANGE.
+-->
+
+<!--THIS OPERATOR - 
+
+Ex.
+
+"John is running fast because he is trying to catch the train".
+
+The this operator acts like the pronoun "he" - so we don't have to say
+"John is running fast because John is trying to catch the train".
+
+
+Ex.
+
+var person = {
+	firstName: "Bob",
+	lastName: "Logg",
+	function fullName(){
+	console.log(this.firstName + this.lastName);	//is the same as vv - so it just lets you 	reference the var or whatever w/o being redundant
+	console.log(person.firstName + person.Lastname);
+	}
+}
+
+this is used because:
+
+There could be a global var w the same name as the one you're fucking w (ex global person and var person).
+
+REALLY BASIC EX.:
+
+$("button").click(function (event){
+	console.log($ (this).prop ("name"));
+this will have a val of ($("button"))
+});
+
+so this can be used in syntax where you need to access an function's props within the function itself ex.:
+
+function showFullName(){
+	console.log(this.firstName + this.LastName);
+}-->
+
+</article>
 
                   </section>
+
                 <section class="main-section" id="ECMAScript6">
                   <header>ECMAScript6 +</header>
                   <article> 
                   </article>
 
                   </section>
+
                 <section class="main-section" id="jQuery">
                   <header>jQuery</header>
                   <article> 
@@ -88,6 +499,7 @@
                 <section class="main-section" id="DOM">
                   <header>DOM</header>
                   <article>
+                  <!--Event listener - Attached to element to listen for interaction (mouseclick etc)-->
                   </article>
                   </section>
 
@@ -97,6 +509,11 @@
                   </article>
                   </section>
 
+                <section class="main-section" id="Sass">
+                  <header>Sass/SCSS</header>
+                  <article>
+                  </article>
+                  </section>                  
 <!--split-->
 
                 <section class="main-section" id="Terminal">
@@ -138,6 +555,58 @@
                 <section class="main-section" id="Ajax">
                   <header>Ajax</header>
                   <article> 
+
+                    <!--WHAT AJAX ACTUALLY IS-
+
+
+You have BOTH the thing being changed, i.e. the "starting code", IN the code, AND
+You have the CHANGE TO BE IMPLEMENTED, which is updated by the server depending on params or whatever, ALSO IN THE CODE
+
+So STATES = XMLHttpRequest.onreadystatechange - You have the BEGINNING and the STARTING STATE! and it's updated/filled in by the server depending on the provided shit
+
+AJAX - 
+Update a webpage w/o reloading page
+-Request data from server AFTER PAGE HAS LOADED		(OPP DI)
+-RECEIVE data from server as well					(LIKE DI)
+-SEND data to a server							
+
+AJAX *IS* ASYNC
+(Asynchronous Javascript And XML lol godammt) - Not really XML anymore might as well be called AJAJ lol
+
+XMLHttpRequest —> AJAX
+
+1. An event occurs in a webpage (page load, button is clicked - some shit at compile to runtime)
+2. An XMLHttpRequest OBJECT is created by JS
+3. That OBJECT sends a request to a web server
+4. The server processes the request
+5. Server sends back response to webpage
+6. Response is read (parsed lol) by JS
+7. Proper action like page update/section/content update is performed by the JS
+
+
+ALL MODERN BROWSERS SUPPORT THE XMLHttpRequest OBJECT
+SO BASICALLY UPDATE PARTS OF PAGE W / O PAGE RELOAD
+
+HOWEVER, DRAWBACK OF AJAX:
+-Can't really make cross-domain requests - the page you're making the request from and the resource have to be on the same server
+
+CROSS-DOMAIN JS CALLS - 
+
+Ajax = basically a general term for MAKING YOUR WEBPAGE DO *DYNAMIC* STUFF ON THE SERVER (ex. make a new post, remove a user, etc.)
+
+Javascript alone is clien-side - can't affect the DB directly. Needs a TECHNIQUE like AJAX to CAUSE AN ACTUAL EFFECT ON THE SERVER.
+
+Normal JS functionality only becomes AJAX WHEN A REMOTE CALL IS EVOLVED
+
+AJAX has two sides
+-The JS which MAKES the request
+-The dynamic page, which does something (changes like a controller updating the model), and returns a RESPONSE
+
+AJAX = REQUEST —> RESPONSE
+
+The dynamic side can be done in PHP, ASP, Ruby on Rails, C++, anything running on webserver.
+
+-->
                   </article>
                   </section>
                   
@@ -148,10 +617,34 @@
                   </section>         
                   
                 <section class="main-section" id="Sessions">
-                  <header>Sessions & Cookies<header>
+                  <header>Sessions & Cookies</header>
                   <article> 
                   </article>
                   </section>
+
+                <section class="main-section" id="Git">
+                  <header>Git</header>
+                  <article> 
+                    <h3>VSCode Git Setup Steps:</h3>                      
+                    <p>
+                      1. Clone repo. from Github <br />
+                      2. Make sure username and email are set up using git config   <br /> 
+                      3. Make changes <br />
+                      4. Add message and commit
+                      (git commit = local) <br />
+                      5. THEN push changes <br />                    
+                      6. Enter gh username and password (sambgordon - Apple692) <br />                
+                    </p>
+                    <li> VScode can stage and commit changes at the same time.</li>
+
+                  </article>
+                  </section>
+                  
+                <section class="main-section" id="Express">
+                  <header>ExpressJS</header>
+                  <article> 
+                  </article>
+                  </section>                  
                   
                 <!--<section class="main-section" id="blank">
                   <header>blank</header>
