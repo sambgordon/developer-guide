@@ -61,7 +61,7 @@
                   <header>Javascript Fundamentals</header>
                   <article>
 
-                      <h3>JS Editions: </h3>
+                      <h2>JS Editions: </h2>
                       <li> 5th Edition (2009) </li>
                       <li> 6th Edition - ECMAScript 2015 </li>
                       <li> 7th Edition - ECMAScript 2016 </li>
@@ -70,8 +70,8 @@
                       <li> ES.Next - Dynamic name referring to whatever the next version is at the time of writing. <br />
                       (ESNext feautres are actually referred to as proposals since they haven't happened yet.)
 
-                      <h3>CALLBACK FUNCTIONS:</h3>
-                          A function which is:
+                      <h2>CALLBACK FUNCTIONS:</h2>
+                    <b>Callback</b> - A function which is:
                           <li>Passed as an ARGUMENT to another function, and </li>
                           <li>Is invoked after some kind of event (so callback is the child function of a parent almost but not bound to scope) </li>
                           
@@ -87,7 +87,7 @@
                           
 
 
-                         <h3>CROSS-BROWSER ISSUES:</h3>
+                         <h2>CROSS-BROWSER ISSUES:</h2>
 
                          <p>JS in different browsers:</p>
                          <p>This originates in the 90s when there were IE and Netscape - Netscape had JS and IE had Jscript and VBScript
@@ -98,10 +98,10 @@
                          <li>When new features are used in code but not supported in older browsers.</li>
                          
                          
-                         <h3>CURRYING:</h3>
+                         <h2>CURRYING:</h2>
 
                          <p>
-                         Currying provides a way for working with functions that take multiple arguments, and using them in frameworks where functions might take only one argument.
+                        <b>Currying </b>provides a way for working with functions that take multiple arguments, and using them in frameworks where functions might take only one argument.
                          An example would be situations where some analytical techniques can only be applied to functions with a single argument.
                          In theoretical work it provides a way to study functions with multiple arguments in a simpler theoretical model that provides only one argument.</p>
                          
@@ -111,10 +111,10 @@
 
 
                      
-                         <h3>CLOSURES:</h3>
+                         <h2>CLOSURES:</h2>
 
 
-                         <p>Closures are important because: <br />
+                         <p><b>Closures</b> are important because: <br />
                          1. A scope is at the function level, not the block level<br />
                          2. Much of what you do in hs is async / event-driven<br />
                          3. They make event-driven code a lot easier to write
@@ -146,11 +146,11 @@
                          two() can access one's params (a and b), and var variable / the return statement since it's in one's body and therefore scope.
                          </p>
 
-                         <h3>Debugging:</h3>
+                         <h2>Debugging:</h2>
                          <p>Can be done via:</p>
                          
                          <li>Console in browser</li>
-                         <li>JS Validator AKA LINTING - Checks to make sure code is valid and follows syntax of language (LINTING)</li>
+                         <li>JS Validator AKA <b>linting</b> - Checks to make sure code is valid and follows syntax of language (LINTING)</li>
                          <li>JS Debugging app <a href="http://www.hacksrus.com/~ginda/venkman/" target="blank">hacksrus.com/~ginda/venkman/</a></li><br />
                          
                          <p>Linting can go through source code and find:</p>
@@ -158,23 +158,22 @@
                          <li>Pinpointing possible logical errors in program</li>
                          
                          <p>
-                         ESLint - <br />
-                         Javascript linter that requires node.js.<br />
-                         JSHint - <br />
-                         Online linter.<br />
+                        <b>ESLint</b> -
+                         Javascript linter that requires node.js<br />
+                         <b>JSHint</b> - 
+                         Online linter<br />
                          </p>
                          
-                         <h3>FEATURE DETECTION:</h3>
+                         <h2>FEATURE DETECTION:</h2>
 
-                         <p>Feature detection is working out whether a browser supports a certain block of code, and running different code dependent on whether it does or doesn't so a browser can always provide a working experience rather than crashing/erroring in some browsers.<br />
+                         <p><b>Feature detection</b> - Working out whether a browser supports a certain block of code, and running different code dependent on whether it does or doesn't so a browser can always provide a working experience rather than crashing/erroring in some browsers.<br />
                          
                          An example would be testing flexbox support in a browser. <br />
-                         
-                         
+                                                 
                          Modernizr is the industry standard for feature detection tests. Feature detection is made easy in CSS with the @supports @ rule.
                          </p>
                          <p>
-                         Do not confuse feature detection w browser sniffing: <br /><br />
+                         Do not confuse feature detection with <b>browser sniffing</b>: <br /><br />
                          feature detection = good<br />
                          browser sniffing = bad<br /><br />
                          
@@ -186,285 +185,281 @@
                          if("geolocation" in navigator){
                            navigator.geolocation.getCurrentPosition(etc…)
                            //show location on a map
-                         }else{
+                         } else{
                            //give user choice of static maps instead
-                         }
+                         };
                          </code>
                          
+
+
+
+                        <h2>HOISTING:</h2>
+
+                        <p>Variables declared w/ var are “hoisted” to “top” scope as in they can’t be declared twice I think. <br />
+                        Basically why when you have an if else statement, you can’t declare the same variable twice using “var” or it will get an “___ already defined” error. <br />
+                        Technically you could have an if/else statement referencing “action” and define “var action” after them.<br />
+                        </p>
                          
-                         
+<h2>I.I.F.E.:</h2>
+
+<b>Immediately Invoked Function Expression</b> - Allows you to control variable scope - variables inside an IIFE aren’t available outside it.
+
+                       <h2>IMAGE MAPS:</h2>
+
+You can make image maps in Javascript: <a href="https://www.tutorialspoint.com/javascript/javascript_image_map.htm">https://www.tutorialspoint.com/javascript/javascript_image_map.htm</a> <br />
+An image map = clickable areas. You can also define coordinates.
+
+<h2>METHODS:</h2>
+
+List of JS methods:
 
 
 
+<h2>NULL VS. UNDEFINED VS. NaN:</h2>
+<p>
+Null = Can be assigned to a variable as a representation of no value. <br />
+Undefined = A variable that has not been assigned a value. <br /> <br />
 
+typeof null = object<br />
 
+typeof undefined = it's already a type - undefined<br /><br />
 
+So, undefined is a type itself, while null is an object you can interact with ("empty").<br />
+So null can be some empty placeholder thing, ex.: </p>
 
-
-
-
-
-
-<!--Hoisting - Vars declared w/ var are “hoisted” to “top” scope aka can’t be declared twice I think
-Basically why when you have an if else statement, you can’t declare the same variable twice using “var” or it will get an “___ already defined” error
-Technically you could have an if/else statement referencing “action” and define “var action” after them-->
-
-
-<!--IIFE (parentheses bs)
-
--Allows you to control variable scope - vars inside an IIFE aren’t available outside-->
-
-                        <!--IMAGE MAPS
-
-YOU CAN MAKE IMG MAPS IN JS W T F https://www.tutorialspoint.com/javascript/javascript_image_map.htm
-An image map = clickable areas - you can also define coordinates
--->
-
-<!--METHODS - 
-
-map() - 
-Creates a new array with the results calling a provided function on every element in the array
-so it "maps" a function to each elem in array and creates that as a new array kind of like a for each loop
-
-List of JS methods-->
-
-<!--NULL VS UNDEFINED VS NaN - 
-
-Null = Can be assigned to a variable as a representation of no value.
-Undefined = A variable that has not been assigned a value.
-
-typeof null = object
-typeof undefined = it's already a type - undefined lol
-
-UNDEFINED IS A TYPE ITSELF,
-WHILE NULL IS AN OBJECT U CAN INTERACT WITH ("EMPTY")
-
-Undefined = a var hasn't been assigned a val yet for ex.
-
-So null can be some empty placeholder thing ex.:
+<code>
 
 null + 3
 = 3
 
+</code>
+<br />
+Whereas with undefined:
+<code>
 undefined + 3
-= undefined or NaN or some shit
-
-If arithmetic makes no sense, JS yields special Numbers:
+= undefined or NaN
+</code>
+<p>
+If arithmetic makes no sense, JS yields special Numbers:</p>
+<code>
 Infinity or NaN(Not a Number).
 console.log(5 / 0);
-//->Infinity-->
+//->Infinity
+</code>
 
-<!--Properties vs. Methods - 
 
-Data is represented as PROPERTIES of the object, and
-Behavior is the methods
+<h2>PROPERTIES VS. METHODS:</h2>
 
-Method- 
- In OOP, it's a procedure associated with A. A message (i guess almost like an HTTP header lol) and B. an Object.
+<li>Data is represented as PROPERTIES of the object, and
+<li>Behavior is represented as the methods</li>
 
-THATS WHAT AN OBJECT IS AND THATS WHAT OBJECT ORIENTED IS IS E V E R Y T H I N G INCLUDING DOM ELEMENTS HAS THEIR A. PROPERTIES (IF AVAILABBLE) AND B. METHODS (IF AVAILABLE)  THATS WHAT ALL THIS SHIT IS DAWG ALL THE OBJECT.FUCKU.TITS CAN BE APPLIED TO EVERYTHING AND IS! 
-
-Ex. a Window object would have methods such as open and close, THATS WHAT IT MEANS BY PROCEDURAL IS THE METHOD IS A PROCEDURE TO BE CARRIED OUT AS A MESSAGE TO THE OBJECT  TO ENACT SUM SHIT
-While its state is a property 
-
-Open and close ie procedures ie imperatives are methods or things you can perform on/with the object
-State or value in an array or key-value pair shit or even like location are P R O P E R T IE S
-
-METHODS ARE LIKE MINI ALGORITHMS lol
-PROPERTIES ARE CHARACTERISTICS - 
-
-METHODS LET U FUK W THE PROPERTIES OF AN OBJECT <<<<<<<<<<<<<<<<
-This is also what people mean wen they say E N C A P S U LA T I O N
-
-The name:values pairs (in JavaScript objects) are called properties.
+<p>
+Method: <br />
+In OOP, it's a procedure associated with a. A message (almost like an HTTP header) and b. an Object.
+</p>
+<p>
+That's what an object is and that's what object oriented is: everything including DOM elements has their a. properties (if available) and b. methods (if available). So all the object.thing1.thing2 can be applied to everything.
+</p>
+<p>
+Ex.: A Window object would have methods such as open and close. <br /> 
+That's what it means by procedural is the method is a procedure to be carried out as a message to the object to enact something, while its state is a property.
+</p>
+<p>
+Open and close i.e. procedures i.e. imperatives are methods or things you can perform on/with the object.
+State or value in an array or key-value pair shit or even like location are properties.
+</p><p>
+Methods are like miniature algorithms, while properties are characteristics.
+Methods allow you to interact with the properties of an object.
+This is also what people mean when they say encapsulation.
+</p><p>
 Methods are actions that can be performed on objects.
-
--->
-
-
-<!--Prototypes - 
-
-Every JS object has a prototype.
-The prototype is also an object.
-All JS objects inherit their properties and methods from their prototype.
-
-Objects created with new Object() inherit from a prototype called Object.prototype.
-
-Object.protoype is at the top of the chain - so all objects inherit from this shit.
-
-new keyword - 
-new constructor[(arguments)]
-constructor - Special method for creating an object within a class.
-Ohhh so JS DOES have classes but they were only introduced in ECMA 2015 ( so constructors are kind of new w JS)
-
-class-based = constructors & factory method pattern
-prototypal = prototype design pattern. Each instance of an object created from the prototype is just a copy
-
-The prototype pattern creates new objects, but rather than creating non-initialized objects, it retuns objects that are initialized w the values copied from the prototype object.
-
-So there's
-
-1. The prototype (sample)
-2. The clone
-3. The creation of that clone
-ex.:
-
-1. function CustomerPrototype(proto){} - //the prototype
-2. function Customer(first, last, dicksize){} - //The cloned objects being created
-3. function run(){} - //creates new object by asking prototype to clone itself
+The name:values pairs (in JavaScript objects) are called properties.
+</p>
 
 
-Classical inheritance - Aka class inheritance "instances" inherit from classes, like a blueprint (PHP).
-These are usually instantiated via constructor functions using the new keyword (PHP)
-Class inheritance may or may not use the "class" keyword.
+<h2>PROTOTYPES:</h2>
+<p>
+Javascript is multi-paradigm:  <br />
+1. OOP with prototypal inheritance <br />
+2. Functional programming <br />
+3. Imperative/procedural programming <br />
+</p>
+<p>
+Every JS object has a prototype. The prototype is also an object. All JS objects inherit their properties and methods from their prototype. The prototype pattern creates new objects, but rather than creating non-initialized objects, it returns objects that are initialized w the values copied from the prototype object.
+</p>
 
-Prototypal inheritance - Aka "instances" inherit directly from other objects aka "prototypes".
-They're usually instantiated via "factory functions" or ex. object.create().
-Prototypal inheritance is simpler and more flexible than class inheritance.
-Prototypal inheritance = objects WITHOUT CLASSES, OLOO
+So there's: <br /><br />
 
-Javascript = multi-paradigm: 1. OOP with prototypal inheritance, 2. Functional programming, 3. Imperative/procedural programming
+1. The prototype (sample)<br />
+2. The clone<br />
+3. The creation of that clone<br /><br />
+Ex.: <br />
+1. function CustomerPrototype(proto){} - //the prototype <br />
+2. function Customer(first, last, something){} - //The cloned objects being created <br />
+3. function run(){} - //creates new object by asking prototype to clone itself <br />
+<br />
+<h3>Rules:</h3>
+<li>Objects created with new Object() inherit from a prototype called Object.prototype.</li>
+<li>Object.protoype is at the top of the chain - so all objects inherit from this.</li>
+<li>When you ask for a property of an object, JS looks for that property - if it doesnt find it, it follows the prototype chain until it finds the property, or returns undefined.</li>
 
-When you ask for a property of an object, JS looks for that property - if it doesnt find it, it follows the prototype chain until it finds the property, or returns undefined.
+<h3>Terms:</h3>
+
+<b>new</b> keyword - <br />
+new constructor[(arguments)]<br />
+<b>constructor</b> - Special method for creating an object within a class.<br />
+So JS DOES have classes but they were only introduced in ECMA 2015 ( so constructors are kind of new with JS)<br />
+class-based - constructors & factory method pattern<br />
+prototypal - prototype design pattern. Each instance of an object created from the prototype is just a copy.<br />
+
+<h3>Classical vs. Prototypal:</h3>
+
+<b>Classical inheritance</b> - Aka class inheritance "instances" inherit from classes, like a blueprint (PHP). <br />
+These are usually instantiated via constructor functions using the new keyword. (PHP) <br />
+Class inheritance may or may not use the "class" keyword. <br /><br />
+
+<b>Prototypal inheritance</b> - Aka "instances" inherit directly from other objects aka "prototypes".<br />
+They're usually instantiated via "factory functions" or ex. object.create().<br />
+Prototypal inheritance is simpler and more flexible than class inheritance.<br />
+Prototypal inheritance = objects WITHOUT CLASSES, OLOO. <br />
+
+<h2>PURE FUNCTIONS</h2>
+
+A function where the return value is only determined by its input values w/o side-effects. <br />
+Ex.: math.cos(x). Computing this does not change "x" - doesn't ask for input or change state. <br />
+So pure = stateless for the most part.
+
+<h2>RECURSION</h2>
+  <p>
+  <b>Recursion</b> - A function invoking (calling) itself again and again until it reaches the final return condition at which point it returns the final value.<br /><br />
+  Each time the function is called, a new local scope is created.
+  
+  </p>
 
 
 
--->
+  <h2>TYPES</h2>
+
+  <h3>There are 7 total data types:</h3>
+  
+  Primitive types: <br />
+  <li>Boolean</li>
+  <li>Null</li>
+  <li>Undefined</li>
+  <li>Number</li>
+  <li>String</li>
+  <li>Symbol(new in ES6)</li>
+  <br />
+  
+  Non-primitive types: <br />
+  <li>Object</li><br />
+  
+  All types except the non-primitive type, object, define immutable values, incapable of being changed.
+  <br /><br />
+  Function = primitive type<br />
+  Object = complex type<br /><br />
+  
+  Every "thing" in JS - including primitive data types and other things - Ex.: <br /> 
+  <li>Date Object</li>
+  <li>String Object</li>
+  <li>Number Object</li>
+  <li>Math Object</li>
+  <li>Array Object</li>
+  <li>Boolean Object</li>
+  <li>Error Object</li>
+  <li>RegExp Object</li>
+  <br />
+  These are all OBJECTS - as in they have specific PROPERTIES and then METHODS. So Math is an object as well.
+  <br />
+  <h3>Terms:</h3>
+  
+  Polymorphism - A type whose operations can be applied to values of some other type or types. (ex. int and variables) <br /><br />
+  
+  Subtypes -Ex. cat is a subtype of animal. So, an expression of type cat can be used anywhere that type animal is used. <br /><br />
+  
+  Type Theory - When with math they write f: X —> Y, X is the old type, Y is the new type being built from the old, and the arrod is a type constructor that i guess designates this.
 
 
-<!--RECURSION - 
 
-Function that calls itself
-Each time the function is called, a new local scope is created
+  <h2>RETURN STATEMENTS</h2>
+  <p>
+  <b>Return</b> - a and b are a function’s parameters, and the value it returns is signified by the return keyword. 
+  <li>The return keyword also stops execution of the code in the function; nothing after it will be run.</li>
+  <li>Functions without a return, aka “returning nothing”, will end up being “undefined”. Every function is going to return “Undefined” UNLESS you give it a return value. </li>
+  <li>A function's return value can be passed to another function as a parameter.</li>
+  </p>
+  
 
-Recursion = A function invoking itself again and again until it reaches the final return condition at which point IT RETURNS THE SHIT-->
+
+<h2>SELECTORS:</h2> 
+
+Use a <b>selector</b> to grab an element, ex.:
+<code>
+var numOne = document.getElementById(“num-one”);</code>
+
+<h2>SIDE EFFECTS:</h2>
+<p>
+<b>side-effects</b> - Any app state change that is observable (aka opposite of pure functions). Side effects are avoided in functional programming. <br /> <br />
+Ex.: Writing to a file, triggering any external process, logging to the console.
+</p>
+
+<h2>STATE:</h2>
+<p>
+<b>State</b> - Information about something held in memory. The set values that something's attributes have at any given moment (things saved to memory).<br /><br />
+Ex.: 10, or "HELLO"= By itself is stateless - does not represent any state. (aka pure values)
+<br />
+There's a state when these "pure values" are associated to some kind of entities, for ex. objects. <br /><br />
+Ex.:<br />
+var car = ("color", "blue"); = properties of "car".<br /> Since car has properties it has a state.
+It's associated to an "entity" (i.e. class/object I think), but ALSO to a point in time.
+So if today car = color, blue but tomorrow it's color, black, then black is the new state of that car object.<br /><br />Properties = states.<br />
+When the properties change, the states change.<br /><br />
 
 
-<!--TYPES 
+<b>Shared state</b> - aka shared mutability. Can be bad because code isn't like containerized or separated or whatever, so it can be a mess.
 
-Polymorphism - A type whose operations can be applied to values of some other type or types (ex. int and variables or some shit)
+</p>
 
-JS PRIMITIVE TYPES:
-Boolean - Null - Undefined - Number - String - Symbol(new in ES6)
 
-NON-PRIMITIVE:
-Object
+<h2>THIS OPERATOR:</h2>
 
-(7 total data types)
+Ex.:<br /><br />
 
-All types except object define immutable values, incapable of being changed.
+"John is running fast because <b>he</b> is trying to catch the train".<br /><br />
 
-Subtypes -
-Ex. cat is a subtype of animal. So, an expression of type cat can be used anywhere that type animal is used.
+The this operator acts like the pronoun "he" - so we don't have to say "John is running fast because John is trying to catch the train".
+<br /><br />
 
-Every "thing" in JS - including primitive data types and other shit - ex. 
-Date Object
-String Object
-Number Object
-Math Object
-Array Object
-Boolean Object
-Error Object
-RegExp Object
-
-These are all OBJECTS - as in they have specific PROPERTIES and then METHODS.
-
-M A T H I S A N O B J E C T T O O
-
-Type Theory -  
-When with math shit they write f: X —> Y, X is the old type, Y is the new type being built from the old, and the arrod is a type constructor that i guess designates this.
-
-FUNCTION = PRIMITIVE TYPE
-OBJECT = COMPLEX TYPE-->
-
-<!--PURE FUNCTIONS - 
-
-function where the return val. is only determined by its input vals w/o side-effects.
-ex.: math.cos(x). Computing this does not change "x" - doesn't ask for input or change state.
-So pure = stateless for the most part.-->
-
-<!--RETURN STATEMENTS - 
-
-Return - a and b are a function’s parameters, and the value it returns is signified by the return keyword. The return keyword also stops execution of the code in the function; nothing after it will be run.
-
-FUNCTIONS WITHOUT A RETURN, AKA “RETURNING NOTHING”, WILL END UP BEING “UNDEFINED”.
-Every function is going to return “Undefined” UNLESS you give it a return value.
-
-A function's return val can be passed to another function as a parameter
-
-If you have two returns, for example:
-	return first+second;
-	return “Weinerboy McGay”;
-
-Nothing will happen beyond the 1st return. As soon as the return happens, this function is finished.
-What happens after that first return never happens - Javascript is finished
--->
-
-<!--SELECTORS - 
-
-Use a selector to grab an element, ex.:
-var numOne = document.getElementById(“num-one”)
--->
-
-<!--SIDE EFFECTS - 
-
- side-effects - Any app state change that is observable (aka opposite of pure functions). Side effects are avoided in functional programming (see above)
-ex.: Writing to a file, triggering any external process, logging to the console.
--->
-
-<!--STATE - 
-
-State- Information about something held in memory. The set values that something's attributes have at any given moment (things saved to memory).
-Shared state - aka shared mutability. Can be bad because code isn't like containerized or separated or whatever, so it can be a mess.
-
-State - 
-10, or "HELLO"= By itself is stateless - does not represent any state. (aka pure values)
-There's a state when these "pure values" are associated to some kind of entities, for ex. objects.
 Ex.:
-var car = ("color", "blue"); = properties of "car". Since car has properties it has a state.
-It's associated to an "entity" (i.e. class/object i think), but ALSO to a point in time.
-So if today car = color, blue but tomorrow it's color, black, then black is the new state of that car object.s
-PROPERTIES = STATES.
-WHEN THE PROPERTIES CHANGE, THE STATES CHANGE.
--->
 
-<!--THIS OPERATOR - 
-
-Ex.
-
-"John is running fast because he is trying to catch the train".
-
-The this operator acts like the pronoun "he" - so we don't have to say
-"John is running fast because John is trying to catch the train".
-
-
-Ex.
-
+<code>
 var person = {
 	firstName: "Bob",
 	lastName: "Logg",
 	function fullName(){
-	console.log(this.firstName + this.lastName);	//is the same as vv - so it just lets you 	reference the var or whatever w/o being redundant
+	console.log(this.firstName + this.lastName);
 	console.log(person.firstName + person.Lastname);
 	}
-}
+}</code>
 
-this is used because:
+In this instance, this.firstName is the same as saying person.FirstName, so it just lets you	reference it without being redundant.
 
-There could be a global var w the same name as the one you're fucking w (ex global person and var person).
-
-REALLY BASIC EX.:
-
+This is used because there could be a global var w the same name as the one you're interacting with (ex. global person and var person).
+<br /><br />
+Ex.:
+<code>
 $("button").click(function (event){
 	console.log($ (this).prop ("name"));
 this will have a val of ($("button"))
-});
+});</code>
 
-so this can be used in syntax where you need to access an function's props within the function itself ex.:
-
+So this can be used in syntax where you need to access an function's props within the function itself ex.:
+<code>
 function showFullName(){
 	console.log(this.firstName + this.LastName);
-}-->
+}</code>
+
+
 
 </article>
 
@@ -625,7 +620,7 @@ The dynamic side can be done in PHP, ASP, Ruby on Rails, C++, anything running o
                 <section class="main-section" id="Git">
                   <header>Git</header>
                   <article> 
-                    <h3>VSCode Git Setup Steps:</h3>                      
+                    <h2>VSCode Git Setup Steps:</h2>                      
                     <p>
                       1. Clone repo. from Github <br />
                       2. Make sure username and email are set up using git config   <br /> 
