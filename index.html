@@ -25,7 +25,37 @@
                 
                   
                   <a class="nav-link" href="#CSS3" rel="internal"><li>CSS3</li></a>
-                  <a class="nav-link" href="#Javascript" rel="internal"><li>Javascript Fundamentals</li></a>
+
+
+                  <a class="nav-link" href="#Javascript" rel="internal"></a><li class="collapsible">
+                    Javascript Fundamentals</li>
+                    <div class="content">
+
+                    <a class="nav-link sub "href="#jsCallback" rel="internal">Callbacks</a> 
+                    <a class="nav-link sub "href="#jsClosure" rel="internal">Closures</a> 
+                    <a class="nav-link sub "href="#jsCross" rel="internal">Cross-Browser</a> 
+                    <a class="nav-link sub "href="#jsCurry" rel="internal">Currying</a> 
+                    <a class="nav-link sub "href="#jsDebug" rel="internal">Debugging</a>
+                    <a class="nav-link sub "href="#jsEditions" rel="internal">Editions</a> 
+                    <a class="nav-link sub "href="#jsFeature" rel="internal">Feature Detection</a> 
+                    <a class="nav-link sub "href="#jsHoist" rel="internal">Hoisting</a> 
+                    <a class="nav-link sub "href="#jsIIFE" rel="internal">I.I.F.E.</a> 
+                    <a class="nav-link sub "href="#jsImage" rel="internal">Image Maps</a> 
+                    <a class="nav-link sub "href="#jsMethods" rel="internal">Methods</a> 
+                    <a class="nav-link sub "href="#jsNull" rel="internal">Null</a> 
+                    <a class="nav-link sub "href="#jsPropVs" rel="internal">Properties Vs. Methods</a> 
+                    <a class="nav-link sub "href="#jsPrototype" rel="internal">Prototypes</a> 
+                    <a class="nav-link sub "href="#jsPrototypalVs" rel="internal">Prototypal Vs. Classical</a> 
+                    <a class="nav-link sub "href="#jsPure" rel="internal">Pure</a> 
+                    <a class="nav-link sub "href="#jsRecursion" rel="internal">Recursion</a> 
+                    <a class="nav-link sub "href="#jsReturn" rel="internal">Return</a> 
+                    <a class="nav-link sub "href="#jsSelectors" rel="internal">Selectors</a> 
+                    <a class="nav-link sub "href="#jsSide" rel="internal">Side Effects</a> 
+                    <a class="nav-link sub "href="#jsState" rel="internal">State</a> 
+                    <a class="nav-link sub "href="#jsThis" rel="internal">This</a>                <a class="nav-link sub "href="#jsTypes" rel="internal">Types</a>                                                                                                                                                                                                                                                                                                                                                             
+
+                    </div>
+                
                   <a class="nav-link" href="#ECMAScript6" rel="internal"><li>ECMAScript6 +</li></a>
                   <a class="nav-link" href="#jQuery" rel="internal"><li>jQuery</li></a>
                   <a class="nav-link" href="#OOP" rel="internal"><li>OOP</li></a>
@@ -70,16 +100,16 @@
                   <header>Javascript Fundamentals</header>
                   <article>
 
-                      <h2>JS Editions: </h2>
+                      <h2 id="jsEditions">JS Editions: </h2>
                       <li> 5th Edition (2009) </li>
                       <li> 6th Edition - ECMAScript 2015 </li>
                       <li> 7th Edition - ECMAScript 2016 </li>
                       <li> 8th Edition - ECMAScript 2017 </li>
                       <li> 9th Edition - ECMAScript 2018 </li>
                       <li> ES.Next - Dynamic name referring to whatever the next version is at the time of writing. <br />
-                      (ESNext feautres are actually referred to as proposals since they haven't happened yet.)
+                      (ESNext features are actually referred to as proposals since they haven't happened yet.)
 
-                      <h2>CALLBACK FUNCTIONS:</h2>
+                      <h2 id="jsCallback">CALLBACK FUNCTIONS:</h2>
                     <b>Callback</b> - A function which is:
                           <li>Passed as an ARGUMENT to another function, and </li>
                           <li>Is invoked after some kind of event (so callback is the child function of a parent almost but not bound to scope) </li>
@@ -94,33 +124,7 @@
 			</code>
                          This is just a function passed almost like the parameters for another function, that is then also called when that "parent function" is triggered. So you run the parent one and it calls back whatever then gets filled in.
                           
-
-
-                         <h2>CROSS-BROWSER ISSUES:</h2>
-
-                         <p>JS in different browsers:</p>
-                         <p>This originates in the 90s when there were IE and Netscape - Netscape had JS and IE had Jscript and VBScript
-                         Things like jQuery were created to abstract away differences in brower implementations</p>
-                         
-                         <p>JS compatibility issues happen when:</p>
-                         <li>Bad code in regards to feature detection browser sniffing etc blocks browsers from rnnng otherwise fine code</li>
-                         <li>When new features are used in code but not supported in older browsers.</li>
-                         
-                         
-                         <h2>CURRYING:</h2>
-
-                         <p>
-                        <b>Currying </b>provides a way for working with functions that take multiple arguments, and using them in frameworks where functions might take only one argument.
-                         An example would be situations where some analytical techniques can only be applied to functions with a single argument.
-                         In theoretical work it provides a way to study functions with multiple arguments in a simpler theoretical model that provides only one argument.</p>
-                         
-                         <p>Currying can equal returning a bunch of things or also like how php template tags let you "repeat" things easier than with html across pages.</p>
-                          
-
-
-
-                     
-                         <h2>CLOSURES:</h2>
+                         <h2 id="jsClosure">CLOSURES:</h2>
 
 
                          <p><b>Closures</b> are important because: <br />
@@ -155,7 +159,28 @@
                          two() can access one's params (a and b), and var variable / the return statement since it's in one's body and therefore scope.
                          </p>
 
-                         <h2>Debugging:</h2>
+                         <h2 id="jsCross">CROSS-BROWSER ISSUES:</h2>
+
+                         <p>JS in different browsers:</p>
+                         <p>This originates in the 90s when there were IE and Netscape - Netscape had JS and IE had Jscript and VBScript
+                         Things like jQuery were created to abstract away differences in brower implementations</p>
+                         
+                         <p>JS compatibility issues happen when:</p>
+                         <li>Bad code in regards to feature detection browser sniffing etc blocks browsers from rnnng otherwise fine code</li>
+                         <li>When new features are used in code but not supported in older browsers.</li>
+                         
+                         
+                         <h2 id="jsCurry">CURRYING:</h2>
+
+                         <p>
+                        <b>Currying </b>provides a way for working with functions that take multiple arguments, and using them in frameworks where functions might take only one argument.
+                         An example would be situations where some analytical techniques can only be applied to functions with a single argument.
+                         In theoretical work it provides a way to study functions with multiple arguments in a simpler theoretical model that provides only one argument.</p>
+                         
+                         <p>Currying can equal returning a bunch of things or also like how php template tags let you "repeat" things easier than with html across pages.</p>
+                          
+
+                         <h2 id="jsDebug">Debugging:</h2>
                          <p>Can be done via:</p>
                          
                          <li>Console in browser</li>
@@ -173,7 +198,7 @@
                          Online linter<br />
                          </p>
                          
-                         <h2>FEATURE DETECTION:</h2>
+                         <h2 id="jsFeature">FEATURE DETECTION:</h2>
 
                          <p><b>Feature detection</b> - Working out whether a browser supports a certain block of code, and running different code dependent on whether it does or doesn't so a browser can always provide a working experience rather than crashing/erroring in some browsers.<br />
                          
@@ -202,29 +227,29 @@
 
 
 
-                        <h2>HOISTING:</h2>
+                        <h2="jsHoist">HOISTING:</h2>
 
                         <p>Variables declared w/ var are “hoisted” to “top” scope as in they can’t be declared twice I think. <br />
                         Basically why when you have an if else statement, you can’t declare the same variable twice using “var” or it will get an “___ already defined” error. <br />
                         Technically you could have an if/else statement referencing “action” and define “var action” after them.<br />
                         </p>
                          
-<h2>I.I.F.E.:</h2>
+<h2 id="jsIIFE">I.I.F.E.:</h2>
 
 <b>Immediately Invoked Function Expression</b> - Allows you to control variable scope - variables inside an IIFE aren’t available outside it.
 
-                       <h2>IMAGE MAPS:</h2>
+                       <h2 id="jsImage">IMAGE MAPS:</h2>
 
 You can make image maps in Javascript: <a href="https://www.tutorialspoint.com/javascript/javascript_image_map.htm">https://www.tutorialspoint.com/javascript/javascript_image_map.htm</a> <br />
 An image map = clickable areas. You can also define coordinates.
 
-<h2>METHODS:</h2>
+<h2 id="jsMethods">METHODS:</h2>
 
 List of JS methods:
 
 
 
-<h2>NULL VS. UNDEFINED VS. NaN:</h2>
+<h2 id="jsNull">NULL VS. UNDEFINED VS. NaN:</h2>
 <p>
 Null = Can be assigned to a variable as a representation of no value. <br />
 Undefined = A variable that has not been assigned a value. <br /> <br />
@@ -257,7 +282,7 @@ console.log(5 / 0);
 </code>
 
 
-<h2>PROPERTIES VS. METHODS:</h2>
+<h2 id="jsPropVs">PROPERTIES VS. METHODS:</h2>
 
 <li>Data is represented as PROPERTIES of the object, and
 <li>Behavior is represented as the methods</li>
@@ -286,7 +311,7 @@ The name:values pairs (in JavaScript objects) are called properties.
 </p>
 
 
-<h2>PROTOTYPES:</h2>
+<h2 id="jsPrototype">PROTOTYPES:</h2>
 <p>
 Javascript is multi-paradigm:  <br />
 1. OOP with prototypal inheritance <br />
@@ -321,7 +346,7 @@ So JS DOES have classes but they were only introduced in ECMA 2015 ( so construc
 class-based - constructors & factory method pattern<br />
 prototypal - prototype design pattern. Each instance of an object created from the prototype is just a copy.<br />
 
-<h3>Classical vs. Prototypal:</h3>
+<h2 id="jsPrototypalVs">PROTOTYPAL vs. CLASSICAL:</h2>
 
 <b>Classical inheritance</b> - Aka class inheritance "instances" inherit from classes, like a blueprint (PHP). <br />
 These are usually instantiated via constructor functions using the new keyword. (PHP) <br />
@@ -332,13 +357,13 @@ They're usually instantiated via "factory functions" or ex. object.create().<br 
 Prototypal inheritance is simpler and more flexible than class inheritance.<br />
 Prototypal inheritance = objects WITHOUT CLASSES, OLOO. <br />
 
-<h2>PURE FUNCTIONS</h2>
+<h2 id="jsPure">PURE FUNCTIONS</h2>
 
 A function where the return value is only determined by its input values w/o side-effects. <br />
 Ex.: math.cos(x). Computing this does not change "x" - doesn't ask for input or change state. <br />
 So pure = stateless for the most part.
 
-<h2>RECURSION</h2>
+<h2 id="jsRecursion">RECURSION</h2>
   <p>
   <b>Recursion</b> - A function invoking (calling) itself again and again until it reaches the final return condition at which point it returns the final value.<br /><br />
   Each time the function is called, a new local scope is created.
@@ -347,50 +372,7 @@ So pure = stateless for the most part.
 
 
 
-  <h2>TYPES</h2>
-
-  <h3>There are 7 total data types:</h3>
-  
-  Primitive types: <br />
-  <li>Boolean</li>
-  <li>Null</li>
-  <li>Undefined</li>
-  <li>Number</li>
-  <li>String</li>
-  <li>Symbol(new in ES6)</li>
-  <br />
-  
-  Non-primitive types: <br />
-  <li>Object</li><br />
-  
-  All types except the non-primitive type, object, define immutable values, incapable of being changed.
-  <br /><br />
-  Function = primitive type<br />
-  Object = complex type<br /><br />
-  
-  Every "thing" in JS - including primitive data types and other things - Ex.: <br /> 
-  <li>Date Object</li>
-  <li>String Object</li>
-  <li>Number Object</li>
-  <li>Math Object</li>
-  <li>Array Object</li>
-  <li>Boolean Object</li>
-  <li>Error Object</li>
-  <li>RegExp Object</li>
-  <br />
-  These are all OBJECTS - as in they have specific PROPERTIES and then METHODS. So Math is an object as well.
-  <br />
-  <h3>Terms:</h3>
-  
-  Polymorphism - A type whose operations can be applied to values of some other type or types. (ex. int and variables) <br /><br />
-  
-  Subtypes -Ex. cat is a subtype of animal. So, an expression of type cat can be used anywhere that type animal is used. <br /><br />
-  
-  Type Theory - When with math they write f: X —> Y, X is the old type, Y is the new type being built from the old, and the arrod is a type constructor that i guess designates this.
-
-
-
-  <h2>RETURN STATEMENTS</h2>
+  <h2 id="jsReturn">RETURN STATEMENTS</h2>
   <p>
   <b>Return</b> - a and b are a function’s parameters, and the value it returns is signified by the return keyword. 
   <li>The return keyword also stops execution of the code in the function; nothing after it will be run.</li>
@@ -400,19 +382,19 @@ So pure = stateless for the most part.
   
 
 
-<h2>SELECTORS:</h2> 
+<h2 id="jsSelectors">SELECTORS:</h2> 
 
 Use a <b>selector</b> to grab an element, ex.:
 <code>
 var numOne = document.getElementById(“num-one”);</code>
 
-<h2>SIDE EFFECTS:</h2>
+<h2 id="jsSide">SIDE EFFECTS:</h2>
 <p>
 <b>side-effects</b> - Any app state change that is observable (aka opposite of pure functions). Side effects are avoided in functional programming. <br /> <br />
 Ex.: Writing to a file, triggering any external process, logging to the console.
 </p>
 
-<h2>STATE:</h2>
+<h2 id="jsState">STATE:</h2>
 <p>
 <b>State</b> - Information about something held in memory. The set values that something's attributes have at any given moment (things saved to memory).<br /><br />
 Ex.: 10, or "HELLO"= By itself is stateless - does not represent any state. (aka pure values)
@@ -430,7 +412,7 @@ When the properties change, the states change.<br /><br />
 </p>
 
 
-<h2>THIS OPERATOR:</h2>
+<h2 id="jsThis">THIS OPERATOR:</h2>
 
 Ex.:<br /><br />
 
@@ -467,6 +449,50 @@ So this can be used in syntax where you need to access an function's props withi
 function showFullName(){
 	console.log(this.firstName + this.LastName);
 }</code>
+
+
+<h2 id="jsTypes">TYPES</h2>
+
+<h3>There are 7 total data types:</h3>
+
+Primitive types: <br />
+<li>Boolean</li>
+<li>Null</li>
+<li>Undefined</li>
+<li>Number</li>
+<li>String</li>
+<li>Symbol(new in ES6)</li>
+<br />
+
+Non-primitive types: <br />
+<li>Object</li><br />
+
+All types except the non-primitive type, object, define immutable values, incapable of being changed.
+<br /><br />
+Function = primitive type<br />
+Object = complex type<br /><br />
+
+Every "thing" in JS - including primitive data types and other things - Ex.: <br /> 
+<li>Date Object</li>
+<li>String Object</li>
+<li>Number Object</li>
+<li>Math Object</li>
+<li>Array Object</li>
+<li>Boolean Object</li>
+<li>Error Object</li>
+<li>RegExp Object</li>
+<br />
+These are all OBJECTS - as in they have specific PROPERTIES and then METHODS. So Math is an object as well.
+<br />
+<h3>Terms:</h3>
+
+Polymorphism - A type whose operations can be applied to values of some other type or types. (ex. int and variables) <br /><br />
+
+Subtypes -Ex. cat is a subtype of animal. So, an expression of type cat can be used anywhere that type animal is used. <br /><br />
+
+Type Theory - When with math they write f: X —> Y, X is the old type, Y is the new type being built from the old, and the arrod is a type constructor that i guess designates this.
+
+
 
 
 
