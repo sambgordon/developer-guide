@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+  <nav id="navbar">
+      <header id="header-main">Developer Guide {Front-end}     <br />Page 2  
+      </header>
+      <ul> 
+          <a class="nav-link" href="#API" rel="internal"><li>API Basics</li></a>
+          <a class="nav-link" href="#OpenSource" rel="internal"><li>Open-Source Basics</li></a>
+                  <a class="nav-link" href="#DevTools" rel="internal"><li>Chrome DevTools</li></a>
+                  <!--split-->
+                  <a class="nav-link" href="#Terminal" rel="internal"><li>Terminal commands</li></a>
+                  <a class="nav-link" href="#Git" rel="internal"><li>Git</li></a>
+                  <a class="nav-link" href="#Gulp" rel="internal"><li>Gulp</li></a>   
+                  <a class="nav-link" href="#SDP" rel="internal"></a><li class="collapsible lightred">Software Design Principles</li>
+                    <div class="content">
+                    <a class="nav-link sub "href="#sdpBasic" rel="internal">Basics</a>
+                    <a class="nav-link sub "href="#sdpLife" rel="internal">Lifecycle</a> 
+                    <a class="nav-link sub "href="#sdpFunc" rel="internal">Functional Programming</a> 
+                    <a class="nav-link sub "href="#sdpProb" rel="internal">Problems</a> 
+                    <a class="nav-link sub "href="#sdpMVC" rel="internal">MVC</a> 
+                    <a class="nav-link sub "href="#sdpMicro" rel="internal">Micro vs. Mono</a> 
+                    <a class="nav-link sub "href="#sdpAgile" rel="internal">Agile</a> 
+                    <a class="nav-link sub "href="#sdpSolid" rel="internal">S.O.L.I.D.</a> 
+                    <a class="nav-link sub "href="#sdpState" rel="internal">State Management</a>     
+                    <a class="nav-link sub "href="#sdpService" rel="internal">Service Workers</a>             
+                    <a class="nav-link sub "href="#sdpArch" rel="internal">Architectures</a> 
+                    <a class="nav-link subClear "href="#sdpFlow" rel="internal">Flow Chart Basics</a> 
+                    <a class="nav-link subClear "href="#sdpDefine" rel="internal">Definitions</a> 
+                    </div>
+          
+                  <a class="nav-link" href="#Algorithm" rel="internal"></a><li class="collapsible">Algorithm Basics</li>
+                    <div class="content"> 
+                    <a class="nav-link sub "href="#algBasic" rel="internal">Basics</a>
+                    <a class="nav-link sub "href="#algBigO" rel="internal">Big O Notation</a>
+                    <a class="nav-link sub "href="#algBigClass" rel="internal">Big O Classes</a>
+                    <a class="nav-link sub "href="#algStruct" rel="internal">Data Structures</a>
+                    <a class="nav-link sub "href="#algDef" rel="internal">Definitions</a>
+                    <a class="nav-link sub "href="#algLink" rel="internal">Links</a>      
+                    </div>
+          
+                  <a class="nav-link" href="#Style" rel="internal"><li>HTML & CSS Style Guide</li></a>
+                  <a class="nav-link" href="#Test" rel="internal"><li>Testing</li></a>
+                  <a class="nav-link" href="#VSCode" rel="internal"><li>VS Code</li></a>
+                  <a class="nav-link" href="#Business" rel="internal"><li>Business Fundamentals</li></a>
+                  <a class="nav-link" id="nav-last" href="#Misc" rel="internal"><li>Miscellaneous <br /> </li></a>
+                  <a class="nav-link" href="index.html" rel="external"><li class="collapsible lightorange">  Page 1 &rarr;</li></a>    
+      </ul>
+    </nav>
+  <main id="main-doc">
+    <section class="main-section" id="API">
+      <header>API Basics</header>
+      <article> 
+
+          An <strong>application programming interface</strong> is a clearly defined specification for communication between two <strong>software components</strong>.
+          <br /><br />
+          APIs can take various forms but typically include some combination of functions or methods, and data structures.
+          <br /><br />
+          Essentially, they provide pre-fabricated functionality that you as a programmer can utilize to build your application.
+          
+          <h3>Browser APIs</h3>
+          
+          Browser APIs, like the Google  Maps API, can be used to import scripts for example. With the Google Maps API that Google exposes, you can consume the API and integrate Google's mapping, street view, navigation and more into your app.
+          <br /><br />
+          This involves importing scripts hosted on Google servers, then utilizing objects and functions from those scripts in line with the API documentation they provide. APIs like this are generally referred to as <strong>server-side APIs</strong>.
+          <br /><br />
+          
+          
+          <h3>Common APIs</h3>
+          
+          [table]
+          Canvas API - used for controlling the HTML5 Canvas. Exposes a straightforward set of entry points and Javascript functions to fullfill its objectives.
+          SVG API - used for manipulating SVGs - also exposes entry points and Javascript functions.
+          XMLHTTPRequest - used to send <strong>asynchronous</strong> requests <strong>to</strong> a server. For example, you can retrieve data from the server and update the page without having to reload the full page. Will most likely be replaced by the more recent Fetch API over time.
+          Web sockets - enables a <strong>two-way communication</strong> session opened between a <strong>browser</strong> and a <strong>server</strong>. This enables the server to provide updates to the user, without the browser needing to poll the server at an interval. For example, on Stack Overflow they're used to <strong>feed live notifications of responses to questions</strong>.
+          
+          
+          <h3>Common third-party APIs</h3>
+          [table]
+          Geolocation API - Accessed through the <span class="inline-code">navigator.geolocation</span> object; it enables a site or app to determine the location of a user based on a combination of info. such as GPS, Wi-Fi, and mobile signal. It's only usable over HTTPS.
+          
+          Push API - Not to be confused with mobile push notifications; it enables web apps to receive messages pushed from a server, even if the application is not in focus/loaded. To do this, a service worker is run in the background (not unlike a daemon). <br /><br />
+          
+          Notification API <br />
+          
+          Amazon S3 - <strong>Amazon S3 (Simple Storage Service)</strong> offers REST APIs, and a client-side SDK to simplify their usage, enabling you to <strong>place, modify and delete</strong> content on the storage. An example use case is uploading photos to the cloud from the browser. <br /><br />
+          
+          Payment Request API <br />
+          Credential Management API <br />          
+          <a href="https://apilist.fun/" target="_blank" rel="noopener noreferrer">Huge List of APIs (874 total)</a> <br />
+
+          </article>
+          </section>                  
+   
+    <section class="main-section" id="OpenSource">
+      <header>Open-Source Basics</header>
+      <article> 
+
+        <p><strong>pull request</strong> - A method of submitting contributions to an open development project. A pull "request" occurs when a developer asks for changes committed to an external repo to be considered for inclusion in a project's main repo.</p>
+        <p>It's called a pull request because you're requesting the target repo to please "pull" your changes in from your own repo/copy of their repo.</p>
+        
+      </article>
+      </section>                  
+  
+    <section class="main-section" id="DevTools">
+      <header>Chrome DevTools</header>
+      <article>
+
+
+      <h2>Elements Tab</h2>
+
+        DevTools lets you recompute styles (Style tab) and anything else able to do w JS/jquery selecting in the Console. <br />
+        
+        <br />
+        
+        When highlighting an element in Chrometools, in the Style pane it’ll show CSS pertaining to that element. <br /><br />
+        
+        It then gives you the styles for each class listed (so display-2 menu-wide etc in an element’s class correspond to .display-2, .menu-wide, etc). <br /><br />
+        
+        It will also <strong>show the line number where that style occurs</strong>, which can be clicked and nav’ed to easily
+        So when you toggle classes (check or uncheck them in the Style pane) it toggles that class which affects ALL elements with that class, not just the one being changed.
+        <br /><br />
+        Can also force element state with hov, and toggle an individual element’s classes with .cls.
+        
+      <h2>Console Tab</h2>
+        
+        <li>Little veto sign clears the console</li>
+            
+      <h3>Console Errors</h3>
+        
+        In the red error, it tells: <br />
+        1. The file <br />
+        2. The line number where the error occurs <br />
+        
+        <h2>Sources Tab</h2>
+        <h2>Network Tab</h2>
+        
+        <li>Can sort to show only JS, CSS, Img, Media, Font, etc.</li>
+        
+        <h2>Application Tab</h2>
+        <p>
+        Inspect all resources that are loaded, including IndexedDB or Web SQL databases, local and session storage, cookies, Application Cache, images, fonts, and stylesheets.
+        </p>
+
+
+        <h2>Audits Tab</h2>
+        
+        <li>Gives some ratings about performance, and suggestions for it to perform better.</li>
+        <li>However, you have to take into account the server you're on.</li>
+        
+      <h2>Tips</h2>
+        
+        *If your page syncs up with Devtools, properly, it can be like the “ultimate” text editor as far as instant visual feedback.
+        <br />
+        *Instead of delete, HIDE elements when changing things so it's hidden but the code isn’t erased even temporarily.
+        <br />
+        *Can literally just change things like computed classes etc and add new classes for elements very easily by doing + for a new style and then add new class.
+        <br /><br />
+        
+        1. Choose element <br />
+        2. Choose + <br />
+        3. Do Add new class <br />
+        4. It essentially adds and overwrites with the new class <br />
+          
+      </article>
+      </section>
+
+    <section class="main-section" id="Terminal">
+          <header>Terminal commands</header>
+          <article>
+            &lgt; &rgt;
+            <li> <b>./filename.extension</b>	| run file within directory</li>
+
+            <li><b>cd</b>| home
+              <ul> <b>modifiers</b>:</ul>
+              <ul>&nbsp; cd <b>[folder]</b> | navigate to folder (case-insensitive)</ul>
+              <ul>&nbsp; cd <b>/</b>	| root directory</ul>
+              <ul>&nbsp; cd <b></b>-</b>	| previous directory (back)</ul>
+              <ul>&nbsp;  cd <b>..</b>	| up one directory</ul>
+              <li> <b>clear</b>	| clears screen</li>
+            <li> <b>[command-a] | [command-b]</b>	| pipe: run a then pass result to b</li>
+
+            <li> <b> diff -bur folder1/ folder2/ </b> | diff two folders </li>
+            <li> <b> diff -qr folder1 folder2 | sort </b> | diff two folders </li>
+
+            <li> <b>grep [searchpattern] [file]</b>	|	Search all lines in file that contain pattern, ex.: grep "Bob" file.txt</li>
+              <li><b>less</b> | output contents of file</li>
+
+              <li> <b>mkdir</b>	| create directory</li>
+              <li> <b>touch</b>	| create empty file (can string file names!)</li>                    
+              <li> <b>pwd</b>	| shows present working directory</li>
+              <li> <b>rm</b>	| remove (delete) file</li>
+              <li> <b>chmod</b>	| change file permissions</li>
+              <li> <b>cUrl</b>	| command to transfer data to or from a server</li>
+
+              <h3>Commands</h3>
+              <li><strong>q</strong> | quit sub-screen and return to Terminal </li>
+              <li><strong>ctrl + c</strong> | stop current process </li>
+              <li><b>ls</b> | short listing </li>
+              <ul> <b>modifiers</b>:</ul>
+              <ul>&nbsp; ls <b>-l</b>	| long listing</ul>
+              <ul>&nbsp; ls <b>-a</b>	|
+                 incl. hidden files</ul>
+              <ul>&nbsp; ls <b>-R</b>	| entire content of folder recursively</ul>
+
+              <h3>Extensions</h3>
+              <h4>VS Code</h4>
+              <ul><b>code [filename]</b> | open file in VS Code </ul>
+
+              <h4>Sass</h4>
+              
+              <ul><b>sass style.sass style.css </b> | convert to CSS </ul>
+              <ul><b> sass --watch style.sass:style.css </b> | compile while watching </ul>
+
+              <h4>npm</h4>
+
+              <ul><strong>npm install <package>@<version></strong>|  install a specific version, even an older one that overwrites a newer one (downgrade)</ul> 
+              <ul><strong>npm outdated</strong>| checks for outdated packages</ul> 
+              <ul><strong>npm audit </strong>| runs security audit</ul> 
+              <ul><strong>npm build</strong>| build a package</ul> 
+              <ul><strong>npm test</strong>| test a package (have to be specified)</ul> 
+              <ul><strong>npm uninstall </strong>| remove a package</ul>          
+              <ul><strong>npm update</strong>| update a package</ul>             
+              <ul><strong>npm link</strong>| creates a <a href="https://docs.npmjs.com/cli/link.html" target="_blank">global link</a> (symlink)</ul>   
+              <ul><strong>npm whoami</strong>| show login credentials</ul>   
+              <ul><strong>npm login</strong>| login using credentials</ul>   
+              <ul><strong>npm publish</strong>| publishes package to npm</ul>   
+
+              <br />
+              <ul><strong>—save</strong>| add to package.json dependencies - saves package required for application to run</ul> 
+              <ul><strong>—save-dev</strong>| used to save the package for development purpose. Example: unit tests, minification, etc.</ul> 
+              <ul><strong>—unsafe-perm</strong>| suppress UID/GID switching when running package scripts</ul>                                                                                                                         
+
+              <h4>Git</h4>
+
+              <ul><strong>git config —global user.name " " </strong>|  configure author name to be associated with commits</ul> 
+              <ul><strong>git config —global user.email cool@example.com</strong>| configure author email</ul> 
+              <br />  
+              <ul><strong>git init </strong>| create a new local repo</ul>      
+              <ul><strong>git add <filename> / *</strong>| add one or more files to staging index</ul>      
+              <ul><strong>git commit -m ""</strong>| commit changes to head but not yet to remote repo</ul>      
+              <ul><strong>git push origin master </strong>|  send changes to the master branch of remote repo</ul>    
+              <br />    
+              <ul><strong>git status</strong>| list files that have been changed/still need to be committed</ul>      
+              <ul><strong>git clone /path/to/repository </strong>| create a working copy of a local repo (aka checkout)</ul>      
+              <ul><strong>git remote add origin <server></strong>| connect local repo to remote server if not done already</ul>      
+              <ul><strong>git pull </strong>| fetch and merge changes on the remote server to working directory</ul>      
+              <ul><strong>git checkout <branchname></strong>| switch from one branch to another</ul>      
+              <ul><strong>git checkout -b <branchname> </strong>| create a new branch and switch to it</ul>      
+              <ul><strong>git branch</strong>|  list all branches in repo and output the branch you're currently in</ul>      
+              <ul><strong>git grep ""</strong>| search working directory for string or regex</ul>      
+            
+              <br />
+              <a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html" target="_blank">Full list of git CLI commands</a>
+
+              <h4>Tips</h4>
+
+
+              *install node_modules for a project: <br />
+              sudo npm install [—unsafe-perm] <br />
+              Don't upload to GH with all the thousands of modules - that's what package.json is for <br /><br />
+              
+              *If something like bootstrap installs weird/doesn't function correctly, can back up, delete all node_modules and reinstall <br /><br />
+
+
+
+                you can string commands together: <br />
+                mkdir webpack-demo && cd webpack-demo <br /><br />
+      
+                *peer dependencies = have to be installed manually (like with material UI) 
+
+                *install gulp:
+
+                sudo npm install --save-dev gulp@4.0.0 --unsafe-perm <br /><br />
+                
+                npm install webpack webpack-cli --save-dev --unsafe-perm <br /><br />
+                
+                Can only use npm install to auto install everything from a package.json using VS code terminal not unix terminal <br /><br />
+                
+                When installing things, ignore: <br />
+                npm WARN "__"@1.0.0 No description <br />
+                npm WARN "__"@1.0.0 No repository field <br /><br />
+                
+                Sometimes installs will hang - delete, retry, use unsafe-perm <br /><br />
+                
+                Next issue like install hanging, post about it in corresponding gh even if its a repost.<br />
+                
+                
+
+
+
+
+          </article>
+      </section>
+
+    <section class="main-section" id="Git">
+      <header>Git</header>
+      <article> 
+
+      <p><strong>Continuous integration</strong> - Continuous integration - When Git, Gulp or something similar, and a cloud platform are used to automate the build and testing of code every time a team member commits changes to watched files (which with Git is usually the entire repo).
+      </p>
+
+      <p>
+        Committing code triggers an automated build system to grab the latest code from the shared repository and to build, test, and validate the full master branch.
+      </p>             
+  
+        <h2>Terms</h2>
+
+      reverting modifications <br />
+      merging upstream updates
+
+      </article>
+      </section>    
+      
+    <section class="main-section" id="Gulp">
+      <header>Gulp</header>
+      <article> 
+
+      <h2>Gulp vs. Webpack</h2>
+      <p>
+      <strong>Webpack</strong> - like Gulp. It's a bundle system that takes files like SASS files or JS files with modules and dependencies or images that are connected in some way, and bundles them into standard JS, CSSm PNG and JPG files. This "bundling" is essentially the same as the build process. <br /> <br/>
+      </p>
+      Webpack does many of the same things as Gulp: <br /> <br/>
+      
+      -Takes files, runs them through some form of conversion/transpiling <br />
+      -Spits out something the browser can understand
+      
+      <p>
+      If you need to do basic bundling, just stick with Gulp. But if mixing in multiple JS files and maybe having some of them split up in certain ways, or if you need to have jQuery and Bootstrap split out but still want to share them between files,or if you need multiple HTML files then look at Webpack.
+      </p> 
+
+      <a href="https://blog.vanila.io/webpack-what-is-it-and-is-it-better-than-gulp-375db8011d22" target="_blank">
+        Gulp vs. Webpack
+        </a>
+
+      </article>
+      </section>             
+
+    <section class="main-section" id="SDP">
+      <header>Software Design Principles</header>
+      <article> 
+      <h2 id="sdpBasic">SDP and Programming Basics</h2>
+      <h3 id="sdpLife">Program Lifecycle Phase</h3>
+        
+        How a program runs - (program lifecycle phase) <br /><br />
+        
+        1. <strong>Edit</strong> time
+        2. <strong>Compile</strong> time
+        3. <strong>Link</strong> time - 
+        4. <strong>Distribution</strong> time - 
+        5. <strong>Installation time</strong>
+        6. <strong>Load time</strong>
+        7. <strong>Run time</strong>
+        
+        <h4>Edit time </h4>
+        
+        This is when the source code of the program is being edited. This spans from initial creation to any a. bug fix, b. refactoring, or c. addition of new features. <br /><br />
+        
+        Editing is typically performed by a person, but aotmated design tools and metaprogramming systems may also be used. <br />
+        
+        <h4>Compile time</h4>
+        
+        When source code is translated "down" (I think) into machine code by a compiler. This partly involves language checking, such as ensuring proper use of the type system. <br /><br />
+        
+        The result of successful compilation is an executable. 
+        
+        <h4>Link time</h4>
+        
+        Connects all necessary machine code components of a program, <strong>including externals</strong> .
+        It is very common for programs to use functions implemented by ext libraries, 
+        <strong>all of which must properly be linked together.</strong> <br /><br />
+        
+        There are two types of linking: <strong>static linking</strong>, which is when the connection is made by the compiler. It always occurs prior to execution.
+        
+        <strong>Dynamic linking</strong>, however, is performed by the operating system just before, or even during execution.
+        
+        <h4>Distribution time</h4>
+        
+        When a copy of the program is being transferred to a user.
+        This dist format is typically an executable, bit it can also be the source code, especially for a program writtn in an <a href="https://en.wikipedia.org/wiki/Interpreted_language" target="_blank">interpreted language</a>.
+        Distribution can be physical media such as a USB drive, or a remote download via the Internet.
+        
+        <h4>Installation time</h4>
+        
+        This gets the distributed program ready for execution on the user's computer, which often includes storing executables for future loading by the operating system.
+        
+        <h4>Load time</h4> 
+        
+        When the OS takes the program's executable from storage, such as a hard drive, and <strong>places it into active memory</strong>, in order to begin execution.
+        
+        <h4>Run time</h4>
+        
+        This is the execution phase, when the CPU executes the program's <strong>machine code</strong> instructions. Programs may run indefinitely. If execution terminates, it will either be normal and expected behavior, or result in an abnormality such as a crash.
+        
+        
+      <h3 id="sdpFunc">Functional Programming</h3>
+        
+        Functional programming involves mathematical "functions". <br /><br />            
+        Pros: 
+        
+        <li>Using the functional paradigm. you can avoid shared state/side-effects, eliminating bugs from multiple functions competing for the same resources</li>
+        <li>More generally reusable code compared to OOP</li>
+        
+        Cons: 
+        
+        <li>Potentially reduce readability</li>
+        <li>Not everyone understands functional programming as well as OO/imperative</li>
+        <li>OOP = more conversational since it's more popular, functional = more academic and formal </li>
+        <br />
+        <strong>OOP</strong> - tends to be imperative rather than declarative. <br />
+        
+        <p>Pros: Somewhat straightforward</p>
+        <p>Cons: Typically depends on shared state.</p>
+        <h4>Subset and Superset</h4>
+        
+        
+        With A and B, if A is B is a superset of A, then all of A is contained in B (and then extended), so all elements of A are also elements of B, so where B is a superset of A, then  A is a subset of B (the subset is the smaller thing that is contained in another thing).
+      
+      <h3 id="sdpProb">SDP Problems</h3>
+      
+        dependency hell <br /><br />
+      
+      <h3 id="sdpMVC">MVC</h3>            
+        
+        1. The <strong>model</strong> represents the data <br />
+        2. The<strong> view</strong> displays the model data (aka UI elements) <br />
+        3. The view, when interacted with, sends user actions (i.e. clicks etc) to the <strong>controller</strong>. The controller <strong>evaluates HTML expressions</strong>. <br />
+        
+        <h4>2-way data binding vs 1-way data flow</h4>
+        
+        In 2-way binding, UI fields are bound to model data dynamically so the user updates the the UI field and the model changes as well, and vice-versa. <br /><br />
+        
+        1-way data flow means the model is the single source of truth. <br /><br />
+        
+        Controller example: <br /><br />
+        
+        When a call is made to: <br />
+        http://example.com/news/latest/10 <br /><br />
+        
+        We can imagine there's a controller named "news". <br />
+        The method being called on news would be "latest". <br />
+        That news method's job could be to grab 10 news items, and render them on the page.  <br /> <br />
+        
+        MVC URL Patterns: <br />
+        http://example.com/[controller-<strong>CLASS</strong>]/[controller-<strong>METHOD</strong>]/[<strong>ARGUMENTS</strong> (for method)] <br /><br />
+        
+        This is typical, although it can change as URL schemes become more complex.
+        <br />
+
+        <h3>Build Process</h3>
+
+        Consists of the following:
+
+        <li>Fetching the code from the source control repository</li>
+        <li>Compile the code and check the dependencies/modules</li>
+        <li>Run automated unit tests</li>
+        <li>Link libraries, code, files, etc. accordingly</li>
+        <li>Once successfully passed, artifacts are built and stored</li>
+        <li>Archive the build logs</li>
+        <li>Send the notification mails</li>
+
+        <h3>Build Types</h3>
+
+        <h4>Full Build</h4>
+
+        This performs a build from scratch. It treats all resources in a project as if they've never been seen by the build server/tool.
+        <br /><br />
+        A full build always starts from an empty work area: it takes a full project as an input, figures out the dependencies, compiles all the source files in your project, and builds all the parts in order accordingly. It then assembles them into the <strong>build artifact</strong> as a final output.
+
+        <h4>Incremental Build</h4>
+
+        Uses a <strong>"last build state"</strong>, maintained internally by the <strong>build/server tool</strong> to do an optimized build <strong>based on the changes in the project since the last build</strong>.
+
+        <h3>Build Terms</h3>
+
+        <strong>manual build trigger</strong> - the most common; when you're ready with the change you can go to the build server using a build tool, and trigger the build.
+        <strong>scheduled build trigger</strong> - configured to run the build at a specific time of the day, or when a specific event occurs (not unlike running scheduled backups of a site to cloud storage).
+        <strong>source code repository build trigger</strong> - initiates a build whenever any source code change occurs in the repository; so whenever a developer commits any change in the version control system, this trigger gets initiated. Can be customized whether you want the build to trigger when any file is changed, a single file is changed, or any files being watched are changed.
+        <strong>post-process build trigger</strong> - listens for post-processing events.
+
+
+      
+      <h3 id="sdpMicro">Microservices vs. Monolithic</h3>
+      
+      
+        Microservices are <strong>loosely coupled</strong>, collaborating services (utilizing service-oriented architecture). <br />
+        Services communicate using either synchronous protocols such as HTTP/REST/GRAPHQL or async protocols such as AMQP. <br />	
+        <strong>Each service has its own database in order to be DECOUPLED from other services.</strong>
+        <br /><br />
+        
+        They're referred to as "micro" services for a reason: the amazon.com website application calls 100-150 services to get the data used to build a web page. <br /><br />
+        
+        Most large scale websites (Amazon, Netflix etc) have evolved from a monolithic to a microservice architecture. <br /><br />
+        
+        Example of services:
+        An app might have order or customer management "services".
+        <br />
+        
+        <h4>Use cases</h4>
+        
+        When do you need to use microservices?<br />
+        -When you have an app that's scaling and the developers to support it<br />
+        -When you need to take advantage of continuous deployment<br /><br />
+        
+        Microservices are useful when you have an application that may have/need:<br />
+        
+        <li>Integration with other apps via web services, etc.</li>
+        <li>Handle HTTP reqs and msgs by executing business logic</li>
+        <li>Access a database</li>
+        <li>Exchange msgs w other systems</li>
+        <li>Return an HTML/JSON response</li> <br />
+        
+        Example of when you need to utilize microservices: <br /><br />
+        
+        1. There's a team of devs working on the app <br />
+        2. New members must quickly become productive<br />
+          (So I could get assigned something that's tracked in Trello, etc. - integrated with Github - probably slack as the communication)<br />
+        3. App <strong>must be easy to understand and modify </strong> (clear documentation)<br />
+        4. You want to practice <strong>continuous deployment</strong> of the app <strong>(XP)</strong>
+        5. You must run <strong>multiple copies</strong> on <strong>multiple machines</strong> in order to satisfy <strong>scalability</strong> and availability requirements. (cloud)
+        6. You want to take advantage of emerging tech (frameworks, langs, etc.)
+        7. You need data consistency.
+        <br />
+        
+        <h4>Benefits and Drawbacks of Microservices</h4>
+        
+        Benefits:
+        -Microservices are relatively small <br />
+        -IDE is faster making devs more productive <br />
+        -App starts faster, speeding up deployments <br />
+        -Each service can be deployed independently of other services - escapes dependency hell
+        -Scalability <br />
+        -Each team can therefore develop, deploy and scale their services independently of all other teams <br />
+        -Eliminates any long-term commitment to a tech stack (i.e. vendor lock) <br /> <br />
+        
+        Drawbacks:
+        -Devs must deal with extra complexity of creating a <strong>distributed system</strong> <br />
+        -Dev tools / IDE's are usually oriented with building MONOLITHIC apps, and <strong>don't provide explicit support for developing distributed apps </strong> <br />
+        -Testing becomes more difficult <br /><br />
+        
+        How to partition the system into microservices: <br /><br />
+        
+        -Separating by use case, for example "Shipping Service" is one use so any relevant code can be bundled into that as necessary. Then you might have an "Account Service" that may need different resources from said Shipping Service. <br />
+        -Implementing queries that need to retrieve data owned by multiple services (async taken into consideration)<br />
+
+      <h3 id="sdpAgile">Agile Development</h3>
+      
+        <a href="images/agile-workflow.png" target="_blank">Agile development workflow graphic</a><br /><br />
+
+        <strong>AGILE</strong> - Requirements and solutions evolve through the collaborative effort of self-organizing, cross-functional teams.
+        <br /> <br />
+        -Adaptive planning <br />
+        -Evolutionary dev <br />
+        -Early delivery <br />
+        -Continuous improvement  <br />
+        -Rapid and flexible response to change <br />
+
+
+      <h3 id="sdpSolid">S O L I D</h3>
+
+        <strong>S</strong>ingle responsibility principle  <br />
+        <strong>O</strong>pen/closed principle  <br />
+        <strong>L</strong>iskov substitution principle  <br />
+        <strong>Interface</strong> segregation principle  <br />
+        <strong>D</strong>ependency inversion principle  <br /> <br />
+
+        <strong>Single responsibility principle</strong> - <br />
+        A CLASS should have only a single responsibility (reduce coupling). <br /><br />
+
+        <strong>Open/closed principle</strong> -  <br />
+        Software entities should be open for extension but closed for modification. <br /><br />
+
+        <strong>Liskov substitution principle</strong> -  <br />
+        Objects in a program should be replaceable w instances of their subtypes, w/o altering the correctness of that program. <br /><br />
+
+        <strong>Interface segregation principle</strong> -   <br />
+        Many client-specific interfaces are better than one general-purpose interface. <br /><br />
+
+        <strong>Dependency inversion principle</strong> -  <br />
+        One should depend on abstractions not concretions (a.k.a. explicit) <br /><br />
+
+
+      <h3 id="sdpState">States and State Management</h3>
+
+        State is a very important consideration when developing SPAs. <br /><br />          
+        
+        <strong>State management</strong> is the practice of putting all of the dynamic values of an application — user inputs to a form, the current page's posts — in one place.  <br /><br />                           
+        Some state is server-based (AJAX, <strong>websockets</strong>), but a lot of state has nothing to do with a server: <span class="inline-code">isPlaying</span>, <span class="inline-code">isTyping</span>, etc.
+
+
+
+      <h3 id="sdpService">Service Workers</h3>
+
+        <strong>Service workers</strong> - a fundamental technology in the future web platform. They're scripts that the browser runs in the background, separate from a web page (almost like the web browser version of a daemon). They enable you to access features that don't need a web page or user interaction, like push notifications, background sync and offline experiences.
+        <br /><br />
+        
+        Main aspects: <br />
+        
+        <li>Life Cycle</li>
+        <li>Registration</li>
+        <li>High Performance Loading</li>
+        <li>HTTPS (required)</li> <br />
+        
+        
+        <a href="https://developers.google.com/web/fundamentals/primers/service-workers/" target="_blank">
+        Introduction to service workers
+        </a>
+
+
+        
+
+        
+      <h3 id="sdpArch">Software Architectures</h3>
+        
+        <strong>Two-tier architecture</strong> - Software architecture where a <strong>presentation layer</strong> or interface (or view or UI) runs on a <strong>client</strong> (the computer, for example), and a <strong>data layer</strong> or data structure gets stored on a server. <br /><br />
+        
+        <strong>Three-tier architecture</strong> - <br /><br />
+        
+        PRESENTATION LAYER 	(client computers) <br />
+        BUSINESS LOGIC	          (application server) <br />
+        DATABASE		          		(database server) <br />
+            
+            
+
+      <h3 id="sdpFlow">Flow Chart Basics</h3>
+
+        An <strong>oval</strong> shape is used to indicate the <strong>start</strong> and <strong>end</strong> of the program.
+        <br /><br />
+        A <strong>parallelogram</strong> is used to indicate <strong>
+        input</strong> and <strong>output</strong> operations.
+        <br /><br />
+        A <strong>rectangle</strong> is used to indicate <strong>operations like assignment, expressions, etc.</strong>
+        <br /><br />
+        A <strong>diamond</strong> shape indicates a decision operation, i.e. <strong>conditions</strong>.
+        A <strong>hexagon</strong> shape indicates <strong>loops, iterations, or repititions</strong>.
+        <br /><br />
+        <strong>Arrows</strong> indicate the direction/flow of execution
+        A <strong>circle</strong> is used when a flowchart spreads to more than one page; it's used to indicate connection between them.
+      
+
+
+
+      <h3 id="sdpDefine">Definitions</h3>
+        
+        <strong>Modularization</strong> - attempts to be an answer to the JS scalability question. <br />
+        However it adds another layer of API that developers have to get familiar with.<br />
+        By splitting code and functionality into smaller modules it's easier to solve problems in your code and <strong>to work in a team on the same codebase</strong>.
+        <br /><br />
+        
+        *Every module should have exactly one purpose and task to do. <br />
+        *A module doesn't know about the outside logic of the application, and can be reused in different locations in situations (loose coupling).<br /><br />
+        
+        <strong>invariant</strong> - a statement about something that is held to be true, like a meta property of anything that's always true (or true under certain conditions).<br /><br />	
+        
+        <strong>read-only</strong> - An object that does not expose any way to change it. However, read-only objects are allowed to change.<br /><br />
+        
+        <strong>Imperative</strong> - Imperative program consists of commands for the computer to perform. <br />
+        Ex. low level languages, since the way computer hardware is designed is to executre machine code, which is native to the computer, and written in an imperative style.<br /><br />
+        
+        <strong>Executable</strong> - a.k.a. "binary" - [machine] code that causes a computer to perform indicated tasks according to encoded instructions, as opposed to a data file which must be parsed by a program to be meaningful.<br /><br />
+        
+        <strong>scripts</strong> - programs written for a special run-time environment (like a browser or an OS) that <strong>automate the execution of tasks.</strong><br /><br />
+        
+        <strong>scripting language</strong> - a.k.a. "extension language" - very high-level (since they're about nabstraction" in the form of automating otherwise manual tasks).<br /><br />
+        
+        <strong>parsing</strong> - the process of analysing a string of symbols conforming to rules of "grammar" a.k.a. syntax. <br />
+        So running a program through a parser means it will be checked to see if its code does anything.<br /><br />
+        
+        <strong>refactoring</strong> - restructuring existing code, a.k.a. changing the factoring, without changing the external behavior (like to make a program run more efficiently etc.) <br /><br />
+        
+        <strong>memoizing</strong> - an optimization technique used to speed up programs by storing the results of expensive function calls (ex. recursion) and <strong>returning the cached result when the SAME *INPUT* occurs again.</strong> <br /><br />
+        
+        <strong>encapsulation</strong> - grouping of data and behavior into one entity. <br /><br />
+        
+        <strong>deep vs shallow copy</strong> (cloning) - <br />
+        shallow - Duplicate as little as possible (like a minimum setting) <br /> 
+        deep - When an object is copied along with the objects to which it refers (like a max setting on something).<br /><br />
+        
+        
+        <strong>overhead</strong> - excess use of memory, bandwidth, or other resources read to perform a specific task ("aka engineering overhead"). <br /> <br/>
+        
+        <strong>use case</strong> - a written description of how users will perform tasks on your website i.e. specs for how a user interacts w a something. <br /><br />
+        
+        It can also be thought of as a list of actions / events (steps) defining the interaction between a role (ACTOR) and a system to achieve a goal. The "actor" can be a human or an external system.
+        <br /><br />
+        A customer must click on this, click on that, etc. <br />
+        This data then gets sucked into the biz logic via a controller / service for example <br /> <br />
+        
+        
+        <strong>dependency injection </strong> - where one object supplies the dependencies of another. <br />
+        A <strong>dependency</strong> is an object that can be used (i.e. a <strong>service</strong>). <br />
+        It's all about passing the service to the client rather than allowing the client to build/find the service. <br /><br />
+        
+        state management <br />
+        strong vs weak type <br />
+        dynamic vs static type <br />
+        
+      
+   
+          
+          
+
+
+
+
+      </article>
+      </section>
+    
+    <section class="main-section" id="Algorithm">
+      <header>Algorithm Basics</header>
+      <article>
+      <h2 id="algBasic">Basics</h2>
+      
+        <strong>Algorithm</strong> - a function that transforms an input data structure into a certain output data structure. The <strong>logic</strong> inside decides the transformation. <br /><br />
+        
+        The inputs and outputs should ideally be clearly defined as <strong>unit tests</strong>. A thorough analysis of the problem is needed. <br /><br />
+        
+        Things to consider: <br /><br />
+        
+        <li>What variables will be needed?</li>
+        <li>How many loops and what kinds?</li>
+        <li>Are there any methods that can help?</li>
+        <li><strong>Edge case</strong> to consider?</li>
+        <li>Can <strong>helper functions</strong> be extracted or abstracted? (an algorithm typically needs to be scalable)</li>
+        <li>Should there be some kind of <strong>caching mechanisms?</strong></li><br />
+        
+        1. To make the problem more concrete, draw diagrams <br />
+        2. When a high-level structure of the solution begins to appear, the pseudocode can begin. <br />
+        3. Look ahead for opportunities to <strong>refactor</strong> and <strong>reuse</strong> code. <br />
+        4. Sometimes, similar-behaving functions can be combined into a more general function that accepts an extra parameter. <br />
+        5. Keeping functions <strong>pure</strong> to ease testing and maintenance also shows foresight. <br />
+        6. Consider <strong>architectural</strong> and <strong>design patterns</strong> in your decisions. <br />
+        7. Any time there's a "sum of the previous two numbers" (fibonacci, for example), recursion is the simplest approach. <br />
+        8. Generally, memory optimizations (space) will need to be sacrificed for performance gains (time). <br />
+        
+
+
+      <h2 id="algBigO">Big O Notation</h2>
+
+          <strong>Big O</strong> - a way to measure how well an algorithm scales as the amount of data involved is increased (i.e. how well it would work with a 10-element array, versus a 10,000-element array). <br />
+
+          It's a mathematical notation describing the <strong>limiting behavior</strong> of a function when the argument tends towards a particular value, or infinity. <br /><br />
+          
+          It's also used to classify algorithms according to how their <strong>running time</strong>
+          or <strong>space requirements</strong> (typically referred to as time and space complexities respectively) grow as the <strong>input size</strong> grows. <br /><br />
+          A description of a function in Big O usually only provides an <strong>upper bound</strong> on the <strong>growth rate</strong> of the function.
+
+          <h3>Calculating time complexity:</h3>
+
+          Remove all <strong>constant factors</strong>, so the running time can be estimated in relation to n as n approaches infinity. Examples:
+
+          <code>
+          statement;
+          </code>
+          is constant. The running time of the statement will not change in relation to n.
+
+          <code>
+          for (i=0; i < n; i++){
+            for (j=0; j < n; j++)
+              statement;
+          }
+          </code>
+          is quadratic. 
+
+          <li>Constant: O(1) </li>
+          <li>Logarithmic: O(log n) </li>
+          <li>Linear: O(n) </li>
+          <li>Linearithmic: O(n log n) </li>
+          <li>Quadratic: O(n²) </li>
+          <li>Expontential: O(2^n) </li>
+          <li>Factorial: O(n!) </li><br />
+
+          The most optimum algorithm scales 1. In a <strong>Constant</strong> time and space, meaning it doesn't care about the growth of its inputs. <br />
+          The next best is 2. <strong>Logarithmic</strong> time or space, <br />
+          then 2. <strong>Linear</strong>, <br />
+          then 3. <strong>Linearithmic</strong>, <br />
+          then 4. <strong>Quadratic</strong>, <br />
+          then 5. <strong>Exponential</strong>, <br />
+          and lastly 6. <strong>Factorial</strong> time or space. <br /><br />
+          
+          To assist in the calculation of <strong>runtime complexities</strong>, you approximate the scalability of an algorithm by extrapolating its input sizes towards infinity, before counting the number of operations required. <br />
+          At this worst-case runtime upper-bound, you can drop coefficients and additive terms and retain only factors that dominate the function.<br />
+          Just a few categories can describe the scalability of almost any algorithm.   
+                            
+          <img src="images/big-o.png" alt=""  height="500">
+            <br />
+          <a href="http://bigocheatsheet.com/" target="_blank">Big O Notation Cheat Sheet</a>
+
+      <h2 id="algBigClass">Big O Classes</h2>            
+      <h3>1. <strong>O(1)</strong> Complexity (<strong>Constant</strong>)</h3>            
+        Example - <strong>Accessing array index</strong>:
+        <code>
+        var a = arr[5];
+        </code> <br />
+        
+        Other examples:
+        <br />
+        <li>push/pop on a stack</li>
+        <li>insert and removal from queue</li>
+        <li>insert a node in a linked list</li>
+        *link
+      
+      <h3>2. <strong>O(n)</strong> Complexity (<strong>Linear</strong>)</h3>
+      
+        Example - <strong>Linear Search:</strong> <br />
+
+        <img src="images/linear-search.gif" alt=""> <br />
+
+        Example - <strong>Check for palindrome</strong>:
+        <code>
+        function palindrome(str) {
+          var re = /[\W_]/g;
+          var lowRegStr = str.toLowerCase().replace(re, '');
+          var reverseStr = lowRegStr.split('').reverse().join(''); 
+          return reverseStr === lowRegStr;
+        }
+        palindrome("A man, a plan, a canal. Panama");
+        </code> <br />
+        
+        Other examples:
+        <br /><br />
+        <li>traverse an array</li>
+        <li>traverse a linked list</li>
+
+        <li>compare two strings</li> <br />
+                    
+      <h3>3. <strong>O(log n)</strong> Complexity (<strong>Logarithmic</strong>)</h3>
+        
+        <p>
+        *The basic premise with O(log n) is not having to use the complete data, and reducing the problem size with every iteration.
+        </p>
+        
+        <br />
+        Example - <strong>Binary Search:</strong><br /><br />
+        <img src="images/binary-search.gif" alt="" height="150"><br />
+        
+        Other examples:   
+
+        <li>
+          Calculate fibonacci numbers
+        </li>
+                  
+      <h3>4. <strong>O(n log n)</strong> Complexity (<strong>Linearithmic</strong>, aka <strong>"Quasilinear"</strong>) (</h3> 
+        
+        Example - <strong>Merge Sort:</strong> <br />
+        <img src="images/merge-sort.gif" alt="" height="150"> <br />
+        Merge Sort example:
+        <code>
+            // If array is empty or consists of one element then return this array since it is sorted.
+            if (originalArray.length <= 1) {
+              return originalArray;
+            }
+        
+            // Split array on two halves.
+            const middleIndex = Math.floor(originalArray.length / 2);
+            const leftArray = originalArray.slice(0, middleIndex);
+            const rightArray = originalArray.slice(middleIndex, originalArray.length);
+        
+            // Sort two halves of split array
+            const leftSortedArray = this.sort(leftArray);
+            const rightSortedArray = this.sort(rightArray);
+        
+            // Merge two sorted arrays into one.
+            return this.mergeSortedArrays(leftSortedArray, rightSortedArray);
+          }
+        
+          mergeSortedArrays(leftArray, rightArray) {
+            let sortedArray = [];
+        
+            // In case if arrays are not of size 1.
+            while (leftArray.length && rightArray.length) {
+              let minimumElement = null;
+        
+              // Find minimum element of two arrays.
+              if (this.comparator.lessThanOrEqual(leftArray[0], rightArray[0])) {
+                minimumElement = leftArray.shift();
+              } else {
+                minimumElement = rightArray.shift();
+              }
+        
+              // Call visiting callback.
+              this.callbacks.visitingCallback(minimumElement);
+        
+              // Push the minimum element of two arrays to the sorted array.
+              sortedArray.push(minimumElement);
+            }
+        
+            // If one of two array still have elements we need to just concatenate
+            // this element to the sorted array since it is already sorted.
+            if (leftArray.length) {
+              sortedArray = sortedArray.concat(leftArray);
+            }
+        
+            if (rightArray.length) {
+              sortedArray = sortedArray.concat(rightArray);
+            }
+        
+            return sortedArray;
+          }
+        }
+        </code>
+        
+        *Merge sort is based on <strong>divide-and-conquer</strong>.
+        It's also based on the idea that arrays of multiple items can't be compared until they're sorted.<br /><br />
+        Merge sort <strong>splits an array into two halves, recursively, until you reach a point in which multiple pairs of single-item arrays are compared to each other</strong>. <br /><br />
+        
+        1. Divide Step - <br />	
+        If a given array A has zero or one element, simply return; it's already sorted! <br />
+        Otherwise, split A[p .. r] into two subarrays A[p .. q], and A [q + 1 .. r]. Each one contains about half the elements of A[p .. r] - that is, q is the halfway point of A[p .. r].
+        <br /><br />
+        2. Conquer Step - <br />
+        Conquer by recursively sorting the two new subarrays A[p .. q] and A[q + 1 ..r].
+        <br /><br />
+        3. Combine Step <br />
+        Combine the elements back in A[p .. r] by merging the two newly sorted subarrays into a sorted sequence. To do this, define a procedure (function) MERGE(A, p, q, r).         <br /><br />    
+    
+        <a href="https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/sorting/merge-sort/MergeSort.js" target="_blank">
+        Merge sort example
+        </a>
+        <br /><br />
+
+        Divide and Conquer example: <br /> 
+        <img src="images/divide-conquer.gif" alt="" height="300"> <br />                        
+        Other examples of O(n log n): 
+        <li>heap sort:</li>
+            <img src="images/heap-sort.gif" alt="" height="150"></img><br />
+        <li>quick sort:</li>
+        <img src="images/quick-sort.gif" alt="" height="150"></img><br />
+        <li>some divide and conquer algorithms (merge sort)</li>
+                                
+      <h3>5. <strong>O(n<sup>2</sup>)</strong> (<strong>Quadratic</strong>)</h3>            
+        
+        Example - <strong>Bubble Sort:</strong><br />
+
+        <img src="images/bubble-sort.gif" alt="" height="150"> <br />
+                    
+        Other examples:
+        <li>insertion sort</li>
+        <li>selection sort</li>
+        <li>traversing a simple 2D array</li>
+        
+        
+      <h3>6. <strong>O(2<sup>n</sup></strong> Complexity (<strong>Quadratic</strong>)</h3>              
+        *Often recursive algorithms that solve a problem of size N, by recursively solving two smaller problems of size N-1. <br /><br />
+        
+        Example:
+        
+        <code>
+        function solveHanoi(n, from_peg, to_peg, spare_peg)
+        {
+            if (n<1) {
+                return;
+            }
+            if (n>1) {
+                solveHanoi(n-1, from_peg, spare_peg, to_peg);
+            }
+            console.log("/"move from " + from_peg + " to " + to_peg");
+            if (n>1) {
+                solveHanoi(n-1, spare_peg, to_peg, from_peg);
+            }
+        }
+        </code>
+      
+      
+           
+      <h2 id="algStruct">Javascript Data Structures</h2>
+        
+        <p>
+        Without data structures, we have no objects by which to apply logic. <br />
+        Without algorithms, objects cannot be transformed.
+        </p>
+        
+        At the high level there are essentially three types of data structures: <br /><br />
+        
+        <li><strong>Stacks</strong> and <strong>Queues</strong> are "array-like" strucrures that differ only in how items are inserted and removed. These are the simplest in terms of complexity and can be constructed from Linked List.</li>
+        <li><strong>Linked Lists,</strong> <strong>Trees,</strong> and <strong>Graphs</strong> are structures with <strong>nodes</strong> that keep <strong>references</strong> to other nodes.
+        <li><strong>Hash Tables</strong> - depend on <strong>hash functions</strong> to save and locate data.</li>
+
+      <h3>Arrays</h3>
+          
+        In Javascript, no other object has more utility mthods than arrays (sort, reverse, slice, splice, etc.) <br />
+        Since arrays are zero-indexed, the last element occurs at <span class="inline-code">array.length - 1</span>. <br />
+        Arrays are the most optimal  for indexing (pushing), but can be terrible at inserting, deleting (not popping), and searching. In Javascript, arrays can also grow dynamically.
+      
+        
+      <h3>Stack</h3>
+        
+        The most important Stack in JS is the <strong>Call Stack,</strong> where we <strong>push</strong> in the <strong>scope</strong> of a function whenever we execute it. <br />
+        <strong>Programatically it's just an array with two principled operations: push and pop</strong>. <br />
+        Push <strong>adds</strong> elements to the <strong>top</strong> of the array, while Pop <strong>removes</strong> them from the same location. <br />
+        Stacks follow the "Last In, First Out" (LIFO) protocol.
+        
+      <h3>Queue</h3>
+        
+        Javascript is an <strong>event-driven</strong> programming language, making it possible to support <strong>non-blocking</strong> operations. <br /><br />
+        Internally, the browser manages only one thread to run the entire JS code using the <strong>event queue</strong> to <strong>enqueue</strong> <span class="inline-code">listeners</span>, and the <strong>event loop</strong> to "listen" for the registered <span class="inline-code">events</span> . <br />
+        To save CPU resources, listener functions dequeue and execute only when the call stack is empty. <br />
+        <strong>Promises</strong> depend on this event-driven architecture to <strong>allow a synchronous-style execution of asynchronous codes that does not block other operations (non-blocking).</strong><br /><br />
+        
+        Programmatically speaking, queues are just arrays with two primary operations: unshift and pop. <br />
+        Unshift <strong>enqueues</strong> items to the <strong>end</strong> of the array, while Pop <strong>dequeues</strong> them from the <strong>beginning</strong> of the array. <br />
+        Queues follow the "First In, First Out" (FIFO) protocol.
+      
+      <h3>Linked List</h3>
+        
+        Like arrays, <strong>Linked Lists</strong> store data elements in a <strong>sequential</strong> order. <br />
+        Instead of indeces, linked lists have <strong>pointers</strong> to other elements. <br />
+        The first node is called the <strong>head</strong>, while the last node is called the <strong>tail</strong>. <br /><br />
+        
+        In a <strong>singly-linked list</strong> each node has only one pointer to the next node - here the head is where you begin the walk down the rest of the list. <br /><br />
+        
+        In a <strong>doubly-linked list</strong> a pointer to the <strong>previous</strong> node is also kept. Therefore you can also start from the tail and walk backwards toward the head. <br />
+        
+        <h4>Advantages Over Arrays</h4>
+        
+        Linked lists have <strong>constant-time</strong> insertions and deletions because you can just update the pointers. <br />
+        To do the same operations in arrays requires linear time, because subsequent items need to be shifted over. <br />
+        Linked lists can also grow as long as there is space - even dynamic arrays that automatically resize can become incredivly expensive. There is a tradeoff, however: to lookup or edit an element in a linked list, you might have to walk the entire length which equates to linear time, while with array indeces such operations are trivial.
+        
+      <h3>Tree</h3>
+        
+        A <strong>Tree</strong> is like a linked list, however it keeps references to <i>multiple</i> <strong>child nodes</strong> in a hierarchical structure. That is, <strong>each node can have no more than one parent</strong>. <br />
+        An example is the DOM, with a root html node that branches into the head and body nodes (html tags), which further subdivide into all familiar html tags. 
+        
+      <h4>Binary Search Tree</h4>
+        
+        This type of Tree is special, because each node can have no more than <strong>two</strong> children. The <strong>left child</strong> must have a value that is smaller than or equal to its parent, while the <strong>right child</strong> must have a value that's greater. <br /><br />
+        
+        This lets you search for any value in <strong>logarithmic</strong> time because you can ignore one-half of the branching with each iteration. The smallest and largest value can easily be found at the leftmost and rightmost leaf, respectively. <br /><br />
+        
+        Traversing though the tree can happen vertically or horizontally. <strong>Depth-First Traversal (DFT)</strong> in the vertical direction allows a recursive algorithm to be more elegant than an iterative one. Nodes can be traversed either pre-order, in-order, or post-order. Binary trees are optimal for <strong>sorting</strong>.
+        <br /><br />
+        
+        With <strong>Breadth-First Traversal (BFT)</strong> in the horizontal direction, an iterative approach is more elegant than a recursive one. This requires the use of a queue to track all children nodes with each iteration. <br />
+        <strong>If the shape of a tree is deeper than it is wide, then DFT is a better choice over BFT.</strong>
+      
+      <h4>Graph</h4>
+        
+        If a tree is free to have more than one parent then it becomes a <strong>Graph</strong>.<br />
+        <strong>Edges</strong> that connect nodes together in a graph can be directed or undirected, weighted or unweighted. Edges that have both <strong>direction</strong> and <strong>weight</strong> are analogous to <strong>vectors</strong>.
+        
+        Examples of graph structures:
+        
+        *Multiple inheritances in the form of mixins and data objects that have <strong>many-to-many</strong> relationships.
+        *A social network and the Internet itself are also graphs.
+        *The most complicated graph is our human brain, which <strong>neural networks</strong> attempt to replicate, to give machines superintelligence.
+      
+      <h3>Hash Table</h3>
+        
+        This is a <strong>dictionary-like structure that pairs keys to values.</strong><br />
+        The location in memory of each pair is determined by a <strong>hash function</strong>, which:
+        <br /><br />
+        1. Accepts a <strong>key</strong>, and
+        2. Returns the <strong>address</strong> where the pair should be inserted and retrieved.
+        <br /><br />
+        Collisions can occur if two or more keys convert to the same address.
+        <br /><br />
+        For robustness, <strong>getters</strong> and <strong>setters</strong> should anticipate these events to ensure that all data can be recovered, and that no data is overwritten.
+        <br /><br />
+        If you know your addresses will be in integer sequences you can simply use an Array to store the key-value pairs. For more complex <strong>address mappings</strong>, you can use <strong>Maps</strong> or <strong>Objects</strong>.
+        <br /><br />
+        If a tradeoff decision favors retrieval over storage, <strong>no other data structure can match the speed of hash tables for lookup, insertion, and deletion</strong>. This is why they're used everywhere from databases to servers to the client. Hash tables, and hash functions in particular, are crucial to the a. performance and b. security of software applications. <br /><br />
+        The speed of database queries relies heavily on keeping tables of indeces that point to records in sorted order. E-commerce over HTTPS is safe only because hashing functions (MD5, SHA256) get used.
+        
+      <h3>Conclusion</h3>
+        
+        *Linked Lists are optimal for <strong>storage</strong>, and can be made into stacks and queues (linear time).
+        *Hash tables are unmatched for <strong>search</strong> speed (constant time).
+        *Tree structures lie somewhere in the middle (logarithmic time).
+        *Only a graph can portray nature's most complex structures, like the human brain (polynomial time).
+        
+      <h2 id="algDef">Definitions</h2>
+      
+        edge cases <br /><br />
+        helper functions <br /><br />
+        caching mechanisms (javascript) <br /><br />
+
+
+        <h3>Hash function</h3>
+        <p>
+        Hash function - Any function that can be used to map data of arbitrary size to data of a fixed size.<br />
+        The values returned by a hash function are called hash values, hash sums, or simply hashes.
+        </p>
+        
+        <p>One use is a data structure called a hash table, widely used in computer software for rapid data lookup.
+        <br /><br />
+        Hash functions accelerate table or database lookup by detecting duplicated records in a large file.</p>
+
+      
+      <h2 id="algLink">Links</h2>
+        
+        <a href="https://www.youtube.com/watch?v=V6mKVRU1evU" target="_blank">
+        Derek Banas Big O Notations
+        </a>
+        
+
+
+
+
+
+
+
+
+
+      </article>
+      </section>
+
+    <section class="main-section" id="Style">
+      <header>HTML & CSS Style Guide</header>
+      <article> 
+
+      
+
+      </article>
+      </section>                  
+
+      <section class="main-section" id="Test">
+        <header>Testing</header>
+        <article> 
+        <h2>Unit Testing</h2>
+        <h3>Basics</h3>
+          JavaScript is a dynamically typed language which comes with great power of expression, but it also comes with almost no help from the compiler. For this reason we feel very strongly that any code written in JavaScript needs to come with a strong set of tests. We have built many features into Angular which make testing your Angular applications easy. With Angular, there is no excuse for not testing. <br /><br />
+
+        <h3>Create and run unit tests in Karma </h3>
+          <strong>Karma</strong> is a JavaScript <strong>command line tool</strong> that can be used to spawn a web server which loads your application's source code and executes your tests. You can configure Karma to run against a number of browsers, which is useful for being confident that your application works on all browsers you need to support. Karma is executed on the command line and will display the results of your tests on the command line once they have run in the browser. <br />
+          Karma is a NodeJS application, and should be installed through npm. Full installation instructions are available on the Karma website. <br />
+
+        <h2>End-to-End Testing</h2>
+
+          This is a technique used to test whether the flow of an application right from start to finish is behaving as expected. The purpose of performing end-to-end testing is to identify system dependencies and to ensure that the data integrity is maintained between various system components and systems.
+
+        </article>
+      </section>
+
+    <section class="main-section" id="VSCode">
+      <header>VS Code</header>
+      <article> 
+        <li><strong>command palette</strong> | cmd + shift + p</li>
+        <li><strong>fold all</strong> | cmd + k + cmd + 0</li>
+      
+        <li><strong>cmd + /</strong> | comment out all selected code</li>
+        <li><strong>h1.foo</strong> | h1 class="foo" </li><br />
+
+        <li><strong>opt+w</strong> | wrap individual lines with abbreviation</li> 
+        <li><strong>cmd+opt+w</strong> | remove tag from selection 
+      (can then make a structure using > to declare more tags,ex. <span class="inline-code"> 
+      div>div>div)</span></li>  
+        <li>**<strong>cmd+shift+v</strong> | markdown preview in side-by-side window</li><br />
+        <li><strong>cmd+opt+k</strong> | set bookmark (extension)</li> 
+        <li><strong>cmd+shift+p</strong> | command palette - find and run all commands </li><br />
+
+        <li><strong> Settings > Text Editor</strong>  | change text editing settings (auto-closing brackets, etc.) </li>
+      
+        <li><strong>f12</strong> | highlight id or class in html; takes you to style in the css. (needs CSS Peek)</li> 
+        <li><strong>optn+f12</strong> | opens a peek window to the css IN THE HTML FILE - can save like normal -  hit esc to leave peak window </li>
+      
+      <br />
+
+      <li><strong>Type with multiple cursors</strong> | <span class="inline-code">opt+click</span> at beginning of each line - this creates a cursor you can type or even copy/paste from
+          
+      <h3>Set key bindings with keyboard shortcuts (for extensions like emmet)</h3>
+
+        1. preferences > keyboards shortcuts > search <br />
+        2. click plus symbol <br />
+        3. enter input for key binding <br />
+        
+      <h3>Use user snippets to generate code</h3>
+
+        1. Preferences > User Snippets <br />
+        2. Search for the language you want to add the snippet for <br /> <br />
+        
+        <strong>prefix</strong> - what will be used to trigger the snippet <br />
+        <strong>body</strong> - what will be inserted in place of the prefix <br />
+        <strong>tab stop ($1, $2)</strong> - tell where the cursor should be using $1 <br /><br />
+        
+        *Changed max memory for large files from 4096 to 2048                          
+
+        
+
+      </article>
+      </section>       
+      
+    <section class="main-section" id="Business">
+      <header>Business Fundamentals</header>
+      <article> 
+
+        <h3>Project Management</h3>
+
+
+        <h4>Basics</h4>
+
+        *The size of the team and the roles needed can vary. <br />
+        *Members on a team can fulfill one role or many.
+        <br /><br />
+        Projects are typically broken down into phases.<br />
+        Each phase outlines the work that needs to be done and who's involved.<br />
+        Typically, in order for a phase to be complete, specific deliverables need to have been completed o handed off.<br />
+        However, some teams implement FAST TRACKING, or when phases overlap.<br />              
+
+        <h4>Management Types</h4>
+
+        <li>Communication management</li>
+        <li>Cost management</li>
+        <li>Human resource management</li>
+        <li>Integration management</li>
+        <li>Procurement management</li>
+        <li>Quality management</li>
+        <li>Risk management</li>
+        <li>Scope management</li>
+        <li>Time management</li>
+
+
+
+
+        <h4>Project Lifecycle</h4>
+        A lifecycle defines the BEGINNING and END of a project - it represents all of the phases together. <br />
+        When defining the project's life cycle, the first phase is noted as step 0: Visioning and conceptualizing of a project. <br /><br />	
+
+        Most projects have four or five phases but some may have more. <br /><br />
+
+        Most common approaches are WATERFALL and AGILE. <br />
+        Whatever your choice, you'll need to incorporate <strong>USER-CENTERED DESIGN (UCD) </strong>best practices and methods.
+
+        <h4>The UCD Process</h4>
+
+        At a high level, UCD includes the following steps: <br /><br />
+
+
+        -Planning <br />
+        -Collecting and analyzing data <br />
+        -Writing content <br />
+        -Designing and developing prototypes of the system <br />
+        -Testing <br />
+
+        <h4>Project Plan and Charter Agreement</h4>
+
+        It's important to come up with a <strong>project plan</strong> the team agrees to upfront so it can serve as a reference point throughout the project. <br /><br />
+
+        Most project plans include: <br /><br />
+
+        -Objectives <br />
+        -Scope, which correlates to the requirements <br />
+        -Resources, including tech, budget, and TEAM ROLES AND RESPONSIBILITIES <br />
+        -Schedule <br />
+        -Assumptions <br />
+        -Dependencies <br />
+        -Risk assessment and management plan <br />
+        -Change control plan (?) <br /><br />
+
+        <p>
+        A <strong>charter agreement</strong> a typically one-page document that has the sponsor of the project sign off that they agree to the work to be done as outlined by the team in the project plan.
+        </p>
+        <p>            
+        <strong>Schedules</strong> reflect the life cycle broken down into specific deliverables and touch points.
+        It defines WHAT NEEDS TO BE DONE and WHO IS THE POINT OF CONTACT RESPONSIBLE FOR THE WORK.
+        </p>
+
+
+        <h2>Links</h2>
+
+        <a href="https://www.usability.gov/how-to-and-tools/methods/project-team.html" target="_blank">
+        Project Team Roles and Responsibilities
+        </a> <br /><br />
+
+        <a href="https://playbook.cio.gov/" target="_blank">
+        Digital Services Playbook
+        </a> <br /><br />
+
+        <a href="https://www.pmi.org/pmbok-guide-standards" target="_blank">
+        Project Management Global Standards
+        </a>
+
+      </article>
+      </section>                  
+                
+
+    <section class="main-section" id="Misc">
+      <header>Miscellaneous</header>
+      <article> 
+
+
+           <a href="https://www.youtube.com/watch?v=fFNXWinbgro" target="_blank">Set up WP in one command (docker app needs to be running)</a>
+
+
+
+
+      <h2>macOS</h2>
+        <li> <b>cmd+shift+.</b>	|	show hidden files in current folder</li>
+
+      <h2>Tips</h2>
+        <p>
+        To save time in the future: <br />
+        <li>Always check package versions</li>
+        <li>Use <strong>--save</strong> or <strong>--save-dev</strong> to save to the package.json</li>
+        <li>Can use <strong>--unsafe-perm</strong> to install problematic packages only if absolutely necessary</li>        
+        </p>
+
+      <h2>Package Management</h2>
+
+
+          <h3>Ruby Gems vs npm Packages</h3>
+
+          A Gemfile is Ruby's equivalent to package.json. newline
+
+          Rubygems has an extension in the form of <strong>Bundler</strong>, whose sole purpose is dependency management. <br /><br />
+
+          Instead of locally, dependencies are managed globally. Bundler also creates a Gemfile.lock, which lists every specific version of libraries. <br /><br />
+
+          This way, version conflicts are taken care of, so when you need to recreate the environment for another developer or deployment, it's guaranteed to reinstall in pristine conditions (similar to package.json and package-lock). <br /><br />
+
+          npm however installs locally, with nested dependencies. If you want npm to be global like Rubygems you can use <span class="inline-code">npm link</span>.
+          <br /><br />
+
+          <strong>Bundler</strong> - provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions needed. It's about solving dependency hell, ensuring the gems needed are present in development, staging, and production.
+
+          <h3>Homebrew extensions</h3>
+
+          <p>Homebrew installs packages to their own directory, then symlinks (symbolic links) their files into /usr/local.</p>
+
+          <a href="https://brew.sh/" target="_blank">List of Homebrew extensions</a> <br /> <br/>
+
+      <h2>Site Performance</h2>
+
+          <h4>Summary</h4>
+          Sites have more features now than ever before, however many sites now struggle to achieve a high level of performance across a variety of network conditions and advices. <br /><br />
+          
+          Performance issues vary: at best, they might create small delays that are only briefly annoying to the end user. At worst, they can make the website completely inaccessible, unresponsive to user input, or both. <br />
+          
+          <h4>Retaining users</h4>
+          
+          Page speed has a massive impact, and low performance can have a negative impact on a business's goals.
+          
+          <h4>Improving conversions</h4>
+          
+          *DoubleClick found that publishers whose sites loaded within five seconds earned up to twice as much ad revenue than sites loading within 19 seconds.
+          
+          <h4>The user experience</h4>
+          
+          When sites ship a lot of code, browsers must use megabytes of the user's data plan in order to download code. Mobile devices have limited CPU power and memory, and often get overwhelmed with what we might consider unoptimized code.
+          
+          <h4>People</h4>
+          
+          Total page side has been steadily increasing since at least 2011. As the typical page sends more data, users must replenish their metered data plans more often, costing them money.
+          
+          <h4>Performance Metrics</h4>
+          
+          <strong>bounce rates</strong>
+          <strong>pages per session</strong>
+          <strong>page load time</strong>
+          <strong>session-based conversion</strong>
+          
+          <h4>Common Solutions</h4>
+          
+          <li>Eliminate render-blocking resources</li>
+          <li>Reduce Javascript execution time</li>
+          <li>Minify Javascript</li>
+          <li>Defer offscreen images</li>
+          <li>Serve static assets with an efficient cache policy</li>
+          <br />
+          <a href="https://www.thinkwithgoogle.com/feature/testmysite" target="_blank">
+          Speed Scorecard tool
+          </a> <br />
+          [scorecard graphic]
+          <br /><br />
+          
+          Measure Performance with the RAIL Model <br />
+          Loading Performance <br />
+          Rendering Performance <br />
+          Audit your site <br /> <br />
+          
+          <a href="https://developers.google.com/web/fundamentals/performance/why-performance-matters/" target="_blank">
+          Site Performance Guide</a><br /><br />
+
+
+
+      <h2>Semantic versioning</h2>
+
+          Major, minor, patch.  <br />
+          2.0.0 <br />
+          M m p <br /><br />
+          
+          <strong>Major </strong>- when you make incompatible API changes (as in, changes so severe there's no backwards compatibility with anything - you need this version) <br />
+            <strong>Minor</strong>- When you add functionallity in a backwards compatible manner (as in, 2.1.0 is still backwards compatible with 2.0.0). <br />
+              <strong>Patch</strong> - When you make backwards-compatible bug fixes.
+          A bug fix is defined as an internal change that fixes incorrect behavior. <br /><br />
+          
+          <strong>
+          Without compliance to some sort of formal spec like maj-min-patch format, version numbers are essentially useless for dependency mgmt.</strong> <br /><br />
+          
+          Version 1.0.0 defines the public API. <br />
+          Release 1.0.0 software when it is being used in production 
+          <br />
+          
+
+      <h2>JS Engines</h2>
+
+          <strong>CHROME v8</strong> - a Javascript engine. JS engines are mostly used in web browsers.
+          
+          <strong>javascript engines</strong> - embedded in browsers and web servers (i.e. Node - what v8 is used in) to allow <strong>run-time compilation and execution of JS code</strong> (a.k.a. <strong>async</strong>.
+          <br /><br />
+          
+          <strong>Node </strong> is a server-side execution environment built on <strong>Chrome's V8 JS runtime</strong>. <br /><br />
+          
+          <strong>just-in-time compilation</strong> - improves app performance at  <strong>
+          runtime</strong> ( like a JIT *compiler*, which is what javascript engines, and therefore V8, and therefore Node, utilize). <br />
+          JIT drawbacks - it does require processing time and memory usage. <br /><br />
+          
+          JVM (Java) for example calls THOUSANDS of methods when it first starts up.
+          <br /><br />
+          
+          Node is an extension or next-level version of the  v8 engine in Chrome basically.
+          <br />
+          
+          <h3>List of JS engines</h3>
+          <li>Google Chrome V8</li>
+          <li>NodeJS</li>
+          <li>Chakra (Edge)</li>
+          <li>Microsoft Edge Chakra Octane 2.0</li>
+          <li>etc sub engines like for specific browsers (NodeJS chakra core octane etc)</li>
+          <li>JScript (IE )</li>
+
+          <h2>YAML</h2>
+
+          yaml stands for "YAML Ain't Markup Language". for people who work with JSON/XML files for configuration settings - human readable strucutred data format. <br /><br />
+
+          YAML takes something like this: <br />
+          <code>
+          bob
+          bill 
+          something 
+          else
+          </code>
+          and turns it into an array data structure ( a form of list): <br /><br />
+          <code>
+          yaml.load(''' 
+            bob 
+            bill 
+            something
+            else
+            ''')
+          ['bob', 'bill', 'something', 'else]<br /><br />
+         </code>
+          <br />YAML DATA IS PORTABLE BETWEEN PROGRAMMING LANGUAGES<br /><br />
+          
+          yaml = / = travis (NOT .yml) <br /><br />
+          
+          ~~~
+          <code>
+          + if ('serviceWorker' in navigator) { 
+          +   window.addEventListener('load', () => {
+          +     navigator.serviceWorker.register('/service-worker.js').then(registration => {
+          +       console.log('SW registered: ', registration);
+          +     }).catch(registrationError => {
+          +       console.log('SW registration failed: ', registrationError);
+          +     });
+          +   });
+          + }
+        </code>
+
+        <h2>Debugging</h2>
+
+          https://www.youtube.com/watch?v=GNKkuV-b6PY <br /><br />
+
+          With debuggers like in chrome, you can set breakpoints, or places where code execution can be stopped, and examine variables while the code is exexuting. <br /><br />
+
+          There's an extension for Chrome called React Developer Tools <br />
+          Postman can be used for debugging requests/responses <br /><br />
+
+          Main tools- <br /><br />
+
+          1. console.log() <br />
+          2. debugger (only in chrome) - can even be wrapped in a conditional so it only runs when needed:
+          <code>
+          if (something){
+            debugger;
+          }
+        </code>
+          Also: <br /><br />
+
+          -Display objects as table: console.table(animals) displays a table in the console <br />
+          -Set benchmark loops by placing things between console.time() and console.timeEnd() (this will tell you exactly how long it takes for something to run): 
+          <code>
+          Console.time('Timer1');
+          
+          var items = [];
+          
+          for(var i = 0; i < 100000; i++){
+            items.push({index: i});
+          }
+          
+          console.timeEnd('Timer1');
+          </code>
+          -Use pretty print { } to unminify code <br />
+
+
+
+
+          </main>
+</body>
+<!--
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+-->
+<script src="js/script.js"></script>
+</html>

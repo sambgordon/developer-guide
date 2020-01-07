@@ -2,6 +2,90 @@
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
+
+
+
+
+.table1 {
+width: 80%;
+}
+
+.table2{
+
+
+}
+
+.table2 td{
+
+}
+
+table, th, td {
+  border: 1.5px solid #ebebeb;
+  border-collapse: collapse;
+}
+
+
+.columnLeft{
+  width: 2%;
+}
+
+.columnRight{
+
+width: 20%;
+word-wrap: break-word;
+
+  
+}
+
+.clearRight{
+  border-right-style: none;
+}
+
+.clearLeft{
+  border-left-style: none;
+}
+
+.clearMid{
+  border-left-style: none;
+  border-right-style: none;
+}
+
+
+th, td {
+  padding: 6px 15px 6px 15px;
+
+  text-align: left;
+  font-weight: lighter;
+}
+
+
+.tableList{
+
+}
+
+
+table tr:nth-child(even) {
+  /* background-color: #eee; */
+  background-color: #fff;
+
+}
+table tr:nth-child(odd) {
+ background-color: #fdfdfd;
+}
+table th {
+  background-color: #fafafa;
+
+}
+
+
+
+
+
+
+
+
+
+
 /* color styles /
 
   .lightgreen{
@@ -62,8 +146,18 @@ html,body{
     color: #4d4e53;
     background-color: #ffffff;
     /*font-family: 'Open Sans',Arial,sans-serif; */
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Times';
     line-height: 1.5;
+  }
+
+  h2{
+    font-size: 2.2em;
+  }
+
+  h3{
+    font-weight: 700;
+    font-size: 1.8em;
+    margin: 50px 0 15px 0 ;
   }
 
 h4{
@@ -78,6 +172,7 @@ text-decoration: underline;
 text-align: left; 
 margin-left: 30px;
 padding-top: 0px;
+font-size:1.8em !important;
 /*/
 color: white;
 /*/
@@ -86,12 +181,12 @@ color: white;
 
 header{
   color:black;
-  font-size: 30px;
+  /* font-size: 30px; */
   margin:10px;
   text-align:center;
-  font-size:1.8em;
+  font-size:3.0em;
   font-weight:bold;
- padding-top: 50px;
+ padding-top: 35px;
 }
 #main-doc header{
   text-align:left;
@@ -172,8 +267,8 @@ code{
   line-height: 1.1;/* 2 */
   /* background-color:#f7f7f7; */
   background-color: #EFF0F1;
-  padding:7px; /* 15px */
-  margin:5px; /* 10px */
+  /* padding:7px;~~ 15px */
+  margin:5px 5px 20px 5px; /* 10px */
   border-radius:5px;
   font-size: 13px;
   width: 90%;
@@ -294,7 +389,7 @@ code{
     }
 
     .sub, .subClear{
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Times';
       font-weight: 500;
       color: #0e0f0f; /*//*/
 

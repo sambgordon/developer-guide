@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
+  <link rel="stylesheet" href="css/style.css">
+  </head>
 <body>
   <nav id="navbar">
-      <header id="header-main">Developer Guide {Front-end}       
+      <header id="header-main">Developer Guide {Front-end} <br />Page 1     
         </header>
         <ul> 
         <!--<div class="topelement"></div>-->
@@ -33,8 +33,9 @@
           <a class="nav-link sub "href="#cssSVG" rel="internal">SVG</a> 
           <a class="nav-link sub "href="#cssGrid" rel="internal">CSS Grid</a> 
           <a class="nav-link sub "href="#cssVend" rel="internal">Vendor prefixes</a> 
-          <a class="nav-link sub "href="#cssAnim" rel="internal">Animations</a>
+          <a class="nav-link subClear "href="#cssAnim" rel="internal">Animations</a>
           <a class="nav-link sub "href="#cssDisadvantage" rel="internal">CSS Disadvantages</a> 
+          <a class="nav-link sub "href="#cssTips" rel="internal">Tips</a> 
           <a class="nav-link subClear "href="#cssLinks" rel="internal">Links</a> 
           </div>
         
@@ -53,11 +54,11 @@
           <a class="nav-link sub "href="#jsDebug" rel="internal">Debugging</a>
           <a class="nav-link sub "href="#jsEditions" rel="internal">Editions</a> 
           <a class="nav-link sub "href="#jsFeature" rel="internal">Feature Detection</a> 
+          <a class="nav-link sub "href="#jsFetch" rel="internal">Fetch API</a> 
           <a class="nav-link sub "href="#jsGet" rel="internal">Get and Set</a>          
           <a class="nav-link sub "href="#jsHoist" rel="internal">Hoisting</a> 
           <a class="nav-link sub "href="#jsIIFE" rel="internal">I.I.F.E.</a> 
           <a class="nav-link sub "href="#jsImage" rel="internal">Image Maps</a> 
-          <a class="nav-link sub "href="#jsMethods" rel="internal">Methods</a> 
           <a class="nav-link sub "href="#jsNull" rel="internal">Null</a> 
           <a class="nav-link sub "href="#jsPropVs" rel="internal">Properties Vs. Methods</a> 
           <a class="nav-link sub "href="#jsPrototype" rel="internal">Prototypes</a> 
@@ -65,9 +66,8 @@
           <a class="nav-link sub "href="#jsPure" rel="internal">Pure</a> 
           <a class="nav-link sub "href="#jsRecursion" rel="internal">Recursion</a> 
           <a class="nav-link sub "href="#jsRegex" rel="internal">Regex</a> 
-
-          
           <a class="nav-link sub "href="#jsReturn" rel="internal">Return</a> 
+          <a class="nav-link sub "href="#jsScope" rel="internal">Scope</a> 
           <a class="nav-link sub "href="#jsSelectors" rel="internal">Selectors</a> 
           <a class="nav-link sub "href="#jsSide" rel="internal">Side Effects</a> 
           <a class="nav-link sub "href="#jsState" rel="internal">State</a> 
@@ -79,47 +79,34 @@
         <a class="nav-link" href="#jsDoc" rel="internal"></a><li class="collapsible lightorange">Javascript Documentation</li>
         <div class="content">
         <a class="nav-link sub" href="#js2String" rel="internal">Strings</a>
-        <a class="nav-link sub" href="#js2Array" rel="internal">Arrays</a>
-        <a class="nav-link subClear" href="#js2Ex" rel="internal">Exercises</a>
+        <a class="nav-link subClear" href="#js2Array" rel="internal">Arrays</a>
         </div>
 
+        <a class="nav-link" href="#ECMAScript6" rel="internal"></a><li class="collapsible lightorange">ES6 (ECMAScript 2015)</li></a>
+          <div class="content"> 
+          <a class="nav-link sub" href="#esLetConst" rel="internal">let & const</a>  
+          <a class="nav-link sub" href="#esArrow" rel="internal">Arrow Functions</a>  
+          <a class="nav-link sub" href="#esParam" rel="internal">Default Parameters</a>  
+          <a class="nav-link sub" href="#esFor" rel="internal">for...of Loops</a>  
+          <a class="nav-link sub" href="#esSpread" rel="internal">Spread</a>  
+          <a class="nav-link sub" href="#esMaps" rel="internal">Maps</a>  
+          <a class="nav-link sub" href="#esSets" rel="internal">Sets</a>  
+          <a class="nav-link sub" href="#esStatic" rel="internal">Static Methods</a>  
+          <a class="nav-link sub" href="#esGetSet" rel="internal">Getters and Setters</a>  
+          <a class="nav-link sub" href="#esDestruc" rel="internal">Destructuring</a>  
+          <a class="nav-link subClear" href="#esPromise" rel="internal">Promises</a>  
 
-        <a class="nav-link" href="#ECMAScript6" rel="internal"><li class="lightorange">ES6 (ECMAScript 2015)</li></a>
+              </div>
+
+
         <a class="nav-link" href="#jQuery" rel="internal"><li class="lightorange">jQuery</li></a>
         <a class="nav-link" href="#OOP" rel="internal"><li class="lightorange">OOP</li></a>
         <a class="nav-link" href="#Libraries" rel="internal"><li class="lightorange">JS Libraries</li></a>
-        <a class="nav-link" href="#React" rel="internal"><li class="lightorange">React</li></a>            
+        <a class="nav-link" href="#React" rel="internal"><li class="lightorange">React</li></a>
+        <a class="nav-link" href="index-2.html" rel="external"><li class="collapsible lightorange">Page 2 &rarr;</li></a>                
         <!--<div class="topelement"></div>-->
-        <a class="nav-link" href="#API" rel="internal"><li>3rd-party APIs</li></a>
-        <a class="nav-link" href="#OpenSource" rel="internal"><li>Open-Source Basics</li></a>
-        <a class="nav-link" href="#DevTools" rel="internal"><li>Chrome DevTools</li></a>
 
-        <!--split-->
-        <a class="nav-link" href="#Terminal" rel="internal"><li>Terminal commands</li></a>
-        <a class="nav-link" href="#Git" rel="internal"><li>Git</li></a>
-        <a class="nav-link" href="#Gulp" rel="internal"><li>Gulp</li></a>   
-        <a class="nav-link" href="#SDP" rel="internal"></a><li class="collapsible lightred">Software Design Principles</li>
-          <div class="content">
-          <a class="nav-link sub "href="#sdpBasic" rel="internal">Basics</a>
-          <a class="nav-link sub "href="#sdpLife" rel="internal">Lifecycle</a> 
-          <a class="nav-link sub "href="#sdpFunc" rel="internal">Functional Programming</a> 
-          <a class="nav-link sub "href="#sdpProb" rel="internal">Problems</a> 
-          <a class="nav-link sub "href="#sdpMVC" rel="internal">MVC</a> 
-          <a class="nav-link sub "href="#sdpMicro" rel="internal">Micro vs. Mono</a> 
-          <a class="nav-link sub "href="#sdpAgile" rel="internal">Agile</a> 
-          <a class="nav-link sub "href="#sdpSolid" rel="internal">S.O.L.I.D.</a> 
-          <a class="nav-link sub "href="#sdpState" rel="internal">State Management</a>     
-          <a class="nav-link sub "href="#sdpService" rel="internal">Service Workers</a>             
-          <a class="nav-link sub "href="#sdpArch" rel="internal">Architectures</a> 
-          <a class="nav-link subClear "href="#sdpFlow" rel="internal">Flow Chart Basics</a> 
-          <a class="nav-link subClear "href="#sdpDefine" rel="internal">Definitions</a> 
-          </div>
-
-        <a class="nav-link" href="#Algorithm" rel="internal"><li>Algorithm Basics</li></a>
-        <a class="nav-link" href="#Style" rel="internal"><li>HTML & CSS Style Guide</li></a>
-        <a class="nav-link" href="#VSCode" rel="internal"><li>VS Code</li></a>
-        <a class="nav-link" href="#Business" rel="internal"><li>Business Fundamentals</li></a>
-        <a class="nav-link" id="nav-last" href="#Misc" rel="internal"><li>Miscellaneous <br /> &nbsp;</li></a>
+        
       </ul>
     </nav>
   <main id="main-doc">
@@ -130,32 +117,31 @@
             </article>
             </section>
 
-
-
-
-            <section class="main-section" id="DOM">
+          <section class="main-section" id="DOM">
                 <header>DOM Basics</header>
                 <article>
     
                     <h3>Summary</h3>
                     
+
                     <p>
+
+
                     
+                    <strong>Document Object Model</strong> - An API that has a HTML, XHTML, or XML doc represented as a tree structure <strong>wherein each node is an object</strong> representing part of the document. <br />
+                    Established in 1998 by Tim Berners-Lee aka the WWWC.<br />
                     
-                    <strong>Document Object Model</strong> - An API that has a HTML, XHTML, or XML doc represented as a tree structure <strong>wherein each node is an object</strong> representing part of the document. <br /><br />
-                    Established in 1998 by Tim Berners-Lee aka the WWWC.<br /><br />
+                    Any visual changes occuring as a result may then be reflected in the display of the document.<br />
                     
-                    Any visual changes occuring as a result may then be reflected in the display of the document.<br /><br />
-                    
-                    Javascript (and something called JScript) was the first thing to let web devs create pages w client-side interactivity.<br /><br />
+                    Javascript (and something called JScript) was the first thing to let web devs create pages w client-side interactivity.<br />
                     
                     The DOM was essentially created to give devs a way to interact with the parts of an HTML doc, to modify it as well, because there wasn't one yet.<br /><br />
                     
-                    So the DOM is just "the standard" and an API that must be understood in order to interact with the elements therein.<br /><br />
+                    So the DOM is just "the standard" and an API that must be understood in order to interact with the elements therein.<br />
     
-                   When a web page is loaded, the browser creates a D O M of the page, which is an OO representation of an HTML document. <br /><br />
+                   When a web page is loaded, the browser creates a D O M of the page, which is an OO representation of an HTML document. <br />
     
-                   Most web browsers basically use the DOM to render a doc like an HTML page. <br /><br />
+                   Most web browsers basically use the DOM to render a doc like an HTML page. <br />
     
                    The top-most node is the Document Object - all obejects have their prototypes so programatically speaking it's safe to assume that any node in the DOM is represented as an object that has a prototype which follows some possibly arbitray prototype inheritance chain. That chain all heads to null which is the only object without its prototype.
     
@@ -164,66 +150,263 @@
                     </p>
                     
                     <h3>DOM Levels</h3>
-                    
-                    DOM level 0 -  Didn't actually exist formally. <br /><br />
-                    
-                    DOM level 1 - Finally provided a complete model for an entire HTML / XML document, including the means to change any portion of the document, via Javascript.<br /><br />
-                    
-                    
-                    DOM level 2 - Published in late 2000. Introduced the getElementById function as well as an event model, AND support for XML namespaces, and CSS.<br /><br />
-                    
-                    
-                    DOM level 3 - Published in 2004. Added support for XPath and Keyboard Event Handling, as well as an interface for serializing docs as XML.<br /><br />
-                    
-                    
-                    DOM level 4 - Published in 2015 - It's  snapshot of the WHATWG living standard.<br /><br />
+
+
+
+                    <table class="table1">
+                        <tr>
+                          <th class="clearRight">DOM Level</th>
+                         <th class="clearLeft"></th>
+                        </tr>
+                        <tr>
+                          <td class="columnLeft">DOM level 0 </td>
+                          <td class="columnRight">Didn't actually exist formally.</td>
+                        </tr>
+                        <tr>
+                          <td class="columnLeft">DOM level 1</td>
+                          <td class="columnRight" >Finally provided a complete model for an entire HTML / XML document, including the means to change any portion of the document, via Javascript.</td>
+                        </tr>
+                        <tr>
+                          <td class="columnLeft">DOM level 2</td>
+                          <td class="columnRight">Published in late 2000. Introduced the getElementById function as well as an event model, AND support for XML namespaces, and CSS.</td>
+                        </tr>
+                        <tr>
+                          <td class="columnLeft">DOM level 3</td>
+                          <td class="columnRight">Published in 2004. Added support for XPath and Keyboard Event Handling, as well as an interface for serializing docs as XML.</td>
+                        </tr>
+                        <tr>
+                          <td class="columnLeft">DOM level 4</td>
+                          <td class="columnRight">Published in 2015 - It's a snapshot of the WHATWG living standard.</td>
+                        </tr>
+                      </table>
+
+
     
                 <!--Event listener - Attached to element to listen for interaction (mouseclick etc)-->
-                <h3>DOM Events</h3>
+                <h3>DOM Event Concepts</h3>
                 <strong>Event</strong> - anything the user does to interact with the page. <br /><br />
-                <strong>UI events</strong> - extends the DOM Event objects defined in the DOM.<br /><br />
+                <strong>UI events</strong> - extends the DOM Event objects defined in the DOM.<br />
     
-                <strong>Event delegation</strong> - JS event listeners fire on a DOM element AND all its descendants.<br /><br />
-                <strong>Event bubbling</strong> - inverse of delegation: events on an element will “bubble” up to parents.<br /><br />
+                <strong>Event delegation</strong> - JS event listeners fire on a DOM element AND all its descendants.<br />
+                <strong>Event bubbling</strong> - inverse of delegation: events on an element will “bubble” up to parents.<br />
     
-                Each available event has an <strong>event handler</strong> - a block of code, usually user-defined JS function, that will be run when the event fires.<br /><br />
+                Each available event has an <strong>event handler</strong> - a block of code, usually user-defined JS function, that will be run when the event fires.<br />
                 When defining these blocks of code, it's registering an event handler.
     
-                Event handler <-> event listener (more or less interchangeable).<br /><br />
+                Event handler &lt;-&gt; event listener (more or less interchangeable).<br /><br />
     
     
                 <h4>DOM Event Types</h4>
-    
-                <li>Clipboard Events</li>
-                <li>CSS Animation Events</li>
-                <li>CSS Transition Events</li>
-                <li>Drag & Drop Events</li>
-                <li>Document events</li>
-                <li>DOM mutation events</li>
-                <li>Form Events</li>
-                <li>Focus Events</li>
-                <li>Keyboard Events</li>
-                <li>Media Events</li>
-                <li>Mouse Events</li>
-                <li>Printing Events</li>
-                <li>Progress Events</li>
-                <li>Resource Events</li>
-                <li>Network Events</li>
-                <li>Session History Events</li>
-                <li>Storage Events</li>
-                <li>SVG Events</li>
-                <li>Tab Events</li>
-                <li>Text Composition Events</li>
-                <li>Touch events</li>
-                <li>Uncategorized Events</li>
-                <li>Update Events</li>
-                <li>Value change Events</li>
-                <li>View Events</li>
-                <li>Websocket Events</li>
-                <li>Window events</li>
-    
+
+
+                <table class="table2">
+                    <tr>
+                      <th class="clearRight">Types</th>
+                      <th class="clearMid"></th>
+                      <th class="clearMid"></th>
+                      <th class="clearMid"></th>
+                      <th class="clearLeft"></th>                     
+                    </tr>
+                    <tr>
+                      <td>Clipboard Events</td>
+                      <td>CSS Animation Events</td>
+                      <td>CSS Transition Events</td>
+                      <td>Drag & Drop Events</td>
+                      <td>Document events</td>
+                    </tr>
+                    <tr>
+                      <td>DOM mutation events</td>
+                      <td>Form Events</td>
+                      <td>Focus Events</td>       
+                      <td>Keyboard Events</td>
+                      <td>Media Events</td>                     
+                    </tr>
+                    <tr>
+                      <td>Mouse Events</td>
+                      <td>Network Events</td>        
+                      <td>Progress Events</td>
+                      <td>Printing Events</td>
+                      <td>Resource Events</td>
+                    </tr>
+                    <tr>
+                      <td>Session History Events</td>
+                      <td>Storage Events</td>
+                      <td>SVG Events</td>
+                      <td>Tab Events</td>
+                      <td>Text Composition Events</td>
+                    </tr>
+                    <tr>
+                      <td>Touch events</td> 
+                      <td>Uncategorized Events</td>
+                      <td>Update Events</td>
+                      <td>Value change Events</td>
+                      <td>View Events</td>  
+                    </tr>
+                    <tr>
+                        <td>Websocket Events</td>
+                        <td>Window events</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+
+                  </table>
+
+
+
+                  
+                  
+                  DOM Element Object Methods: <br />
+                  <br />                  
+                  <span class="inline-code">addEventListener()</span> - attaches an event handler to the specified ("input") element. Ex.:
+                  <br /><br />
+                  Attach a <strong>click event</strong> to a &lt;button&gt; element. <br />
+                  When the user clicks the button, output "Hello World" in a &lt; p &gt; element with id="demo":
+                  
+                  
+                  <code>
+                  document.getElementById("myBtn").addEventListener("click",
+                  function(){
+                    document.getElementById("demo").innerHTML = "Hello World";
+                  });
+                  </code>
+                  <br />
+                  Syntax:
+                  <code>
+                  eventTarget.addEventListener(type,listener,[,useCapture]);
+                  </code>
+                  <br />
+                  *The <span class="inline-code">useCapture</span> of <span class="inline-code">addEventListener</span> is what will know the capturing and bubbling states. By default, useCapture is false - meaning it's in the bubbling phase.
+                  
+                  
+                  
+                  <li>document.getElementById("myBtn") - use document object's getElementById() method to target the element with ID "myBtn"</li>
+                  
+                  <li>.addeventListener("click", function(){…} - use the DOM element object's addEventListener() method to attach (or add) a click <strong>(input)</strong> (event)to the button #MyBtn, and then run a function (the event handler):</li>
+                  
+                  <li>function(){document.getElementById("demo") - the <strong>(output)</strong> <p> element whose inner content will be modified when the input element, #myBtn, is clicked.</li>
+                  
+                  <li>.innerHTML = "Hello World" - adds the innerHTML <strong>property</strong> with the new content that will be updated on click</li>
+                  <br /><br />
+                  
+                  <h3>Most Common JS Events</h3>
+                  <li>click</li>
+                  <strong><li>input</li></strong>
+                  <li>mouseenter</li>
+                  <li>mouseleave</li>
+                  <li>mousedown</li>
+                  <li>mouseup</li>
+                  <li>mousemove</li>
+                  <li>keydown</li>
+                  <li>keyup</li>
+                  <li>blur</li>
+                  <li>focus</li>
+                  
+              
+  
+                  <h2>Events in JS</h2>
+                  
+                  There are two main ways to handle/get notified of DOM events:
+                  <li>addEventListener()</li>
+                  <li><strong>on-event</strong> handlers</li>
+                  
+                  <h3>on-event Handlers</h3>
+                  The on-event handler is usually named according to the event it's designed to react to, such as <span class="inline-code">onclick</span>, <span class="inline-code">onfocus</span>, <span class="inline-code">onkeypress</span>, etc.
+                  
+                  
+                  <h3>DOM Events</h3>
+                  
+                  Each event is going to have a corresponding event object as its "type".
+                  <br />
+                  <a href=https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">
+                  List of all Dom Events
+                  </a>
+                  
+                  
+                  <h3>DOM Event Objects</h3>
+                  Any event is going to belong to a certain event object - for example, the mouse click event belongs to the MouseEvent object. <br />
+                  All event objects are based on the Event Object; <strong>
+                  they inherit all of its properties and methods</strong>.
+                  
+                  <h4>The  Event Object</h4>
+                  This is the parent of all other event objects. It has the following methods, properties and associated event types.
+                  
+                  <a href="https://www.w3schools.com/jsref/obj_event.asp" target="_blank">
+                  Event Object Methods, Properties and Types
+                  </a>
+                  
+                  <br /><br />
+                  
+                  
+                
+                  Event "types" for individual DOM events = corresponding event objects <br/ >
+                  
+                  
+                  With dom event manipulation that also relates to (adds/removes css classes), be sure and troubleshoot the CSS, not just the JS. <br/ >
+                  
+                  
+                  <h4>List of all Event Objects</h4>
+                  https://www.w3schools.com/jsref/obj_animationevent.asp
+                  
+                  
+                  
+                  HTML events are <strong>things that happen to HTML elements</strong>. Javascript can "react" on these events.
+                  
+                  <h3>HTML DOM Events</h3>
+                  
+                  An HTML DOM Event allows JS to register different event handlers on elements in an HTML document. <br /><br />
+                  They're usually <strong>in combination with functions</strong>, and the function will be executed when the specified event (i.e. click). 
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  An HTML event is either a. <strong>something the browser does</strong>, or b. <strong>something the user does</strong>. Examples of HTML events:
+                  <li>An HTML web page finishes loading</li>
+                  <li>An HTML input field was changed</li>
+                  <li>An HTML button was clicked</li>
+                  <br />
+                  
+                  <strong>event handler</strong> - a block of code, <strong>usually a user-defined JS funfction</strong>, that runs when the event is triggered (so on mouse click, run function using event handler). <br /><br />
+                  When this function is defined to be run in response to that even triggering, it's called <strong>registering an event handler</strong>. <br /><br />
+                  
+                  Event handler and event listener are usually interchangeable terms, although the listener listens for the event happening, and the handler is the actual code run in response to the event happening. (so <span class="inline-code">addEventListener()</span> is both the event LISTENER and the event HANDLER - the handler is the function called in the listener).
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <code>
+                  document.getElementById("coolBtn") //target the "input" element to be listened to (#coolBtn)
+                  .addEventListener("click", //attaches event listener, click, to targeted element
+                  function(){ document.getElementById("demo)} /* the event handler that contains the code (function) to be run when the event 
+                  being listened to is triggered - targeting the p element #demo */
+                  .innerHTML = "Hello World" // the method performed on the "output" element (#demo)
+                  </code>
+                  
+                  
+                  
+                  
+                  
+                  <h3>Event Capturing vs Event Bubbling</h3>
+                  
+                  If you have two elements, 1 and 2, and 2 is inside of 1, you can attach an event handler to both elements, such as onClick. Now when 2 is clicked on, <strong>the handler for both elements is executed</strong>. In what way that order executes is going to either be event capturing or event bubbling. In capturing, 1 executes first (so trickle-down on the elements); in bubbling, 2 would execute first (bubble upwards to parent elements).
+          
+
+
+       
                 <h3>Resources</h3>
     
+
+                <a href="https://www.w3schools.com/jsref/dom_obj_document.asp" target="_blank" rel="noopener noreferrer"> Document Object Methods and Properties</a>
+                <br />
+
                 <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">DOM Events List</a> <br />
     
                 <a href="https://www.w3.org/TR/DOM-Level-3-Events/" target="_blank">Comprehensive Guide to UI Events</a>
@@ -236,8 +419,6 @@
           <section class="main-section" id="CSS3">
             <header>CSS3</header>
             <article>
-
-
             <h2 id="cssBox">Box Model</h2>
 
               <p>
@@ -246,29 +427,29 @@
               <br /><br />
               It wraps around every HTML element.
               </p>
-              <strong>content</strong> - The innermost layer containing text or other elements of the target element <br /><br />	
+              <strong>content</strong> - The innermost layer containing text or other elements of the target element <br />
               <strong>padding</strong> - the layer just outside the content layer. The padding is transparent.
-              More padding gives visual effect of increasing the size of the content layer. <br /><br />
+              More padding gives visual effect of increasing the size of the content layer. <br />
                 
               <strong>border</strong> - 
               the layer surrounding padding. Most of the time has a small width of maybe only 1 pixel. 
-              Unlike padding and margin layers, this layer can be given color and style.	<br /><br />
-              
+              Unlike padding and margin layers, this layer can be given color and style.	<br />
+              <br />
               <strong>margin</strong> - the outermost layer between the target element and its parent element. The margin is transparent. <br />
               Adding space to the margin gives the visual effect of increasing the content size of the parent element. <br /><br />
               
               When you set the width and height properties of an element with CSS, you just set the width and height of the content area. <br />
               To calculate the full size of an element, you must also add padding, borders and margins. <br /><br />
               
-              total element width = (width) + (left + right padding) + (left + right border) + (left + right margin) <br /><br />
+              <strong>total element width</strong> = (width) + (left + right padding) + (left + right border) + (left + right margin) <br />
               
-              total element height = (height) + (top + bottom padding) + (top + bottom border) + (top + bottom margin) <br /><br />
+              <strong>total element height</strong> = (height) + (top + bottom padding) + (top + bottom border) + (top + bottom margin) <br /><br />
                   
             <h2 id="cssVar">CSS Variables and Custom Properties</h2>
               
               <strong>CSS variables</strong> - entities containing specific values to be reused throughout a document.
               <br /><br />	
-              They're set using custom property notation (ex. —main-color: black;i).<br />
+              They're set using <strong>custom property notation</strong> (ex. —main-color: black;i).<br />
               They're accessed using the var() function (ex. var(—main-color);). <br /><br />
               
               Complex websites have very large amounts of CSS, often with a lot of repeated values. <br />
@@ -279,7 +460,7 @@
               <h3>CSS Variables vs. Preprocessor Variables</h3>
               
               <p>
-              CSS variables are live CSS properties running in the browser, while preprocessor variables that have to get compiled into regular CSS code, therefore the browser knows nothing about them.
+              CSS variables are live CSS properties running in the browser, while preprocessor variables have to get compiled into regular CSS code, therefore the browser knows nothing about them.
               </p>
               
               <p>
@@ -676,8 +857,7 @@
               
 
             <h2 id="cssAnim">Animations</h2>
-
-              <h3>Animation Basics</h3>      
+            <h3>Animation Basics</h3>      
               
               -should be snappy <br />
               -durations should be kept short <br />
@@ -690,7 +870,7 @@
               (easing basics)</a>
               
               
-              <h3>Animating Between Views</h3>
+            <h3>Animating Between Views</h3>
               
               <a href="https://developers.google.com/web/fundamentals/design-and-ux/animations/animating-between-views" target="_blank">
               Full guide to animating between views with CSS and JS
@@ -712,22 +892,45 @@
                 overflow: hidden;
                 position: relative;
               }
-              </code>
-                                  
-
-
-
-
-
-
-
-
-
-
+              </code>                    
             <h2 id="cssDisadvantage">CSS Disadvantages</h2>
               <p>CSS has always been used to do layouts, but using tables, floats, positioning and inline-block are all essentially hacks which left out a lot of important functionality, like vertical centering.</p>
+
+            <h2 id="cssTips">Tips</h2>
+              *Width and height values can exceed 100%.  <br />     <br />
+                        
+              *When doing colors on things like tables:  <br />
+
+              *Having 8 COLORS (4 that are each supposed to be complementary with another 4, well, DON'T do that. That's a lot more ridiculous than it sounds.  <br /> <br />
+              *Mock it up even if a screenshot with photoshop - bg, text, buttons can be layered via cut.
+              <br /> <br />
+              *Have colors typed out as names for css in textedit- makes actually writing css for them easier.
+              <br /> <br />
+              *Keep all related styles in same area in css. <br /> <br />
               
-            
+              *If changing colors alot esp. in CSS, use highlight -> cmd+d to select it 'linearly" and change more quickly. <br /> <br />
+              
+              *Do NOT have a bunch of different stylesheets for the same project (unless done properly like for modularity) - like a style.css, a responsive.css.  <br /><br />
+
+              reisizing an element easily vs other similar elements (transform-scale):
+              <code>
+              .highlight .pricing-box {
+                box-shadow: 0px 0px 40px rgba(200, 200, 200, 0.9);
+                transform: scale(1.15);
+                -webkit-transform: scale(1.15);
+                -moz-transform: scale(1.15);
+                -ms-transform: scale(1.15);
+                -o-transform: scale(1.15);
+              }
+              </code>
+
+
+
+
+
+
+
+
             <h2 id="cssLinks">Links</h2>
             
               <a href="https://css-tricks.com/" target="_blank">
@@ -737,137 +940,197 @@
               <a href="https://css-tricks.com/snippets/css/retina-display-media-query/" target="_blank">
               Retina display media queries
               </a>  <br/>
-            
+
+
+              <a href="https://css-tricks.com/bem-101/" target="_blank">
+                <h4>BEM Methodology</h4>
+                </a> <br /><br />
+                
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model" target="_blank">
+                <h4>CSS Object Model</h4>
+                </a> <br /><br />
+                
+                <h4>Child and Parent Elements</h4>
+                
+                Syle child elements individually without redundant css: <br /><br />
+                <strong>.className:nth-child(1)</strong> - selects FIRST child element <br />
+                <strong>.className:nth-child(2)</strong> - selects SECOND child elem <br />
+                <strong>.className:nth-child(3)</strong> - selects THIRD <br /><br />
+                Ex.: <br /><br />
+                <strong>.call-out</strong> = has 3 child elems. <br />
+                <strong>.call-out:nth-child(1){background-color: #ff0000;}</strong> -->> selects and styles the first <br /><br />
+                
+                <h4>Properly enable responsiveness on a webpage</h4>
+                <code>
+                &lt; meta name="viewport" content="width=device-width, initial-scale=1" &gt;
+                </code>
+                
+                This tells the browser to set the width of the content to the width of the device itself, and to scale that content to 1 on page load. <br /><br />
+                <a href="https://responsivedesign.is/develop/responsive-html/viewport-meta-element/" target="_blank">
+                Viewport Options
+                </a>
+                
+                <h4>Call-to-actions</h4>
+                Can be a button, or banner, or text or anything. <br />
+                Prompts the user to CLICK it. <br />
+                For an "immediate" interaction like to buy a specific product or service. <br />
+                CTA testing can be done in A/B Testing to see which of severla graphics have the highest click success rate. <br />                                          
             <h2>Terms</h2>
-              
               responsive layout <br />
               set viewport <br />
               fluid widths <br />        
               overflow <br />   
-              position <br />                    
-                      
+              position <br />                                          
             </article>
-            </section>    
-            
+            </section>            
           <section class="main-section" id="Bootstrap">
               <header>Bootstrap</header>
               <article>
                 <h2>Grid Structure</h2>
               <img src="images/grid-structure.jpg" alt="" style="width: 70%;">
-
-
-              </article>
-
-              
+              <h2>Useful Bootstrap Plugins</h2>
+              <a href="https://www.eyecon.ro/bootstrap-datepicker/" target="_blank"> 
+              Datepicker
+              </a><br />
+              <a href="http://www.daterangepicker.com/" target="_blank">
+              Date Range Picker
+              </a><br />
+              <a href="http://botmonster.com/jquery-bootpag/#.XIquShNKjOT" target="_blank">
+              bootpag
+              </a> - Dynamic Boostrap pagination<br />
+              </article>          
             </section>   
-
 
           <section class="main-section" id="Design">
             <header>Design Basics</header>
             <article> 
               <img src="images/design-color-theory.png" alt="" height="400">
-
               <h2>Wireframing</h2>      
-              <strong>wireframe</strong> - the blueprint of your site <br />
-  
-              Example Steps:<br />
-              1. Draft the design<br />
-              2. Organize the content in html<br />
-              3. Format in css<br />
-              4. Ensure cross-browser compat.<br />
-              5. Check validity/testing<br />
-              6. Final code<br /><br />
-  
-              <p>Number of ways different designers go from design to implementation:<br />
-              <li>Wireframe -> Interactive Prototype-Visual -> Design</li>
-              <li>Sketch -> Code</li>
-              <li>Sketch -> Wireframe -> Hi-Def Wireframe -> Visual -> Code</li>
-              <li>Sketch -> Wireframe -> Visual -> Code</li></p>
+                <strong>wireframe</strong> - the blueprint of your site <br />
+    
+                Example Steps:<br />
+                1. Draft the design<br />
+                2. Organize the content in html<br />
+                3. Format in css<br />
+                4. Ensure cross-browser compat.<br />
+                5. Check validity/testing<br />
+                6. Final code<br /><br />
+    
+                <p>Number of ways different designers go from design to implementation:<br />
+                <li>Wireframe -> Interactive Prototype-Visual -> Design</li>
+                <li>Sketch -> Code</li>
+                <li>Sketch -> Wireframe -> Hi-Def Wireframe -> Visual -> Code</li>
+                <li>Sketch -> Wireframe -> Visual -> Code</li></p>
 
               <h2>UX</h2>
-
               <h3>UX Principles</h3>
 
-              *Empathy beats intuition - just think about it from the viewpoint of someon clicking around on your site. <br />
-              *Knowing the essentials - putting together points, lines and planes in a combination and bring color into the equation. Any UI component can be created.<br />
-              *Good design is as little design as possible (aids usability)<br />
-              *Optimize legibility <br />
-              *Typographic hierarchy (i.e. consistency) <br />
-              *Prototype and test with users and then iterate in response <br />
-              *Improve accessibility with contrast between foreground and background colors <br />
-              *Releasing minimum viable products early and testing them with actual users, moving from alpha to beta to live to adding features <br />
-              *According to a UserTesting report, every dollar invested in UX can return between $2 and $100 <br />
-              *As a UX designer, your first task in a new job is clearly explaining the value you'll be bringing to the company and how you'll bring that about. <br />
-              *Iteration reduces risk <br />
+                *Empathy beats intuition - just think about it from the viewpoint of someon clicking around on your site. <br />
+                *Knowing the essentials - putting together points, lines and planes in a combination and bring color into the equation. Any UI component can be created.<br />
+                *Good design is as little design as possible (aids usability)<br />
+                *Optimize legibility <br />
+                *Typographic hierarchy (i.e. consistency) <br />
+                *Prototype and test with users and then iterate in response <br />
+                *Improve accessibility with contrast between foreground and background colors <br />
+                *Releasing minimum viable products early and testing them with actual users, moving from alpha to beta to live to adding features <br />
+                *According to a UserTesting report, every dollar invested in UX can return between $2 and $100 <br />
+                *As a UX designer, your first task in a new job is clearly explaining the value you'll be bringing to the company and how you'll bring that about. <br />
+                *Iteration reduces risk <br /> <br />
+
+
+                Someone who is a UX specialist looks more at the human side of the design process, and would tend to do research and ask questions that will form the basis for coming up with design concepts/ideas, and then also doing user testing and evaluation to validate these ideas post development (or as part of the development cycle). <br /><br />
+
+                If you really want to cut through all the jargon and terminology, UX is really just a concept/approach. So if you think more like a user (i.e. from a goal driven perspective) rather than a developer (i.e. from a specification/implementation perspective) then you are on a good path to becoming a UX practitioner. <br /><br />
+
+                This is what they refer to as the <strong>user-centric</strong> approach to design and development. <br /><br />
+
+                In comparison, UI is a little less abstract because it deals directly with the user interface aspect, and although it can be as high level as creating design patterns and libraries, you can also get down to specific details like individual UI components and elements. <br /><br />
+
+                Problems for user-centric approach in very small teams is that we don't necessarily have enough time dedicated to users. <br /><br />
+
+                Front-end developer = foreman, can BUILD things, but might not understand how buildings should be created.
+                An experienced foreman relies on things like municipal building codes ("design patterns") to guide construction, but the end result MAY END UP HARD TO USE OR UNATTRACTIVE. <br />
+
+                UX = architect, trained in understanding spaces, how people will use the building and move through it, etc.
+                They may not have the ability to plaster a wall o drive a nail however, and as a result THEIR MORE ADVENTUROUS DESIGNS MIGHT BE CHALLENGING TO BRING THE REAL WORLD. <br /><br />
+
+                As a front-end dev, you're the foreman and construction crew all rolled into one, but YOU MIGHT NOT BE AN ARCHITECT (yet) - you may not have the training about HOW to design the software for the best UX.<br /><br />
+
+                You can draw on examples from the world around you to produce *functional* apps, but it may not be sufficient to produce *usable* apps. <br /><br />
+
+                Good news is you can learn UX techniques that will help you to: <br />
+                -Understand user needs <br />
+                -Create designs to meet those needs, and <br />
+                -Test those designs with real live users to verify.<br /><br />
+
               
               <h3>UX Stages</h3>
+                
+                1. <strong>Initial stages</strong> <br /><br />
+                This is where the research happens. <br />
+                A UX designer will generally get a brief from the client or manager asking them to do some project research.<br />
+                If ___ wants a new app, the UX designer would combine DESK-BASED and FIELD research to get a full picture of who they're designing for.<br /><br />
+                This might include:<br />
+                -Reviewing what the current site has to offer.<br />
+                -<strong>Interviewing existing users</strong> to identify <strong>opportunities</strong> and <strong>pain points</strong>.<br />
+                -<strong>Doing competitor research</strong> to see what else is out there.<br />
+                
+                <p>
+                These tasks will enable the UX designer to <strong>pinpoint the core features needed</strong> for the <strong>minimum viable product</strong> and start <strong>drafting some initial personas</strong>.
+                </p>
+                <p>
+                For example, for a food app the core features might be a menu, the ability to make online reservations and a branch finder.
+                </p>
+                
+                2. <strong>Personas and information architecture</strong><br /><br />
+                
+                With the core features having been decided on, it's time to figure out what <strong>tasks</strong> 
+                each persona wants to perform and <strong>why</strong>.
+                <br /><br />
+                An example persona for a food app might be Lucy, a go-getting 20-something who likes eating artisan salads on her lunch break. <br />
+                An example task for her would be: <br />
+                "Lucy likes to pre-order the salad via the app on the phone, as it saves her time between meetings."<br />
+                <p>
+                Once this process has been completed for each persona being considered, then it's possible to REFINE THE CONTENT *NEEDED*, working out the information architecture and SITE MAP and beginning PAPER PROTOTYPES.
+                </p>
               
-              1. <strong>Initial stages</strong> <br /><br />
-              This is where the research happens. <br />
-              A UX designer will generally get a brief from the client or manager asking them to do some project research.<br />
-              If ___ wants a new app, the UX designer would combine DESK-BASED and FIELD research to get a full picture of who they're designing for.<br /><br />
-              This might include:<br />
-              -Reviewing what the current site has to offer.<br />
-              -<strong>Interviewing existing users</strong> to identify <strong>opportunities</strong> and <strong>pain points</strong>.<br />
-              -<strong>Doing competitor research</strong> to see what else is out there.<br />
-              
-              <p>
-              These tasks will enable the UX designer to <strong>pinpoint the core features needed</strong> for the <strong>minimum viable product</strong> and start <strong>drafting some initial personas</strong>.
-              </p>
-              <p>
-              For example, for a food app the core features might be a menu, the ability to make online reservations and a branch finder.
-              </p>
-              
-              2. <strong>Personas and information architecture</strong><br /><br />
-              
-              With the core features having been decided on, it's time to figure out what <strong>tasks</strong> 
-              each persona wants to perform and <strong>why</strong>.
-              <br /><br />
-              An example persona for a food app might be Lucy, a go-getting 20-something who likes eating artisan salads on her lunch break. <br />
-              An example task for her would be: <br />
-              "Lucy likes to pre-order the salad via the app on the phone, as it saves her time between meetings."<br />
-              <p>
-              Once this process has been completed for each persona being considered, then it's possible to REFINE THE CONTENT *NEEDED*, working out the information architecture and SITE MAP and beginning PAPER PROTOTYPES.
-              </p>
-             
-              These are very rough sketches which can be shown to colleagues, and quickly and easily improved.
-              <br /><br />
-              
-              3. <strong>Wireframes and user testing </strong><br /><br />
-              After paper prototypes comes WIREFRAMES, USER TESTING, and plenty of ITERATING. <br />
-              Wireframes typically go through many stages and there's no right/wrong way of doing them.
-              <br /><br />
-              
-              They often start as very basic b&w designs moving on to interactive designs where users can navigate between the different pages, as they would with the final product, to high-res designs which give the user a really clear idea of what the end product will look like. <br /><br />
-              **Each stage is punctuated with user testing and iterations.**
-              <br /><br />
-              4. <strong>Visual design</strong><br /><br />
-              
-              During the visual design stage, wireframes are converted into <strong>mock-ups</strong>. <br /><br />
-              
-              These include the final <strong>imagery</strong>, <strong>color</strong>, and <strong>typography</strong>. <br />
-              
-              <p>
-              The main focus is the <strong>look</strong> and <strong>feel</strong> - they should be <strong>pixel-perfect</strong> and show exactly what the design will look like when brought to life so they can be used as a guide when development starts. <br /><br />
-              
-              Some UX designers do the visual design themselves using Photoshop etc, but others might choose to use a digital designer/front-end dev to get the design just right.
-              </p>
+                These are very rough sketches which can be shown to colleagues, and quickly and easily improved.
+                <br /><br />
+                
+                3. <strong>Wireframes and user testing </strong><br /><br />
+                After paper prototypes comes WIREFRAMES, USER TESTING, and plenty of ITERATING. <br />
+                Wireframes typically go through many stages and there's no right/wrong way of doing them.
+                <br /><br />
+                
+                They often start as very basic b&w designs moving on to interactive designs where users can navigate between the different pages, as they would with the final product, to high-res designs which give the user a really clear idea of what the end product will look like. <br /><br />
+                **Each stage is punctuated with user testing and iterations.**
+                <br /><br />
+                4. <strong>Visual design</strong><br /><br />
+                
+                During the visual design stage, wireframes are converted into <strong>mock-ups</strong>. <br /><br />
+                
+                These include the final <strong>imagery</strong>, <strong>color</strong>, and <strong>typography</strong>. <br />
+                
+                <p>
+                The main focus is the <strong>look</strong> and <strong>feel</strong> - they should be <strong>pixel-perfect</strong> and show exactly what the design will look like when brought to life so they can be used as a guide when development starts. <br /><br />
+                
+                Some UX designers do the visual design themselves using Photoshop etc, but others might choose to use a digital designer/front-end dev to get the design just right.
+                </p>
               
               <h3>Definitions</h3>
-              
-              Dynamic sectors <br />
-              <a href=" http://theuxreview.co.uk/personas-the-beginners-guide/" target="_blank">
-              Persona (UX)</a> <br /> - The "person" you're using as a basis for whom you're designing the site. <br />
-              Information Architecture<br />
-              Core features of a website<br />
-              Paper prototyping<br />
-
-              <a href="https://www.usability.gov/how-to-and-tools/methods/writing-for-the-web.html" target="_blank">Usability guide for writing user-friendly content</a> <br />&nbsp;
                 
+                Dynamic sectors <br />
+                <a href=" http://theuxreview.co.uk/personas-the-beginners-guide/" target="_blank">
+                Persona (UX)</a> <br /> - The "person" you're using as a basis for whom you're designing the site. <br />
+                Information Architecture<br />
+                Core features of a website<br />
+                Paper prototyping<br />
+
+                <a href="https://www.usability.gov/how-to-and-tools/methods/writing-for-the-web.html" target="_blank">Usability guide for writing user-friendly content</a> <br />&nbsp;
+                  
               <h3>Links</h3> 
 
-              <a href="https://www.smashingmagazine.com/2016/05/easy-steps-to-better-logo-design/" target="_blank" rel="noopener noreferrer">Logo/SVG Design Fundamentals</a>
-
+                <a href="https://www.smashingmagazine.com/2016/05/easy-steps-to-better-logo-design/" target="_blank" rel="noopener noreferrer">Logo/SVG Design Fundamentals</a>
 
             </article>
             </section>                  
@@ -875,7 +1138,7 @@
           <section class="main-section" id="Sass">
               <header>Sass/SCSS</header>
               <article>
-                  <h2>Sass/SCSS</h2>
+
                   <h2>.sass vs .scss</h2>
                   <p>
                   When Sass first came out its syntax was noticeably different from CSS - it looked a lot like Haml.
@@ -1234,7 +1497,7 @@
             <header>Javascript Fundamentals</header>
             <article>
 
-                <h2 id="jsEditions">JS Editions: </h2>
+              <h2 id="jsEditions">JS Editions: </h2>
                 <li> 5th Edition (2009) </li>
                 <li> 6th Edition - ECMAScript 2015 </li>
                 <li> 7th Edition - ECMAScript 2016 </li>
@@ -1244,7 +1507,7 @@
                 (ESNext features are actually referred to as proposals since they haven't happened yet.)
 
                 <h2 id="jsCallback">Callback Functions:</h2>
-                <b>Callback</b> - A function which is:
+                  <b>Callback</b> - A function which is:
                     <li>Passed as an ARGUMENT to another function, and </li>
                     <li>Is invoked after some kind of event (so callback is the child function of a parent almost but not bound to scope) </li>
                     
@@ -1404,6 +1667,43 @@
                       //give user choice of static maps instead
                     };
                     </code>
+
+
+
+                    <h2 id="jsFetch">Fetch API</h2>
+
+                      The <strong>Fetch API</strong> will be familiar with anyone who has used XMLHttpRequest. This API provides a more powerful and flexible feature set.
+                      <br /><br />
+                      Fetch provides a generic definition of <span class="inline-code">Request</span> and <span class="inline-code">Response</span> objects, as well as other things involved with network requests. <br /><br />
+                      These objects will be available for many things, including: <br />
+                      <li>Service workers</li>
+                      <li>Cache API</li>
+                      <li>Any other time you''re handling or modifying requests and responses</li>
+                      <li>Any kind of use case that might require you to generate your own responses programmatically</li>
+                      <br />
+                      
+                      The <span class="inline-code">fetch()</span> method takes <strong>one mandatory argument</strong>, which is the <strong>path to the resource</strong> you want to fetch. <br />
+                      It returns a <span class="inline-code">Promise</span> <strong>that resolves to the <span class="inline-code">Response</span> to that request, whether it's successful or not. 
+                      </strong>
+                      <br />
+                      You can also pass in an <span class="inline-code">init</span> options object as the second argument optionally. <br />
+                      
+                      Once a <span class="inline-code">Response</span> is received, many methods are available for defining what the <span class="inline-code">body</span> content is and how it should be handled. <br />
+                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     
 
                     <h2 id="jsGet">Get and Set</h2>
@@ -1433,153 +1733,173 @@
                   Technically you could have an if/else statement referencing “action” and define “var action” after them.<br />
                   </p>
                     
-            <h2 id="jsIIFE">I.I.F.E.:</h2>
+              <h2 id="jsIIFE">I.I.F.E.:</h2>
 
-            <b>Immediately Invoked Function Expression</b> - Allows you to control variable scope - variables inside an IIFE aren’t available outside it. It's a function that runs as soon as its defined.
+                <b>Immediately Invoked Function Expression</b> - Allows you to control variable scope - variables inside an IIFE aren’t available outside it. It's a function that runs as soon as its defined.
 
+              <h2 id="jsImage">Image Maps:</h2>
 
-            <h2 id="jsImage">Image Maps:</h2>
+                You can make image maps in Javascript: <a href="https://www.tutorialspoint.com/javascript/javascript_image_map.htm">https://www.tutorialspoint.com/javascript/javascript_image_map.htm</a> <br />
+                An image map = clickable areas. You can also define coordinates.
 
-            You can make image maps in Javascript: <a href="https://www.tutorialspoint.com/javascript/javascript_image_map.htm">https://www.tutorialspoint.com/javascript/javascript_image_map.htm</a> <br />
-            An image map = clickable areas. You can also define coordinates.
+              <h2 id="jsNull">Null vs. Undefined vs. NaN:</h2>
+                <p>
+                Null = Can be assigned to a variable as a representation of no value. <br />
+                Undefined = A variable that has not been assigned a value. <br /> <br />
 
-            <h2 id="jsMethods">Methods:</h2>
+                typeof null = object<br />
 
-            List of JS methods:
+                typeof undefined = it's already a type - undefined<br /><br />
 
+                So, undefined is a type itself, while null is an object you can interact with ("empty").<br />
+                So null can be some empty placeholder thing, ex.: </p>
 
+                <code>
 
-            <h2 id="jsNull">Null vs. Undefined vs. NaN:</h2>
-            <p>
-            Null = Can be assigned to a variable as a representation of no value. <br />
-            Undefined = A variable that has not been assigned a value. <br /> <br />
+                null + 3
+                = 3
 
-            typeof null = object<br />
-
-            typeof undefined = it's already a type - undefined<br /><br />
-
-            So, undefined is a type itself, while null is an object you can interact with ("empty").<br />
-            So null can be some empty placeholder thing, ex.: </p>
-
-            <code>
-
-            null + 3
-            = 3
-
-            </code>
-            <br />
-            Whereas with undefined:
-            <code>
-            undefined + 3
-            = undefined or NaN
-            </code>
-            <p>
-            If arithmetic makes no sense, JS yields special Numbers:</p>
-            <code>
-            Infinity or NaN(Not a Number).
-            console.log(5 / 0);
-            //->Infinity
-            </code>
-
-
-            <h2 id="jsPropVs">Properties vs. Methods:</h2>
-
-            <li>Data is represented as PROPERTIES of the object, and
-            <li>Behavior is represented as the methods</li>
-
-            <p>
-            Method: <br />
-            In OOP, it's a procedure associated with a. A message (almost like an HTTP header) and b. an Object.
-            </p>
-            <p>
-            That's what an object is and that's what object oriented is: everything including DOM elements has their a. properties (if available) and b. methods (if available). So all the object.thing1.thing2 can be applied to everything.
-            </p>
-            <p>
-            Ex.: A Window object would have methods such as open and close. <br /> 
-            That's what it means by procedural is the method is a procedure to be carried out as a message to the object to enact something, while its state is a property.
-            </p>
-            <p>
-            Open and close i.e. procedures i.e. imperatives are methods or things you can perform on/with the object.
-            State or value in an array or key-value pair or even like location are properties.
-            </p><p>
-            Methods are like miniature algorithms, while properties are characteristics.
-            Methods allow you to interact with the properties of an object.
-            This is also what people mean when they say encapsulation.
-            </p><p>
-            Methods are actions that can be performed on objects.
-            The name:values pairs (in JavaScript objects) are called properties.
-            </p>
-
-
-            <h2 id="jsPrototype">Prototypes:</h2>
-            <p>
-            Javascript is multi-paradigm:  <br />
-            1. OOP with prototypal inheritance <br />
-            2. Functional programming <br />
-            3. Imperative/procedural programming <br />
-            </p>
-            <p>
-            Every JS object has a prototype. The prototype is also an object. All JS objects inherit their properties and methods from their prototype. The prototype pattern creates new objects, but rather than creating non-initialized objects, it returns objects that are initialized w the values copied from the prototype object.
-            </p>
-
-            So there's: <br /><br />
-
-            1. The prototype (sample)<br />
-            2. The clone<br />
-            3. The creation of that clone<br /><br />
-            Ex.: <br />
-            1. function CustomerPrototype(proto){} - //the prototype <br />
-            2. function Customer(first, last, something){} - //The cloned objects being created <br />
-            3. function run(){} - //creates new object by asking prototype to clone itself <br />
-            <br />
-            <h3>Rules:</h3>
-            <li>Objects created with new Object() inherit from a prototype called Object.prototype.</li>
-            <li>Object.protoype is at the top of the chain - so all objects inherit from this.</li>
-            <li>When you ask for a property of an object, JS looks for that property - if it doesnt find it, it follows the prototype chain until it finds the property, or returns undefined.</li><br />
-
-              <h3>Prototype Example</h3>
-              <code>
-
-                  var prototypeof = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-                  var objwithprototype = Object.create(prototypeof);
-                  
-                  Object.getPrototypeOf(objwithprototype);
-                  
-                  console.log(Object.getPrototypeOf(objwithprototype));
-                  console.log(prototypeof.isPrototypeOf(objwithprototype));
-                  
-                  var test= [];
-                  Object.assign(test, prototypeof);
-                  console.log(test);
-                  console.log(Object.entries(test));
-                  
-                  console.log(typeof test);</code>
+                </code>
                 <br />
-            <h3>Terms:</h3>
+                Whereas with undefined:
+                <code>
+                undefined + 3
+                = undefined or NaN
+                </code>
+                <p>
+                If arithmetic makes no sense, JS yields special Numbers:</p>
+                <code>
+                Infinity or NaN(Not a Number).
+                console.log(5 / 0);
+                //->Infinity
+                </code>
 
-            <b>new</b> keyword - 
-            new constructor[(arguments)]<br />
-            <b>constructor</b> - Special method for creating an object within a class.<br /><br />
-            So JS DOES have classes but they were only introduced in ECMA 2015 ( so constructors are kind of new with JS)<br />
-            class-based - constructors & factory method pattern.<br /><br />
-            <strong>prototypal</strong> - prototype design pattern. Each instance of an object created from the prototype is just a copy.<br />
+              <h2 id="jsPropVs">Properties vs. Methods:</h2>
+
+              <li>Data is represented as PROPERTIES of the object, and
+              <li>Behavior is represented as the methods</li>
+
+              <p>
+              Method: <br />
+              In OOP, it's a procedure associated with a. A message (almost like an HTTP header) and b. an Object.
+              </p>
+              <p>
+              That's what an object is and that's what object oriented is: everything including DOM elements has their a. properties (if available) and b. methods (if available). So all the object.thing1.thing2 can be applied to everything.
+              </p>
+              <p>
+              Ex.: A Window object would have methods such as open and close. <br /> 
+              That's what it means by procedural is the method is a procedure to be carried out as a message to the object to enact something, while its state is a property.
+              </p>
+              <p>
+              Open and close i.e. procedures i.e. imperatives are methods or things you can perform on/with the object.
+              State or value in an array or key-value pair or even like location are properties.
+              </p><p>
+              Methods are like miniature algorithms, while properties are characteristics.
+              Methods allow you to interact with the properties of an object.
+              This is also what people mean when they say encapsulation.
+              </p><p>
+              Methods are actions that can be performed on objects.
+              The name:values pairs (in JavaScript objects) are called properties.
+              </p>
+            <h2 id="jsPrototype">Prototypes:</h2>
+              <p>
+              Javascript is multi-paradigm:  <br />
+              1. OOP with prototypal inheritance <br />
+              2. Functional programming <br />
+              3. Imperative/procedural programming <br />
+              </p>
+              <p>
+              Every JS object has a prototype. The prototype is also an object. All JS objects inherit their properties and methods from their prototype. The prototype pattern creates new objects, but rather than creating non-initialized objects, it returns objects that are initialized w the values copied from the prototype object.
+              </p>
+
+              So there's: <br /><br />
+
+              1. The prototype (sample)<br />
+              2. The clone<br />
+              3. The creation of that clone<br /><br />
+              Ex.: <br />
+              1. function CustomerPrototype(proto){} - //the prototype <br />
+              2. function Customer(first, last, something){} - //The cloned objects being created <br />
+              3. function run(){} - //creates new object by asking prototype to clone itself <br />
+              <br />
+              <h3>Rules:</h3>
+              <li>Objects created with new Object() inherit from a prototype called Object.prototype.</li>
+              <li>Object.protoype is at the top of the chain - so all objects inherit from this.</li>
+              <li>When you ask for a property of an object, JS looks for that property - if it doesnt find it, it follows the prototype chain until it finds the property, or returns undefined.</li><br />
+
+                <h3>Prototype Example</h3>
+                <code>
+
+                    var prototypeof = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+                    var objwithprototype = Object.create(prototypeof);
+                    
+                    Object.getPrototypeOf(objwithprototype);
+                    
+                    console.log(Object.getPrototypeOf(objwithprototype));
+                    console.log(prototypeof.isPrototypeOf(objwithprototype));
+                    
+                    var test= [];
+                    Object.assign(test, prototypeof);
+                    console.log(test);
+                    console.log(Object.entries(test));
+                    
+                    console.log(typeof test);</code>
+                  <br />
+              <h3>Terms:</h3>
+
+              <strong>mutations</strong> - changing or affecting a source element; a mutation is a side effect. 
+              <br />
+
+              Examples of mutable versus immutable methods: <br /><br />
+
+              <span class="inline-code">Array.prototype.push</span> (source element mutated)
+              <span class="inline-code">Array/prototype.unshift</span>  (source element mutated)
+              <span class="inline-code">Array.prototype.concat</span>  (immutable)
+              <span class="inline-code">Spread Operator (…)</span>  (immutable)
+              <br /><br />
+              <span class="inline-code">Array.prototype.push</span> <strong>
+              does not return</strong> a copy of the array it's used on; rather, it <strong>mutates the original array</strong> by adding a new element and returning the <span class="inline-code">length</span> property of the object upon which the method's called.
+              <br /><br />
+              <span class="inline-code">concat</span> does not mutate - the goal with mutations versus immutables is<strong>keeping the source array untouched</strong> (to prevent side effects).
+
+              <strong>shallow copies vs deep clones</strong> - use <span class="inline-code">cloneDeep</span> if the elements of the source array are other arrays or objects that need to be kept untouched. Deep cloning, however, is very expensive in terms of performance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <b>new</b> keyword - 
+              new constructor[(arguments)]<br />
+              <b>constructor</b> - Special method for creating an object within a class.<br /><br />
+              So JS DOES have classes but they were only introduced in ECMA 2015 ( so constructors are kind of new with JS)<br />
+              class-based - constructors & factory method pattern.<br /><br />
+              <strong>prototypal</strong> - prototype design pattern. Each instance of an object created from the prototype is just a copy.<br />
 
             <h2 id="jsPrototypalVs">Prototypal vs. Classical:</h2>
 
-            <b>Classical inheritance</b> - Aka class inheritance "instances" inherit from classes, like a blueprint (PHP). <br />
-            These are usually instantiated via constructor functions using the new keyword. (PHP) <br />
-            Class inheritance may or may not use the "class" keyword. <br /><br />
+              <b>Classical inheritance</b> - Aka class inheritance "instances" inherit from classes, like a blueprint (PHP). <br />
+              These are usually instantiated via constructor functions using the new keyword. (PHP) <br />
+              Class inheritance may or may not use the "class" keyword. <br /><br />
 
-            <b>Prototypal inheritance</b> - Aka "instances" inherit directly from other objects aka "prototypes".<br />
-            They're usually instantiated via "factory functions" or ex. object.create().<br />
-            Prototypal inheritance is simpler and more flexible than class inheritance.<br />
-            Prototypal inheritance = objects WITHOUT CLASSES, OLOO. <br />
+              <b>Prototypal inheritance</b> - Aka "instances" inherit directly from other objects aka "prototypes".<br />
+              They're usually instantiated via "factory functions" or ex. object.create().<br />
+              Prototypal inheritance is simpler and more flexible than class inheritance.<br />
+              Prototypal inheritance = objects WITHOUT CLASSES, OLOO. <br />
 
             <h2 id="jsPure">Pure Functions</h2>
 
-            A function where the return value is only determined by its input values w/o side-effects. <br />
-            Ex.: math.cos(x). Computing this does not change "x" - doesn't ask for input or change state. <br />
-            So pure = stateless for the most part.
+              A function where the return value is only determined by its input values w/o side-effects. <br />
+              Ex.: math.cos(x). Computing this does not change "x" - doesn't ask for input or change state. <br />
+              So pure = stateless for the most part.
 
             <h2 id="jsRecursion">Recursion</h2>
               <p>
@@ -1587,136 +1907,146 @@
               Each time the function is called, a new local scope is created.
               
               </p>
-
-
-
               <h2 id="jsReturn">Return Statements</h2>
               <p>
               <b>Return</b> - a and b are a function’s parameters, and the value it returns is signified by the return keyword. 
               <li>The return keyword also stops execution of the code in the function; nothing after it will be run.</li>
               <li>Functions without a return, aka “returning nothing”, will end up being “undefined”. Every function is going to return “Undefined” UNLESS you give it a return value. </li>
               <li>A function's return value can be passed to another function as a parameter.</li>
-              </p>
-              
+              </p>            
 
+              <h2 id="jsScope">Scope</h2>       
+                A variable’s <strong>scope</strong> is the portion of code where it’s visible.
+                newline
+                It's important to understand that a <strong>block (identified by a pair of curly braces) does not define a
+                new scope</strong>. A new scope is only created when a function is created, because <span class="inline-code">var</span> does not have block scope, but function scope.
+                <br /><br />
 
-            <h2 id="jsSelectors">Selectors:</h2> 
+                <strong>block scope</strong> - Block = set of curly braces, ex.:
+                <code>
+                if(x > y){
+                ...
+                }
+                </code>
 
-            Use a <b>selector</b> to grab an element, ex.:
-            <code>
-            var numOne = document.getElementById(“num-one”);</code>
+            <h2 id="jsSelectors">Selectors</h2> 
+
+              Use a <b>selector</b> to grab an element, ex.:
+              <code>
+              var numOne = document.getElementById(“num-one”);</code>
 
             <h2 id="jsSide">Side Effects:</h2>
-            <p>
-            <b>side-effects</b> - Any app state change that is observable (aka opposite of pure functions). Side effects are avoided in functional programming. <br /> <br />
-            Ex.: Writing to a file, triggering any external process, logging to the console.
-            </p>
+              <p>
+              <b>side-effects</b> - Any app state change that is observable (aka opposite of pure functions). Side effects are avoided in functional programming. <br /> <br />
+              Ex.: Writing to a file, triggering any external process, logging to the console.
+              </p>
 
             <h2 id="jsRegex">Regex</h2>
-            <p>
-                .replace(/\D/g, '') <br />              
-                <a href="https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285" target="_blank">Regex cheat sheet</a>
-            </p>
+              <p>
+                  .replace(/\D/g, '') <br />              
+                  <a href="https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285" target="_blank">Regex cheat sheet</a>
+              </p>
 
-            <h2 id="jsState">State:</h2>
-            <p>
-            <b>State</b> - Information about something held in memory. The set values that something's attributes have at any given moment (things saved to memory).<br /><br />
-            Ex.: 10, or "HELLO"= By itself is stateless - does not represent any state. (aka pure values)
-            <br />
-            There's a state when these "pure values" are associated to some kind of entities, for ex. objects. <br /><br />
-            Ex.:<br />
-            <code>var car = ("color", "blue"); //properties of "car"
-            </code>
-            <br /> Since car has properties it has a state.
-            It's associated to an "entity" (i.e. class/object I think), but ALSO to a point in time.
-            So if today car = color, blue but tomorrow it's color, black, then black is the new state of that car object.<br /><br />Properties = states.<br />
-            When the properties change, the states change.<br /><br />
-
-
-            <b>Shared state</b> - aka shared mutability. Can be bad because code isn't like containerized or separated or whatever, so it can be a mess.
-
-            </p>
+            <h2 id="jsState">State</h2>
+              <p>
+              <b>State</b> - Information about something held in memory. The set values that something's attributes have at any given moment (things saved to memory).<br /><br />
+              Ex.: 10, or "HELLO"= By itself is stateless - does not represent any state. (aka pure values)
+              <br />
+              There's a state when these "pure values" are associated to some kind of entities, for ex. objects. <br /><br />
+              Ex.:<br />
+              <code>
+              var car = ("color", "blue"); //properties of "car"
+              </code>
+              <br /> Since car has properties it has a state.
+              It's associated to an "entity" (i.e. class/object I think), but ALSO to a point in time.
+              So if today car = color, blue but tomorrow it's color, black, then black is the new state of that car object.<br /><br />Properties = states.<br />
+              When the properties change, the states change.<br /><br />
 
 
-            <h2 id="jsThis">this Operator:</h2>
+              <b>Shared state</b> - aka shared mutability. Can be bad because code isn't like containerized or separated or whatever, so it can be a mess.
 
-            Ex.:<br /><br />
+              </p>
 
-            "John is running fast because <b>he</b> is trying to catch the train".<br /><br />
 
-            The this operator acts like the pronoun "he" - so we don't have to say "John is running fast because John is trying to catch the train".
-            <br /><br />
+            <h2 id="jsThis">this Operator</h2>
 
-            Ex.:
+              Ex.:<br /><br />
 
-            <code>
-            var person = {
-              firstName: "Bob",
-              lastName: "Logg",
-              function fullName(){
-              console.log(this.firstName + this.lastName);
-              console.log(person.firstName + person.Lastname);
-              }
-            }</code>
+              "John is running fast because <b>he</b> is trying to catch the train".<br /><br />
 
-            In this instance, this.firstName is the same as saying person.FirstName, so it just lets you	reference it without being redundant.
+              The this operator acts like the pronoun "he" - so we don't have to say "John is running fast because John is trying to catch the train".
+              <br /><br />
 
-            This is used because there could be a global var w the same name as the one you're interacting with (ex. global person and var person).
-            <br /><br />
-            Ex.:
-            <code>
-            $("button").click(function (event){
-              console.log($ (this).prop ("name"));
-            this will have a val of ($("button"))
-            });</code>
+              Ex.:
 
-            So this can be used in syntax where you need to access an function's props within the function itself ex.:
-            <code>
-            function showFullName(){
-              console.log(this.firstName + this.LastName);
-            }</code>
+              <code>
+              var person = {
+                firstName: "Bob",
+                lastName: "Logg",
+                function fullName(){
+                console.log(this.firstName + this.lastName);
+                console.log(person.firstName + person.Lastname);
+                }
+              }</code>
+
+              In this instance, this.firstName is the same as saying person.FirstName, so it just lets you	reference it without being redundant.
+
+              This is used because there could be a global var w the same name as the one you're interacting with (ex. global person and var person).
+              <br /><br />
+              Ex.:
+              <code>
+              $("button").click(function (event){
+                console.log($ (this).prop ("name"));
+              this will have a val of ($("button"))
+              });</code>
+
+              So this can be used in syntax where you need to access an function's props within the function itself ex.:
+              <code>
+              function showFullName(){
+                console.log(this.firstName + this.LastName);
+              }</code>
 
 
             <h2 id="jsTypes">Types</h2>
 
-            <h3>There are 7 total data types:</h3>
+              <h3>There are 7 total data types:</h3>
 
-            Primitive types: <br />
-            <li>Boolean</li>
-            <li>Null</li>
-            <li>Undefined</li>
-            <li>Number</li>
-            <li>String</li>
-            <li>Symbol(new in ES6)</li>
-            <br />
+              Primitive types: <br />
+              <li>Boolean</li>
+              <li>Null</li>
+              <li>Undefined</li>
+              <li>Number</li>
+              <li>String</li>
+              <li>Symbol(new in ES6)</li>
+              <br />
 
-            Non-primitive types: <br />
-            <li>Object</li><br />
+              Non-primitive types: <br />
+              <li>Object</li><br />
 
-            All types except the non-primitive type, object, define immutable values, incapable of being changed.
-            <br /><br />
-            Function = primitive type<br />
-            Object = complex type<br /><br />
+              All types except the non-primitive type, object, define immutable values, incapable of being changed.
+              <br /><br />
+              Function = primitive type<br />
+              Object = complex type<br /><br />
 
-            Every "thing" in JS - including primitive data types and other things - Ex.: <br /> 
-            <li>Date Object</li>
-            <li>String Object</li>
-            <li>Number Object</li>
-            <li>Math Object</li>
-            <li>Array Object</li>
-            <li>Boolean Object</li>
-            <li>Error Object</li>
-            <li>RegExp Object</li>
-            <br />
-            These are all OBJECTS - as in they have specific PROPERTIES and then METHODS. So Math is an object as well.
-            <br />
-            <h3>Terms:</h3>
+              Every "thing" in JS - including primitive data types and other things - Ex.: <br /> 
+              <li>Date Object</li>
+              <li>String Object</li>
+              <li>Number Object</li>
+              <li>Math Object</li>
+              <li>Array Object</li>
+              <li>Boolean Object</li>
+              <li>Error Object</li>
+              <li>RegExp Object</li>
+              <br />
+              These are all OBJECTS - as in they have specific PROPERTIES and then METHODS. So Math is an object as well.
+              <br />
+              <h3>Terms:</h3>
 
-            <b>Polymorphism</b> - A type whose operations can be applied to values of some other type or types. (ex. int and variables) <br /><br />
+              <b>Polymorphism</b> - A type whose operations can be applied to values of some other type or types. (ex. int and variables) <br />
 
-            <b>Subtypes</b> - Ex. cat is a subtype of animal. So, an expression of type cat can be used anywhere that type animal is used. <br /><br />
+              <b>Subtypes</b> - Ex. cat is a subtype of animal. So, an expression of type cat can be used anywhere that type animal is used. <br />
 
-            <b>Type Theory</b> - When with math they write f: X —> Y, X is the old type, Y is the new type being built from the old, and the arrod is a type constructor that i guess designates this.
+              <b>Type Theory</b> - When with math they write f: X —> Y, X is the old type, Y is the new type being built from the old, and the arrod is a type constructor that i guess designates this.
 
             <h2 id="jsVoid">Void Operator </h2>
 
@@ -1728,11 +2058,129 @@
               
               <li>Can be used to force the function keyword to be treated as an expression instead of a declaration</li>
              
+            <h2 id="jsTips">Tips</h2>
+
+
+              * Chain methods together when possible. <br /><br />
+              * Map with arrow function <br /><br />
+              * Use . notation to access a property <br /><br />
+              * Object syntax (const object = {}; ) <br /><br />
+              * Objects can contain other objects <br /><br />
+
+              * In JS, an empty string returns a false <br /><br />
+              event object = e as parameter  <br /><br />
+              DOM operations tend to be slow - which is why the Virtual DOM (diffing vs. real DOM - only updating what's needed a.k.a. computing minimal DOM  operations) is important.  <br /><br />
+
+              * Properties are accessed as Obj.property, methods are Obj.method().  <br /><br />
+
+              * In loops, i is a loop counter variable; can be thought of as "index"  <br /><br />
+
+              * this.attributes["data-img"] is a different accessor, but same way as saying this.attributes.data-img, but since that's bad syntax you want to use the array accessor instead. <br /><br />
+
+              * modular = isolated = don't use globals typically <br /><br />
+
+              <h4>map vs for loop </h4>
+              
+              Both have their positives:
+              <br /><br />
+              
+              Most developers will understand a for loop and know what you're doing right away. A for loop can be thought of as easier to read.
+              <br /><br />
+              
+              <span class="inline-code">map()</span> 
+              can save you 2 or 3 lines of code.
+              <br /><br />
+              
+              As far as performance goes, <span class="inline-code">map() </span> is built internally with something similar to a for loop, and there might be a few milliseconds of difference when it comes to performance speeds through large enough iterations but that's it.
+              
+              Map and reduce both emphasize <strong>readability</strong> and <strong>maintainability</strong>. <br /><br />
+              
+              
+              <span class="inline-code">forEach()</span>  - executes a provided function (a <strong>callback</strong>) once for each element, but doesn't return anything.
+              <br />
+              <span class="inline-code">map()</span> - executes a provided function (callback) once for each array element, and <strong>creates a new array</strong> with the results of this execution.
+              
+              
+              <h4>Detect client's browser name</h4>
+              <span class="inline-code">navigator.appName</span> 
+              <br />
+              
+              <h4>Find the number with the highest value of x and y</h4>
+              <span class="inline-code">Math.max(x,y)</span>
+              <br />
+              
+              <h4>every() vs filter()</h4>
+              
+              filter() creates an array of all the elements matching the condition in the callback, while every() returns true (boolean) if every element in the array matches the condition in the callback. <br />
+              
+              <h4>Function Calls</h4>
+              <strong>Call</strong>ing a function literally just means saying <span class="inline-code">myFunction()</span>.
+              <br />
+              
+              <h4>for vs forEach</h4>
+              
+              <code>
+              //functionally equivalent
+              
+              for (var i = 0; i < arr.length; i++) {
+                console.log('Element', i, 'is', arr[i]));
+              }
+              
+              arr.forEach(function(element, i) {
+                console.log('Element', i, 'is', element);
+              });
+              </code>
+              *forEach only works on arrays, however. Don't use if you need to count for example.
+              
+              Accumulator vs. Parameter - usually used interchangeably; however, a parameter is something given to a function (declaration, definition or prototype), and an argument is something actually passed when calling that function. Ex.:
+              <code>
+              var test = function(a,b){
+                console.log(a); //both print 10
+                console.log(arguments[0]));
+              }
+              test(10,20);
+              </code>
+              
+              Unfortunately, sometimes algorithm knowledged is just based on knowing quirks: like, there's an array method for reverse, but not for a string. So to reverse a string you have to split it into an array, reverse it, then join it again.
+              
+              <h4>Using apply</h4>
+              .apply - It's common to use apply where you want to use the elements of an array as arguments to a function. <br />
+              
+              <h4>null</h4>
+              null = can be used as a placeholder (for a function's arguments):
+              <code>
+              function myFunction (a, b, c, d){}
+              var args = [0, 1, 2, 3];
+              myFunction.apply(null, args); //apply the array args as arguments to the function myFunction
+              </code>                            
+              
+              <h4>Arguments object</h4>
+              Arguments object - an array-like object accessible inside all functions, containing the values of the args passed to that function. Array-like means <span class="inline-code">arguments</span> has a <span class="inline-code">length</span> property/properties indeed from zero, but doesn't have Array's built-in methods like forEach() and map().
+              <br />
+              
+              <h4>Change content of html element</h4>
+              <code>
+              p id="demo" This is a demonstration. /p
+              document.getElementById("demo").innerHTML = "Hello World!";
+              </code>
+                            
+              <h4>Return last item in array</h4>
+              <code>
+              return array.length-1;
+              </code>
+              
+              <h4>Find the largest number in an array</h4>
+              <code>
+              function findLargest(){
+              return Math.max(…arr) //spreads array into values so it can be operated on I think
+              }
+              </code>
+              
+              <h4>Use dot notation to access a property</h4>
+              
 
             </article>
-
             </section>
-
 
           <section class="main-section" id="jsDoc">
             <header>Javascript Documentation</header>
@@ -1890,7 +2338,7 @@
               //returns kiwi kiwi kiwi
               </code><br />
               
-              <strong><span class="inline-code">filter()</span></strong> creates an array of all the elements matching the condition in the callback. so if a condition is true for a value being filtered, it gets put in the array. Ex.:
+              <strong><span class="inline-code">filter()</span></strong> creates a new array with all elements that pass whatever test is implemented by the provided function (callback). So if a condition is true for a value being filtered, it gets put in the array Ex.:
               <code>
               const isBigEnough = (element) {
                 return element >= 10;
@@ -1898,6 +2346,18 @@
               var filtered = [12, 5, 9, 130, 44].filter(isBigEnough);
               
               </code><br />
+
+              Ex.:
+
+              <code>
+              var words = ['word', 'longword' 'longerword', 'longestword'];
+              
+              var filtering = (words.length > 5);
+              var result = words.filter(filtering);
+              </code>
+
+
+
               
               <span class="inline-code">find()</span> - returns the value of the first element in an array that passes a given test (callback) Ex.:
               <code>
@@ -2050,148 +2510,194 @@
               So, when constructing a property, <strong>ALL arrays are given the property</strong>, and its value, as default. <br />
               When constructing a method, ALL arrays have this method available. <br />
               *So Array.prototype doesn't refer to a single array but <strong>to the Array() object itself</strong>.
-            <h2 id="js2Ex">JS Exercises</h2>
-
-              Write a JavaScript function to split a string and convert it into an array of words: 
+          
+            
+            <h2 id="esParam">Default Parameters</h2>            
+            <h3>Parameter Defaults</h3>
+              <br />
+              *If a function is called with <strong>missing arguments</strong> (less than declared), the missing values are set to <strong>undefined</strong>. <br />
+              Sometimes this is acceptable, but sometimes it's better to <strong>assign a default value to the parameter</strong>:
               <code>
-              var splitted = (str) => {
-                  str.split(" ");
-              };
-              </code><br />
-
-              Write a JS function that checks whether an 'input' is a string or not:
-              <code>
-              var typeCheck = (input) => {
-                  if (typeof input === 'string') {
-                      return true;
-                  } else {
-                      return false;
-                  }
-              };
-              </code><br />
-
-              Write a JavaScript function to extract a specified number of characters from a string:
-              <code>
-              var truncateString = (str, length) => { //string AND specified length need to be params
-                  str.slice(0, length); //start at zero index, then specify number
-              };
-              truncateString("Billy Bob", 4);
+              const myFunction = (x, y) => {
+                if (y === undefined) {
+                y=0;
+                }
+              };	//x is not called but is defined for clarity's sake
               </code>
-
-              Create a function that accepts an array and returns the last item in the array:
+            
+            <h3>JS Parameter rules</h3>
+              <br />
+              *Javascript function definitions do not specify <strong>data types</strong> for parameters. <br />
+              *Javascript functions do not perform <strong>type checking</strong> on the passed arguments. <br />
+              *Javascript functions do not check the number of arguments received.
+              
+            <h2 id="esFor">for…of Loop</h2>
+              
+              <span class="inline-code">for…of</span> iterates through a list of elements, like an array, and <strong>returns the elements</strong> (not their indexes) one by one. Ex.:
               <code>
-              function getLastItem(arr) {
-                var popped = arr.pop();
-                return popped;
+              let arr = [2, 3, 4, 1];
+              for (let value of arr) {
+                console.log(value);
               }
+              
+              //Output:
+              //2
+              //3
+              //4
+              //1
               </code>
-
-
-              Calculate number of digits in a given number:
+            
+            <h2 id="esSpread">Spread Attributes</h2>
+              Introduced in ES6, <span class="inline-code">spread</span> allows an <strong>iterable</strong> (i.e. something that can be iterated over) to "spread" or expand, individually, inside a <strong>receiver</strong>. <br />
+              <br />
+              
+              The <span class="inline-code">spread operator […]</span> is used to "spread" something, like a string stored in a variable being called using that operator, ex.: <span class="inline-code">[…codeburst] //codeburst is a string stored in a var, and contains 'CODEBURST'</span> .
+              
+              An example is <strong>
+              using an array with 3 indexes to "spread" into a function that takes 3 arguments.</strong> <br /><br />
+              
+              An <strong>iterable</strong> can be a string, an array, a set, or anything that can be looped over. Ex.:
+              
               <code>
-              function findDigitAmount(num) {
-                var strung = num.toString();
-                return string.length;
-              }
-              </code><br />
-
-              Write a function that determines and classifies the missing angle as either "acute", "right", or "obtuse":
-
+              var phrase = 'PHRASE';
+              var characters = [ …phrase ]; //spreading the string 'PHRASE'
+              // [ 'P', 'H', 'R', 'A', 'S', 'E']
+              </code>
+              <br />
+              *Spread (ES6) is more or less interchangeable with the apply method. <br />
+              *Spread can also remove a key from an object without mutation.
+              
+            <h2 id="esMaps">Maps</h2>
+            
+              <strong>Maps</strong> are different from the <span class="inline-code">map()</span> method. Maps hold <strong>key-value pairs</strong>. They're similar to an array, but you can define your own indexes; indexes are also unique in maps. Ex.:
               <code>
-
-              // //An acute angle is smaller than 90 degrees.
-              // //A right angle is 90 degrees.
-              // //An obtuse angle is greater than 90 but smaller than 180.
-
-              function missingAngle(angle1, angle2) {
-                if (180 - angle1 - angle2 < 90) {
-                  return "acute";
-                } else if (180 - angle1 - angle2 == 90) {
-                  return "right";
-                } else if (180 - angle1 - angle2 > 90 && 180 - angle1 - angle2 < 180) {
-                  return "obtuse";
+              var NewMap = new Map() //insantiates a new Map() object, NOT calling the map() method
+              NewMap.set('name', 'Sam');
+              NewMap.set('id', '234935');
+              NewMap.set('interest', ['javascript', 'node']);
+              
+              NewMap.get('name'); //Sam
+              NewMap.get('id'); //234935
+              NewMap.get('interest'); /['javascript', 'node']
+              </code>
+              
+            
+            <h2 id="esSets">Sets</h2>
+              
+              <strong>Sets</strong> - are very simple - they're used to store the unique values of any type. A <strong>set</strong> is a collection of items which are <strong>unique</strong>, i.e. no element can be repeated. <br />
+              Syntax:
+              <code>
+              set1.add(val);
+              
+              //Parameter:
+              //val - value to be added to set
+              
+              //Returns:
+              the set object
+              </code>
+              <br />
+              Example:
+              <code>
+              var set1 = new Set(); //create a new empty set
+              
+              set1.add(10);
+              set1.add(20);
+              </code>
+            
+            <h2 id="esStatic">Static Methods</h2>
+              <strong>Static methods</strong> - intended to provide <strong>class-specific</strong> methods for OOP in Javascript. <br />
+              Static methods are similar to class methods in Ruby. <br />
+              To declare a static methods, prefix a <strong>method declaration</strong> with the word <strong>static</strong> inside the <strong>class declaration</strong>, ex.:
+              <code>
+              class myClass(){
+                static methodName(){
+                  console.log("something");
                 }
-              }
-              </code><br />
-
-              Create a function that takes in 3 params:
-              <code>
-              //1. Probability of winning
-              //2. Prize value
-              //3. Cost of playing
-              //and returns whether or not the gamble is profitable.
-              //A profitable gamble will be a game that yields a positive net profit; net profit is calculated as: 
-              //net_outcome = probability_of_winning * prize_value - cost_of_playing
-
-              const profitableGamble = (prob, prize, pay) => {
-                var net_outcome = prob * prize - pay;
-                if (net_outcome > 0) {
-                  return true;
-                } else {
-                  return false;
-                }
-              };
-              </code><br />
-
-              Create a function that finds all even numbers from 1 to the given number:
-              <code>
-              const findEvenNums = num => {
-                var val;
-                while (1 < val < num) {
-                  if (num % 2 == 0) {
-                    return val;
-                  } else return [];
-                }
-              };
-              </code> <br />
-
-              Write a JavaScript function to extract a specified number of characters from a string:
-              <code>
-              var truncateString = (str, length) => { //string AND specified length need to be params
-                  str.slice(0, length); //start at zero index, then specify number
-              };
-              truncateString("Billy Bob", 4);
-              </code> <br />
-
-              Capitalize the first letter of each word in a string:
-              <code>
-              var capitalize = (str) => {
-                  var splitted = str.split("").charAt[0].toUpperCase() + str.slice(1);
-                  var joined = splitted.join("");
-              };
-              </code> <br />
-
-              Check for a prime number:
-
-              <code>
-
-              //A prime number is divisible only by itself and 1.
-              //You can use a while loop and increase by 1.
-              //If a number is divisible by any even number, it will be divisibly by 2.
-
-              function isPrime(n){ //check if an in out n is prime
-                var divisor = 2; //use to determine a number is prime or not by being divisible by 2
-                
-                while (n > divisor){ //as long as n is greater than 2,
-                  if(n % divisor == 0){//if n can be divided by 2, return false
-                    return false;
-                  } else
-                  divisor++; //else increment 
-                }
-                return true;
               }
               </code>
+              
+              Static methods are often used to create <strong>utility functions</strong> for an application.
+            
+            <h2 id="esGetSet">Getters and Setters</h2>            
+            <h3>Basics</h3>
+              <strong>Getters and setters</strong> are useful if you use JS classes. They're <strong>accessor properties</strong>, represented as "getter" and "setter" methods, and are denoted by <span class="inline-code">get</span> and <span class="inline-code">set</span>.  <br /><br />
+              The getter works when <span class="inline-code">obj.propName</span> is <strong>read</strong>; the setter works when <span class="inline-code">obj.propName</span> is being <strong>defined</strong>. <br /><br />
+              
+              Accessor properties <strong>are only accessible with get/set</strong>. <br />
+              A property can either be a <strong>data property</strong> or an <strong>accessor property</strong>, but not both. <br /><br />
+            
+            <h3>Get</h3>
+              
+              <span class="inline-code">get</span> - a function without arguments; works when a property is <strong>read</strong>.
+              
+              Get example:
+              <code>
+              let user = {
+                name: "John",
+                surname: "Smith",
+              
+                get fullName() { //notice that get has no argument
+                  return '${this.name} ${this.surname}';
+                }
+              };
+              </code>
+            
+            <h3>Set</h3>
+            
+              <span class="inline-code">set</span> - a function with <strong>one</strong> argument; called when the property is being set. Ex.:
+              
+              <code>
+              let user = {
+                name: "John",
+                surname: "Smith".
+              
+                set fullName(value){ //notice that set has one argument being set
+                  [this.name, this.surname] = value.split(" ");
+                }
+              };
+              </code>
+              
+              <h2 id="esDestruc">Destructuring</h2>
 
+                The <strong>destructuring assignment</strong> syntax is a Javascript <strong>expression</strong> that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+                <br /><br />
+                Basic assignment example:
+                <code>
+                var o = {p: 42, q: true};
+                var {p, q} = o;
+                //this destructures an object
+                </code>
+            
+            <h2 id="esPromise">Promises</h2>
+              
+              <strong>Promises</strong> either succeed or fail, once.
+              <br /><br />
+              Have a state of either <span class="inline-code">fulfilled</span>, <span class="inline-code">rejected</span>, <span class="inline-code">pending</span> 
+              or <span class="inline-code">settled</span>.
+              newline
+              
+              Example of a promise that <strong>resolves immediately</strong>:
+              <code>
+              var p1 = Promise.resolve("Resolve Me")
+              
+              p1.then
+              
+              //then is a function that takes two optional arguments, being first a. a callback for success, and b. another for failure * these are optional
+              </code>
+              
+            <h3>Terms</h3>
+              
+              .then <br />
+              (res) <br />
+              Promise.resolve <br />
+              Promises guide <br />
+                  
+            super - keyword used to access and call functions on an argument's parent. <br />
+            Ex. super([something]); //calls parent constructor <br /><br />
+              
+            progressive web apps - designed to deliver an experience similar to native apps. One of the most significant abilities for this to occur is for the "app" to function when offline, which can be accomplished using service workers. <br /><br />
 
-
-
-
-
-
-
-
-
-
+            progressive web apps &lt;-&gt; service workers
 
 
 
@@ -2205,14 +2711,6 @@
 
 
             </article>
-            </section>                  
-                      
-
-          <section class="main-section" id="ECMAScript6">
-            <header>ES6 (ECMAScript 2015)</header>
-            <article> 
-            </article>
-
             </section>
 
           <section class="main-section" id="jQuery">
@@ -2264,7 +2762,7 @@
                 <li>by class: $(".btn")</li>
                 <li>by id $("#target1").</li>
                 
-                _
+               
                 
                 <h2>Target the Parent of an Element Using jQuery</h2>
                 
@@ -2317,6 +2815,31 @@
               boolProp: true
             }; 
             </code>
+
+
+
+            <h2>Objects and Operations</h2>
+
+            Types of operations you can perform on an object:
+            
+            [table]
+            Creation - Creating a new object.
+            Addition - Adding properties to an object.
+            Reading/Retrieving - Reading the <strong>value</strong> associated with a <strong>key</strong>.
+            Existence - Whether a property exists in an object.
+            Updation - Updating the values of existing properties.
+            Deletion - Deleting existing properties.
+            Iteration (Enumeration) - Looping over an object's <strong>keys and values</strong>.
+            Comparison - Comparing two different objects.
+            Copying - Making a copy of an existing object.
+            
+            <h3>Creation</h3>
+            
+            Properties of an object <strong>are just like variables</strong>.
+
+
+
+
 
             <h2>Class vs Object:</h2>
 
@@ -2413,7 +2936,8 @@
                  
                 <a href="https://colintoh.com/blog/lodash-10-javascript-utility-functions-stop-rewriting" target="_blank" rel="noopener noreferrer">Lodash Basics    </a>
 
-
+                <h3>Modernizr</h3>
+                Modernizr - about standardized feature detection. lets you detect HTML5/CSS3 features, and lets JS avoid using unimplemented features, or use a workaround to emulate them. 
 
 
 
@@ -2424,11 +2948,39 @@
               <h3>socket.io</h3>
               <h3>three.js</h3>
               <h3>vue</h3>
-              <p>          
+                <p>          
                 <li>designed to be more of a complete package</li>
                 <li>considered easier for beginners than react/li>
                 <li>react has a larger user base and job opportunities</li>
                 </p>
+              <h3>Webpack</h3>        
+                <strong>code splitting</strong> - don't load code that you don't need to. helps reduce js payloads. <br /><br />
+
+                <strong>lazy loading</strong> - "on-demand" loading - involves splitting code at logical breakpoints, then loading it once the user has done something that requires or will require a new block of code. <br />
+                
+                This speeds up the initial load of the app, and lightens its overall weight as some blocks might never be loaded. <br /><br />
+                
+                Webpack converts dynamic code and modules into static assets. <br /><br />
+                
+                So it takes modules, which can be custom or downloaded from npm, and generates static assets to represent those modules. <br /><br />
+                
+                You can take a fully dynamic application and package it into static files to deploy to the server. You can also extend webpack with plugins and loaders.
+                
+                <strong>modules</strong> - abstraction, encapsulation, usually delegates functions to libraries so we don't really have to understand them. ><<<<<<<<<<<<<
+                <br /><br />
+                
+                So abstraction is about *not* knowing the ins and outs of something or having to - just a. requiring it and b. being able to use the public API that's exposed.
+                <br /><br />
+                
+                <strong>loaders</strong> - can be used to transform other resources into js (so a loader is the same thing as a transpiler essentially),
+                
+                
+                <strong>clever parsing</strong> - require("./templates/" + name + ".jade") - in Webpack, this allows you to parse essentially any third-party library.
+                <br /><br />
+                
+                So something like app.bundle.js (where the code's all crazy af and looks minified) is all the modules bundled into one file from the entry point AND its dependencies.
+                
+
 
             </article>
             </section>      
@@ -2436,7 +2988,37 @@
             <section class="main-section" id="React">
                 <header>React</header>
                 <article> 
-          
+
+                <h2>Basics</h2>
+
+                  React in itself has a very small API, and you basically need to understand 4 concepts to get started: <br />
+                  Components <br />
+                  JSX <br />
+                  State <br />
+                  Props <br />
+
+                <h3>module.exports</h3>
+                  Example:
+                  <code>
+                    module.exports = {
+                      entry: '.src/index.js',   //specify react entry file
+                      output:{
+                          path: path.join(__dirname, '/dist'),
+                          filename: 'index_bundle.js'
+                      },
+                      module: {
+                          rules: [
+                              {
+                                  test: /\.js$/,
+                                  exclude: /node_modules/,    
+                                  use: {
+                                      loader: 'babel-loader'
+                                  }
+                              }
+                          ]
+                      }
+                    }
+                  </code>
                 <h3>Tips</h3>               
                   
                   *React is best for large programs that display a lot of changing data. <br />
@@ -2527,1184 +3109,21 @@
                   
                   export const processorsReducer = (state = {})              
                   </code>
+
+                  <h3>create-react-app</h3>
+
+                    Adds: <br />
+                    <span class="inline-code">npm run build </span>  <br />
+                    <span class="inline-code">npm test </span> | run testing suite using jest  <br />
+                    <span class="inline-code">npm eject </span>  <br />
+                    
+
     
                 </article>
                 </section>               
             
 
-          <section class="main-section" id="API">
-            <header>3rd-party APIs</header>
-            <article> 
 
- 
-            Payment Request API <br />
-            Credential Management API <br />          
-             <a href="https://apilist.fun/" target="_blank" rel="noopener noreferrer">Huge List of APIs (874 total)</a> <br />
-
-                
-                
-
-
-            </article>
-            </section>                  
-         
-
-
-            
-          <section class="main-section" id="OpenSource">
-            <header>Open-Source Basics</header>
-            <article> 
-
-              <p><strong>pull request</strong> - A method of submitting contributions to an open development project. A pull "request" occurs when a developer asks for changes committed to an external repo to be considered for inclusion in a project's main repo.</p>
-              <p>It's called a pull request because you're requesting the target repo to please "pull" your changes in from your own repo/copy of their repo.</p>
-              
-            </article>
-            </section>                  
-        
- 
-               
-
-          <section class="main-section" id="DevTools">
-            <header>Chrome DevTools</header>
-            <article>
-            </article>
-            </section>
-
-
-
-
-
-            
-            
-          <section class="main-section" id="Terminal">
-                <header>Terminal commands</header>
-                <article>
- 
-                  <li> <b>./filename.extension</b>	| run file within directory</li>
-
-                  <li><b>cd</b>| home
-                    <ul> <b>modifiers</b>:</ul>
-                    <ul>&nbsp; cd <b>[folder]</b> | navigate to folder (case-insensitive)</ul>
-                    <ul>&nbsp; cd <b>/</b>	| root directory</ul>
-                    <ul>&nbsp; cd <b></b>-</b>	| previous directory (back)</ul>
-                    <ul>&nbsp;  cd <b>..</b>	| up one directory</ul>
-                    <li> <b>clear</b>	| clears screen</li>
-                  <li> <b>[command-a] | [command-b]</b>	| pipe: run a then pass result to b</li>
-                  <li> <b>grep [searchpattern] [file]</b>	|	Search all lines in file that contain pattern, ex.: grep "Bob" file.txt</li>
-                    <li><b>less</b> | output contents of file</li>
-
-                    <li> <b>mkdir</b>	| create directory</li>
-                    <li> <b>touch</b>	| create empty file (can string file names!)</li>                    
-                    <li> <b>pwd</b>	| shows present working directory</li>
-                    <li> <b>rm</b>	| remove (delete) file</li>
-                    <li> <b>chmod</b>	| change file permissions</li>
-                    <li> <b>cUrl</b>	| command to transfer data to or from a server</li>
-
-                    <h3>Commands</h3>
-                    <li><strong>q</strong> | quit sub-screen and return to Terminal </li>
-                    <li><strong>ctrl + c</strong> | stop current process </li>
-                    <li><b>ls</b> | short listing </li>
-                    <ul> <b>modifiers</b>:</ul>
-                    <ul>&nbsp; ls <b>-l</b>	| long listing</ul>
-                    <ul>&nbsp; ls <b>-a</b>	|
-                       incl. hidden files</ul>
-                    <ul>&nbsp; ls <b>-R</b>	| entire content of folder recursively</ul>
-
-                    <h3>Extensions</h3>
-                    <h4>VS Code</h4>
-                    <ul><b>code [filename]</b> | open file in VS Code </ul>
-
-                    <h4>npm</h4>
-
-                    <ul><strong>npm install <package>@<version></strong>|  install a specific version, even an older one that overwrites a newer one (downgrade)</ul> 
-                    <ul><strong>npm outdated</strong>| checks for outdated packages</ul> 
-                    <ul><strong>npm audit </strong>| runs security audit</ul> 
-                    <ul><strong>npm build</strong>| build a package</ul> 
-                    <ul><strong>npm test</strong>| test a package (have to be specified)</ul> 
-                    <ul><strong>npm uninstall </strong>| remove a package</ul>          
-                    <ul><strong>npm update</strong>| update a package</ul>             
-                    <ul><strong>npm link</strong>| creates a <a href="https://docs.npmjs.com/cli/link.html" target="_blank">global link</a> (symlink)</ul>   
-                    <ul><strong>npm whoami</strong>| show login credentials</ul>   
-                    <ul><strong>npm login</strong>| login using credentials</ul>   
-                    <ul><strong>npm publish</strong>| publishes package to npm</ul>   
-
-                    <br />
-                    <ul><strong>—save</strong>| add to package.json dependencies - saves package required for application to run</ul> 
-                    <ul><strong>—save-dev</strong>| used to save the package for development purpose. Example: unit tests, minification, etc.</ul> 
-                    <ul><strong>—unsafe-perm</strong>| suppress UID/GID switching when running package scripts</ul>                                                                                                                         
-
-                    <h4>Git</h4>
-
-                    <ul><strong>git config —global user.name " " </strong>|  configure author name to be associated with commits</ul> 
-                    <ul><strong>git config —global user.email cool@example.com</strong>| configure author email</ul> 
-                    <br />  
-                    <ul><strong>git init </strong>| create a new local repo</ul>      
-                    <ul><strong>git add <filename> / *</strong>| add one or more files to staging index</ul>      
-                    <ul><strong>git commit -m ""</strong>| commit changes to head but not yet to remote repo</ul>      
-                    <ul><strong>git push origin master </strong>|  send changes to the master branch of remote repo</ul>    
-                    <br />    
-                    <ul><strong>git status</strong>| list files that have been changed/still need to be committed</ul>      
-                    <ul><strong>git clone /path/to/repository </strong>| create a working copy of a local repo (aka checkout)</ul>      
-                    <ul><strong>git remote add origin <server></strong>| connect local repo to remote server if not done already</ul>      
-                    <ul><strong>git pull </strong>| fetch and merge changes on the remote server to working directory</ul>      
-                    <ul><strong>git checkout <branchname></strong>| switch from one branch to another</ul>      
-                    <ul><strong>git checkout -b <branchname> </strong>| create a new branch and switch to it</ul>      
-                    <ul><strong>git branch</strong>|  list all branches in repo and output the branch you're currently in</ul>      
-                    <ul><strong>git grep ""</strong>| search working directory for string or regex</ul>      
-                  
-                    <br />
-                    <a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html" target="_blank">Full list of git CLI commands</a>
-
-
-
-
-                </article>
-            </section>
-
-          <section class="main-section" id="Git">
-            <header>Git</header>
-            <article> 
-
-            <p><strong>Continuous integration</strong> - Continuous integration - When Git, Gulp or something similar, and a cloud platform are used to automate the build and testing of code every time a team member commits changes to watched files (which with Git is usually the entire repo).
-            </p>
-
-            <p>
-              Committing code triggers an automated build system to grab the latest code from the shared repository and to build, test, and validate the full master branch.
-            </p>             
-        
-              <h2>Terms</h2>
-
-            reverting modifications <br />
-            merging upstream updates
-
-            </article>
-            </section>    
-            
-          <section class="main-section" id="Gulp">
-            <header>Gulp</header>
-            <article> 
-
-            <h2>Gulp vs. Webpack</h2>
-            <p>
-            <strong>Webpack</strong> - like Gulp. It's a bundle system that takes files like SASS files or JS files with modules and dependencies or images that are connected in some way, and bundles them into standard JS, CSSm PNG and JPG files. This "bundling" is essentially the same as the build process. <br /> <br/>
-            </p>
-            Webpack does many of the same things as Gulp: <br /> <br/>
-            
-            -Takes files, runs them through some form of conversion/transpiling <br />
-            -Spits out something the browser can understand
-            
-            <p>
-            If you need to do basic bundling, just stick with Gulp. But if mixing in multiple JS files and maybe having some of them split up in certain ways, or if you need to have jQuery and Bootstrap split out but still want to share them between files,or if you need multiple HTML files then look at Webpack.
-            </p> 
-
-            <a href="https://blog.vanila.io/webpack-what-is-it-and-is-it-better-than-gulp-375db8011d22" target="_blank">
-              Gulp vs. Webpack
-              </a>
-
-            </article>
-            </section>             
-
-          <section class="main-section" id="SDP">
-            <header>Software Design Principles</header>
-            <article> 
-            <h2 id="sdpBasic">SDP and Programming Basics</h2>
-            <h3 id="sdpLife">Program Lifecycle Phase</h3>
-              
-              How a program runs - (program lifecycle phase) <br /><br />
-              
-              1. <strong>Edit</strong> time
-              2. <strong>Compile</strong> time
-              3. <strong>Link</strong> time - 
-              4. <strong>Distribution</strong> time - 
-              5. <strong>Installation time</strong>
-              6. <strong>Load time</strong>
-              7. <strong>Run time</strong>
-              
-              <h4>Edit time </h4>
-              
-              This is when the source code of the program is being edited. This spans from initial creation to any a. bug fix, b. refactoring, or c. addition of new features. <br /><br />
-              
-              Editing is typically performed by a person, but aotmated design tools and metaprogramming systems may also be used. <br />
-              
-              <h4>Compile time</h4>
-              
-              When source code is translated "down" (I think) into machine code by a compiler. This partly involves language checking, such as ensuring proper use of the type system. <br /><br />
-              
-              The result of successful compilation is an executable. 
-              
-              <h4>Link time</h4>
-              
-              Connects all necessary machine code components of a program, <strong>including externals</strong> .
-              It is very common for programs to use functions implemented by ext libraries, 
-              <strong>all of which must properly be linked together.</strong> <br /><br />
-              
-              There are two types of linking: <strong>static linking</strong>, which is when the connection is made by the compiler. It always occurs prior to execution.
-              
-              <strong>Dynamic linking</strong>, however, is performed by the operating system just before, or even during execution.
-              
-              <h4>Distribution time</h4>
-              
-              When a copy of the program is being transferred to a user.
-              This dist format is typically an executable, bit it can also be the source code, especially for a program writtn in an <a href="https://en.wikipedia.org/wiki/Interpreted_language" target="_blank">interpreted language</a>.
-              Distribution can be physical media such as a USB drive, or a remote download via the Internet.
-              
-              <h4>Installation time</h4>
-              
-              This gets the distributed program ready for execution on the user's computer, which often includes storing executables for future loading by the operating system.
-              
-              <h4>Load time</h4> 
-              
-              When the OS takes the program's executable from storage, such as a hard drive, and <strong>places it into active memory</strong>, in order to begin execution.
-              
-              <h4>Run time</h4>
-              
-              This is the execution phase, when the CPU executes the program's <strong>machine code</strong> instructions. Programs may run indefinitely. If execution terminates, it will either be normal and expected behavior, or result in an abnormality such as a crash.
-              
-              
-            <h3 id="sdpFunc">Functional Programming</h3>
-              
-              Functional programming involves mathematical "functions". <br /><br />            
-              Pros: 
-              
-              <li>Using the functional paradigm. you can avoid shared state/side-effects, eliminating bugs from multiple functions competing for the same resources</li>
-              <li>More generally reusable code compared to OOP</li>
-              
-              Cons: 
-              
-              <li>Potentially reduce readability</li>
-              <li>Not everyone understands functional programming as well as OO/imperative</li>
-              <li>OOP = more conversational since it's more popular, functional = more academic and formal </li>
-              <br />
-              <strong>OOP</strong> - tends to be imperative rather than declarative. <br />
-              
-              <p>Pros: Somewhat straightforward</p>
-              <p>Cons: Typically depends on shared state.</p>
-              <h4>Subset and Superset</h4>
-              
-              
-              With A and B, if A is B is a superset of A, then all of A is contained in B (and then extended), so all elements of A are also elements of B, so where B is a superset of A, then  A is a subset of B (the subset is the smaller thing that is contained in another thing).
-            
-            <h3 id="sdpProb">SDP Problems</h3>
-            
-              dependency hell <br /><br />
-            
-            <h3 id="sdpMVC">MVC</h3>            
-              
-              1. The <strong>model</strong> represents the data <br />
-              2. The<strong> view</strong> displays the model data (aka UI elements) <br />
-              3. The view, when interacted with, sends user actions (i.e. clicks etc) to the <strong>controller</strong>. The controller <strong>evaluates HTML expressions</strong>. <br />
-              
-              <h4>2-way data binding vs 1-way data flow</h4>
-              
-              In 2-way binding, UI fields are bound to model data dynamically so the user updates the the UI field and the model changes as well, and vice-versa. <br /><br />
-              
-              1-way data flow means the model is the single source of truth. <br /><br />
-              
-              Controller example: <br /><br />
-              
-              When a call is made to: <br />
-              http://example.com/news/latest/10 <br /><br />
-              
-              We can imagine there's a controller named "news". <br />
-              The method being called on news would be "latest". <br />
-              That news method's job could be to grab 10 news items, and render them on the page.  <br /> <br />
-              
-              MVC URL Patterns: <br />
-              http://example.com/[controller-<strong>CLASS</strong>]/[controller-<strong>METHOD</strong>]/[<strong>ARGUMENTS</strong> (for method)] <br /><br />
-              
-              This is typical, although it can change as URL schemes become more complex.
-              <br />
-            
-            <h3 id="sdpMicro">Microservices vs. Monolithic</h3>
-            
-            
-              Microservices are <strong>loosely coupled</strong>, collaborating services (utilizing service-oriented architecture). <br />
-              Services communicate using either synchronous protocols such as HTTP/REST/GRAPHQL or async protocols such as AMQP. <br />	
-              <strong>Each service has its own database in order to be DECOUPLED from other services.</strong>
-              <br /><br />
-              
-              They're referred to as "micro" services for a reason: the amazon.com website application calls 100-150 services to get the data used to build a web page. <br /><br />
-              
-              Most large scale websites (Amazon, Netflix etc) have evolved from a monolithic to a microservice architecture. <br /><br />
-              
-              Example of services:
-              An app might have order or customer management "services".
-              <br />
-              
-              <h4>Use cases</h4>
-              
-              When do you need to use microservices?<br />
-              -When you have an app that's scaling and the developers to support it<br />
-              -When you need to take advantage of continuous deployment<br /><br />
-              
-              Microservices are useful when you have an application that may have/need:<br />
-              
-              <li>Integration with other apps via web services, etc.</li>
-              <li>Handle HTTP reqs and msgs by executing business logic</li>
-              <li>Access a database</li>
-              <li>Exchange msgs w other systems</li>
-              <li>Return an HTML/JSON response</li> <br />
-              
-              Example of when you need to utilize microservices: <br /><br />
-              
-              1. There's a team of devs working on the app <br />
-              2. New members must quickly become productive<br />
-                (So I could get assigned something that's tracked in Trello, etc. - integrated with Github - probably slack as the communication)<br />
-              3. App <strong>must be easy to understand and modify </strong> (clear documentation)<br />
-              4. You want to practice <strong>continuous deployment</strong> of the app <strong>(XP)</strong>
-              5. You must run <strong>multiple copies</strong> on <strong>multiple machines</strong> in order to satisfy <strong>scalability</strong> and availability requirements. (cloud)
-              6. You want to take advantage of emerging tech (frameworks, langs, etc.)
-              7. You need data consistency.
-              <br />
-              
-              <h4>Benefits and Drawbacks of Microservices</h4>
-              
-              Benefits:
-              -Microservices are relatively small <br />
-              -IDE is faster making devs more productive <br />
-              -App starts faster, speeding up deployments <br />
-              -Each service can be deployed independently of other services - escapes dependency hell
-              -Scalability <br />
-              -Each team can therefore develop, deploy and scale their services independently of all other teams <br />
-              -Eliminates any long-term commitment to a tech stack (i.e. vendor lock) <br /> <br />
-              
-              Drawbacks:
-              -Devs must deal with extra complexity of creating a <strong>distributed system</strong> <br />
-              -Dev tools / IDE's are usually oriented with building MONOLITHIC apps, and <strong>don't provide explicit support for developing distributed apps </strong> <br />
-              -Testing becomes more difficult <br /><br />
-              
-              How to partition the system into microservices: <br /><br />
-              
-              -Separating by use case, for example "Shipping Service" is one use so any relevant code can be bundled into that as necessary. Then you might have an "Account Service" that may need different resources from said Shipping Service. <br />
-              -Implementing queries that need to retrieve data owned by multiple services (async taken into consideration)<br />
-
-            <h3 id="sdpAgile">Agile Development</h3>
-            
-              <a href="images/agile-workflow.png" target="_blank">Agile development workflow graphic</a>
-
-              <strong>AGILE</strong> - Requirements and solutions evolve through the collaborative effort of self-organizing, cross-functional teams.
-              <br /> <br />
-              -Adaptive planning <br />
-              -Evolutionary dev <br />
-              -Early delivery <br />
-              -Continuous improvement  <br />
-              -Rapid and flexible response to change <br />
-
-
-            <h3 id="sdpSolid">S O L I D</h3>
-
-              <strong>S</strong>ingle responsibility principle  <br />
-              <strong>O</strong>pen/closed principle  <br />
-              <strong>L</strong>iskov substitution principle  <br />
-              <strong>Interface</strong> segregation principle  <br />
-              <strong>D</strong>ependency inversion principle  <br />
-
-              <strong>Single responsibility principle</strong> - <br />
-              A CLASS should have only a single responsibility (reduce coupling) <br /><br />
-
-              Open/closed principle -  <br />
-              Software entities should be open for extension but closed for modification <br /><br />
-
-              Liskov substitution principle -  <br />
-              Objects in a program should be replaceable w instances of their subtypes, w/o altering the correctness of that program. <br /><br />
-
-              Interface segregation principle -   <br />
-              Many client-specific interfaces are better than one general-purpose interface. <br /><br />
-
-              Dependency inversion principle -  <br />
-              One should depend on abstractions not concretions (a.k.a. explicit) <br /><br />
-
-
-            <h3 id="sdpState">States and State Management</h3>
-	
-              State is a very important consideration when developing SPAs. <br /><br />          
-              
-              <strong>State management</strong> is the practice of putting all of the dynamic values of an application — user inputs to a form, the current page's posts — in one place.  <br /><br />                           
-              Some state is server-based (AJAX, <strong>websockets</strong>), but a lot of state has nothing to do with a server: <span class="inline-code">isPlaying</span>, <span class="inline-code">isTyping</span>, etc.
-
-
-
-            <h3 id="sdpService">Service Workers</h3>
-
-              <strong>Service workers</strong> - a fundamental technology in the future web platform. They're scripts that the browser runs in the background, separate from a web page (almost like the web browser version of a daemon). They enable you to access features that don't need a web page or user interaction, like push notifications, background sync and offline experiences.
-              <br /><br />
-              
-              Main aspects: <br />
-              
-              <li>Life Cycle</li>
-              <li>Registration</li>
-              <li>High Performance Loading</li>
-              <li>HTTPS (required)</li>
-              
-              
-              <a href="https://developers.google.com/web/fundamentals/primers/service-workers/" target="_blank">
-              Introduction to service workers
-              </a>
-
-
-              
-
-              
-            <h3 id="sdpArch">Software Architectures</h3>
-              
-              <strong>Two-tier architecture</strong> - Software architecture where a <strong>presentation layer</strong> or interface (or view or UI) runs on a <strong>client</strong> (the computer, for example), and a <strong>data layer</strong> or data structure gets stored on a server. <br /><br />
-              
-              <strong>Three-tier architecture</strong> - <br /><br />
-              
-              PRESENTATION LAYER 	(client computers) <br />
-              BUSINESS LOGIC	          (application server) <br />
-              DATABASE		          		(database server) <br />
-                  
-                  
-
-            <h3 id="sdpFlow">Flow Chart Basics</h3>
-
-              An <strong>oval</strong> shape is used to indicate the <strong>start</strong> and <strong>end</strong> of the program.
-              <br /><br />
-              A <strong>parallelogram</strong> is used to indicate <strong>
-              input</strong> and <strong>output</strong> operations.
-              <br /><br />
-              A <strong>rectangle</strong> is used to indicate <strong>operations like assignment, expressions, etc.</strong>
-              <br /><br />
-              A <strong>diamond</strong> shape indicates a decision operation, i.e. <strong>conditions</strong>.
-              A <strong>hexagon</strong> shape indicates <strong>loops, iterations, or repititions</strong>.
-              <br /><br />
-              <strong>Arrows</strong> indicate the direction/flow of execution
-              A <strong>circle</strong> is used when a flowchart spreads to more than one page; it's used to indicate connection between them.
-            
-
-
-
-            <h3 id="sdpDefine">Definitions</h3>
-              
-              <strong>Modularization</strong> - attempts to be an answer to the JS scalability question. <br />
-              However it adds another layer of API that developers have to get familiar with.<br />
-              By splitting code and functionality into smaller modules it's easier to solve problems in your code and <strong>to work in a team on the same codebase</strong>.
-              <br /><br />
-              
-              *Every module should have exactly one purpose and task to do. <br />
-              *A module doesn't know about the outside logic of the application, and can be reused in different locations in situations (loose coupling).<br /><br />
-              
-              <strong>invariant</strong> - a statement about something that is held to be true, like a meta property of anything that's always true (or true under certain conditions).<br /><br />	
-              
-              <strong>read-only</strong> - An object that does not expose any way to change it. However, read-only objects are allowed to change.<br /><br />
-              
-              <strong>Imperative</strong> - Imperative program consists of commands for the computer to perform. brtag
-              Ex. low level languages, since the way computer hardware is designed is to executre machine code, which is native to the computer, and written in an imperative style.<br /><br />
-              
-              <strong>Executable</strong> - a.k.a. "binary" - [machine] code that causes a computer to perform indicated tasks according to encoded instructions, as opposed to a data file which must be parsed by a program to be meaningful.<br /><br />
-              
-              <strong>scripts</strong> - programs written for a special run-time environment (like a browser or an OS) that <strong>automate the execution of tasks.</strong><br /><br />
-              
-              <strong>scripting language</strong> - a.k.a. "extension language" - very high-level (since they're about nabstraction" in the form of automating otherwise manual tasks).<br /><br />
-              
-              <strong>parsing</strong> - the process of analysing a string of symbols conforming to rules of "grammar" a.k.a. syntax. <br />
-              So running a program through a parser means it will be checked to see if its code does anything.<br /><br />
-              
-              <strong>refactoring</strong> - restructuring existing code, a.k.a. changing the factoring, without changing the external behavior (like to make a program run more efficiently etc.) <br /><br />
-              
-              <strong>memoizing</strong> - an optimization technique used to speed up programs by storing the results of expensive function calls (ex. recursion) and <strong>returning the cached result when the SAME *INPUT* occurs again.</strong> <br /><br />
-              
-              <strong>encapsulation</strong> - grouping of data and behavior into one entity. <br /><br />
-              
-              <strong>deep vs shallow copy</strong> (cloning) - <br />
-              shallow - Duplicate as little as possible (like a minimum setting) <br /> 
-              deep - When an object is copied along with the objects to which it refers (like a max setting on something).<br /><br />
-              
-              
-              <strong>overhead</strong> - excess use of memory, bandwidth, or other resources read to perform a specific task ("aka engineering overhead"). <br /> <br/>
-              
-              <strong>use case</strong> - a written description of how users will perform tasks on your website i.e. specs for how a user interacts w a something. <br /><br />
-              
-              It can also be thought of as a list of actions / events (steps) defining the interaction between a role (ACTOR) and a system to achieve a goal. The "actor" can be a human or an external system.
-              <br /><br />
-              A customer must click on this, click on that, etc. <br />
-              This data then gets sucked into the biz logic via a controller / service for example <br /> <br />
-              
-              
-              <strong>dependency injection </strong> - where one object supplies the dependencies of another. <br />
-              A <strong>dependency</strong> is an object that can be used (i.e. a <strong>service</strong>). <br />
-              It's all about passing the service to the client rather than allowing the client to build/find the service. <br /><br />
-              
-              state management <br />
-              strong vs weak type <br />
-              dynamic vs static type <br />
-              
-            
-         
-                
-                
-
-
-
-
-            </article>
-            </section>
-          
-          <section class="main-section" id="Algorithm">
-            <header>Algorithm Basics</header>
-            <article>
-              <h2>Big O Notation</h2>
-
-            <li>Constant: O(1) </li>
-            <li>Logarithmic: O(log n) </li>
-            <li>Linear: O(n) </li>
-            <li>Linearithmic: O(n log n) </li>
-            <li>Quadratic: O(n²) </li>
-            <li>Expontential: O(2^n) </li>
-            <li>Factorial: O(n!) </li>
-            
-              
-            <img src="images/big-o.png" alt=""  height="500">
-              <br />
-            <a href="http://bigocheatsheet.com/" target="_blank">Big O Notation Cheat Sheet</a>
-
-
-
-
-
-
-
-
-            <h2>
-              Big-O Classes
-            </h2>
-
-            <h3>1. <strong>O(1)</strong> Complexity (<strong>Constant</strong>)</h3>
-            
-            O(1) example - <strong>Accessing array index</strong>:
-            <code>
-            var a = arr[5];
-            </code>
-            
-            Other examples:
-            <br /><br />
-            <li>push/pop on a stack</li>
-            <li>insert and removal from queue</li>
-            <li>insert a node in a linked list</li>
-            *link
-            
-            <h3>2. <strong>O(n)</strong> Complexity (<strong>Linear</strong>)</h3>
-            
-            O(n) example - <strong>check for palindrome</strong>:
-            <code>
-            function palindrome(str) {
-              var re = /[\W_]/g;
-              var lowRegStr = str.toLowerCase().replace(re, '');
-              var reverseStr = lowRegStr.split('').reverse().join(''); 
-              return reverseStr === lowRegStr;
-            }
-            palindrome("A man, a plan, a canal. Panama");
-            </code>
-            
-            Other examples:
-            <br /><br />
-            <li>traverse an array</li>
-            <li>traverse a linked list</li>
-            <li>linear search</li>
-            <li>compare two strings</li> <br />
-            
-            
-            <h3>3. <strong>O(log n)</strong> Complexity (<strong>Logarithmic</strong>)</h3>
-             
-            <p>
-            *The basic premise with O(log n) is not having to use the complete data, and reducing the problem size with every iteration.
-            </p>
-            
-            O(log n) example -
-            Calculate fibonacci numbers
-            
-            Other examples: <br />
-            <li>binary search</li><br />
-            
-            
-            <h3>4. <strong>O(n log n)</strong> Complexity (<strong>Linearithmic</strong>, aka <strong>"Quasilinear"</strong>) (</h3>
-            
-            Merge Sort - example:
-            <code>
-                // If array is empty or consists of one element then return this array since it is sorted.
-                if (originalArray.length <= 1) {
-                  return originalArray;
-                }
-            
-                // Split array on two halves.
-                const middleIndex = Math.floor(originalArray.length / 2);
-                const leftArray = originalArray.slice(0, middleIndex);
-                const rightArray = originalArray.slice(middleIndex, originalArray.length);
-            
-                // Sort two halves of split array
-                const leftSortedArray = this.sort(leftArray);
-                const rightSortedArray = this.sort(rightArray);
-            
-                // Merge two sorted arrays into one.
-                return this.mergeSortedArrays(leftSortedArray, rightSortedArray);
-              }
-            
-              mergeSortedArrays(leftArray, rightArray) {
-                let sortedArray = [];
-            
-                // In case if arrays are not of size 1.
-                while (leftArray.length && rightArray.length) {
-                  let minimumElement = null;
-            
-                  // Find minimum element of two arrays.
-                  if (this.comparator.lessThanOrEqual(leftArray[0], rightArray[0])) {
-                    minimumElement = leftArray.shift();
-                  } else {
-                    minimumElement = rightArray.shift();
-                  }
-            
-                  // Call visiting callback.
-                  this.callbacks.visitingCallback(minimumElement);
-            
-                  // Push the minimum element of two arrays to the sorted array.
-                  sortedArray.push(minimumElement);
-                }
-            
-                // If one of two array still have elements we need to just concatenate
-                // this element to the sorted array since it is already sorted.
-                if (leftArray.length) {
-                  sortedArray = sortedArray.concat(leftArray);
-                }
-            
-                if (rightArray.length) {
-                  sortedArray = sortedArray.concat(rightArray);
-                }
-            
-                return sortedArray;
-              }
-            }
-            </code>
-            
-            Merge sort is based on divide-and-conquer.
-            It's also based on the idea that arrays of multiple items can't be compared until they're sorted.<br /><br />
-            Merge sort splits an array into two halves, recursively, until you reach a point in which multiple pairs of single-item arrays are compared to each other. <br /><br />
-            
-            1. Divide Step - <br />	
-            If a given array A has zero or one element, simply return; it's already sorted! <br />
-            Otherwise, split A[p .. r] into two subarrays A[p .. q], and A [q + 1 .. r]. Each one contains about half the elements of A[p .. r] - that is, q is the halfway point of A[p .. r].
-            <br /><br />
-            2. Conquer Step - <br />
-            Conquer by recursively sorting the two new subarrays A[p .. q] and A[q + 1 ..r].
-            <br /><br />
-            3. Combine Step <br />
-            Combine the elements back in A[p .. r] by merging the two newly sorted subarrays into a sorted sequence. To do this, define a procedure (function) MERGE(A, p, q, r).
-            
-            [merge-sort.gif]
-            
-            <a href="https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/sorting/merge-sort/MergeSort.js" target="_blank">
-            Merge sort example
-            </a>
-            
-            Other examples of O(n log n): 
-            <li>heap sort</li>
-            <li>quick sort</li>
-            <li>some divide and conquer algorithms (merge sort)</li>
-                                    
-            <h3>5. <strong>O(n<sup>2</sup>)</strong> (<strong>Quadratic</strong>)</h3>            
-            
-            O(n<sup>2</sup>) example - 
-            
-            bubble sort<br /><br />
-                        
-            Other examples:
-            <li>insertion sort</li>
-            <li>selection sort</li>
-            <li>traversing a simple 2D array</li>
-            
-            
-            <h3>6. <strong>O(2<sup>n</sup></strong> Complexity (<strong>Quadratic</strong>)</h3>
-            
-            *Often recursive algorithms that solve a problem of size N, by recursively solving two smaller problems of size N-1. <br /><br />
-            
-            Example:
-            
-            <code>
-            function solveHanoi(n, from_peg, to_peg, spare_peg)
-            {
-                if (n<1) {
-                    return;
-                }
-                if (n>1) {
-                    solveHanoi(n-1, from_peg, spare_peg, to_peg);
-                }
-                console.log("/"move from " + from_peg + " to " + to_peg");
-                if (n>1) {
-                    solveHanoi(n-1, spare_peg, to_peg, from_peg);
-                }
-            }
-            </code>
-            
-            
-            <h2>Basics</h2>
-            
-            <strong>Algorithm</strong> - a function that transforms an input data structure into a certain output data structure. The <strong>logic</strong> inside decides the transformation. <br /><br />
-            
-            The inputs and outputs should ideally be clearly defined as <strong>unit tests</strong>. A thorough analysis of the problem is needed. <br /><br />
-            
-            Things to consider: <br /><br />
-            
-            <li>What variables will be needed?</li>
-            <li>How many loops and what kinds?</li>
-            <li>Are there any methods that can help?</li>
-            <li><strong>Edge</strong> case to consider?</li>
-            <li>Can <strong>helper functions</strong> be extracted or abstracted? (an algorithm typically needs to be scalable)</li>
-            <li>Should there be some kind of <strong>caching mechanisms?</strong></li>
-            
-            1. To make the problem more concrete, draw diagrams <br />
-            2. When a high-level structure of the solution begins to appear, the pseudocode can begin. <br />
-            3. Look ahead for opportunities to <strong>refactor</strong> and <strong>reuse</strong> code. <br />
-            4. Sometimes, similar-behaving functions can be combined into a more general function that accepts an extra parameter. <br />
-            5. Keeping functions <strong>pure</strong> to ease testing and maintenance also shows foresight. <br />
-            6. Consider <strong>architectural</strong> and <strong>design patterns</strong> in your decisions. <br />
-            7. Any time there's a "sum of the previous two numbers" (fibonacci, for example), recursion is the simplest approach. <br />
-            8. Generally, memory optimizations (space) will need to be sacrificed for performance gains (time). <br />
-            
-            <h2>Big O Basics</h2>
-              
-              The most optimum algorithm scales in a constant time and space, meaning it doesn't care about the growth of its inputs. <br />
-              The next best is logarithmic time or space, <br />
-              then linear, <br />
-              then linearithmic, <br />
-              then quadratic, <br />
-              then exponential, <br />
-              and lastly factorial time or space. <br /><br />
-              
-              To assist in the calculation of <strong>runtime complexities</strong>, you approximate the scalability of an algorithm by extrapolating its input sizes towards infinity, before counting the number of operations required. <br />
-              At this worst-case runtime upper-bound, you can drop coefficients and additive terms and retain only factors that dominate the function.<br />
-              Just a few categories can describe the scalability of almost any algorithm.                    
-            <h2>Javascript Data Structures</h2>
-              
-              <p>
-              Without data structures, we have no objects by which to apply logic. <br />
-              Without algorithms, objects cannot be transformed.
-              </p>
-              
-              At the high level there are essentially three types of data structures: <br /><br />
-              
-              <li><strong>Stacks</strong> and <strong>Queues</strong> are "array-like" strucrures that differ only in how items are inserted and removed. These are the simplest in terms of complexity and can be constructed from Linked List.</li>
-              <li><strong>Linked Lists,</strong> <strong>Trees,</strong> and <strong>Graphs</strong> are structures with <strong>nodes</strong> that keep <strong>references</strong> to other nodes.
-              <li><strong>Hash Tables</strong></li> depend on <strong>hash functions</strong> to save and locate data.
-
-            <h3>Arrays</h3>
-                
-              In Javascript, no other object has more utility mthods than arrays (sort, reverse, slice, splice, etc.) <br />
-              Since arrays are zero-indexed, the last element occurs at <span class="inline-code">array.length - 1</span>. <br />
-              Arrays are the most optimal  for indexing (pushing), but can be terrible at inserting, deleting (not popping), and searching. In Javascript, arrays can also grow dynamically.
-            
-              
-            <h3>Stack</h3>
-              
-              The most important Stack in JS is the <strong>Call Stack,</strong> where we <strong>push</strong> in the <strong>scope</strong> of a function whenever we execute it. <br />
-              <strong>Programatically it's just an array with two principled operations: push and pop</strong>. <br />
-              Push <strong>adds</strong> elements to the <strong>top</strong> of the array, while Pop <strong>removes</strong> them from the same location. <br />
-              Stacks follow the "Last In, First Out" (LIFO) protocol.
-              
-            <h3>Queue</h3>
-              
-              Javascript is an <strong>event-driven</strong> programming language, making it possible to support <strong>non-blocking</strong> operations. <br /><br />
-              Internally, the browser manages only one thread to run the entire JS code using the <strong>event queue</strong> to <strong>enqueue</strong> <span class="inline-code">listeners</span>, and the <strong>event loop</strong> to "listen" for the registered <span class="inline-code">events</span> . <br />
-              To save CPU resources, listener functions dequeue and execute only when the call stack is empty. <br />
-              <strong>Promises</strong> depend on this event-driven architecture to <strong>allow a synchronous-style execution of asynchronous codes that does not block other operations (non-blocking).</strong><br /><br />
-              
-              Programmatically speaking, queues are just arrays with two primary operations: unshift and pop. <br />
-              Unshift <strong>enqueues</strong> items to the <strong>end</strong> of the array, while Pop <strong>dequeues</strong> them from the <strong>beginning</strong> of the array. <br />
-              Queues follow the "First In, First Out" (FIFO) protocol.
-            
-            <h3>Linked List</h3>
-              
-              Like arrays, <strong>Linked Lists</strong> store data elements in a <strong>sequential</strong> order. <br />
-              Instead of indeces, linked lists have <strong>pointers</strong> to other elements. <br />
-              The first node is called the <strong>head</strong>, while the last node is called the <strong>tail</strong>. <br /><br />
-              
-              In a <strong>singly-linked list</strong> each node has only one pointer to the next node - here the head is where you begin the walk down the rest of the list. <br /><br />
-              
-              In a <strong>doubly-linked list</strong> a pointer to the <strong>previous</strong> node is also kept. Therefore you can also start from the tail and walk backwards toward the head. <br /><br />
-              
-              <h4>Advantages Over Arrays</h4>
-              
-              Linked lists have <strong>constant-time</strong> insertions and deletions because you can just update the pointers. <br />
-              To do the same operations in arrays requires linear time, because subsequent items need to be shifted over. <br />
-              Linked lists can also grow as long as there is space - even dynamic arrays that automatically resize can become incredivly expensive. There is a tradeoff, however: to lookup or edit an element in a linked list, you might have to walk the entire length which equates to linear time, while with array indeces such operations are trivial.
-              
-            <h3>Tree</h3>
-              
-              A <strong>Tree</strong> is like a linked list, however it keeps references to <i>multiple</i> <strong>child nodes</strong> in a hierarchical structure. That is, <strong>each node can have no more than one parent</strong>. <br />
-              An example is the DOM, with a root html node that branches into the head and body nodes (html tags), which further subdivide into all familiar html tags. 
-              
-            <h4>Binary Search Tree</h4>
-              
-              This type of Tree is special, because each node can have no more than <strong>two</strong> children. The <strong>left child</strong> must have a value that is smaller than or equal to its parent, while the <strong>right child</strong> must have a value that's greater. <br /><br />
-              
-              This lets you search for any value in <strong>logarithmic</strong> time because you can ignore one-half of the branching with each iteration. The smallest and largest value can easily be found at the leftmost and rightmost leaf, respectively. <br /><br />
-              
-              Traversing though the tree can happen vertically or horizontally. <strong>Depth-First Traversal (DFT)</strong> in the vertical direction allows a recursive algorithm to be more elegant than an iterative one. Nodes can be traversed either pre-order, in-order, or post-order. Binary trees are optimal for <strong>sorting</strong>.
-              <br /><br />
-              
-              With <strong>Breadth-First Traversal (BFT)</strong> in the horizontal direction, an iterative approach is more elegant than a recursive one. This requires the use of a queue to track all children nodes with each iteration. <br />
-              <strong>If the shape of a tree is deeper than it is wide, then DFT is a better choice over BFT.</strong>
-            
-            <h4>Graph</h4>
-              
-              If a tree is free to have more than one parent then it becomes a <strong>Graph</strong>.<br />
-              <strong>Edges</strong> that connect nodes together in a graph can be directed or undirected, weighted or unweighted. Edges that have both <strong>direction</strong> and <strong>weight</strong> are analogous to <strong>vectors</strong>.
-              
-              Examples of graph structures:
-              
-              *Multiple inheritances in the form of mixins and data objects that have <strong>many-to-many</strong> relationships.
-              *A social network and the Internet itself are also graphs.
-              *The most complicated graph is our human brain, which <strong>neural networks</strong> attempt to replicate, to give machines superintelligence.
-            
-            <h3>Hash Table</h3>
-              
-              This is a <strong>dictionary-like structure that pairs keys to values.</strong><br />
-              The location in memory of each pair is determined by a <strong>hash function</strong>, which:
-              <br /><br />
-              1. Accepts a <strong>key</strong>, and
-              2. Returns the <strong>address</strong> where the pair should be inserted and retrieved.
-              <br /><br />
-              Collisions can occur if two or more keys convert to the same address.
-              <br /><br />
-              For robustness, <strong>getters</strong> and <strong>setters</strong> should anticipate these events to ensure that all data can be recovered, and that no data is overwritten.
-              <br /><br />
-              If you know your addresses will be in integer sequences you can simply use an Array to store the key-value pairs. For more complex <strong>address mappings</strong>, you can use <strong>Maps</strong> or <strong>Objects</strong>.
-              <br /><br />
-              If a tradeoff decision favors retrieval over storage, <strong>no other data structure can match the speed of hash tables for lookup, insertion, and deletion</strong>. This is why they're used everywhere from databases to servers to the client. Hash tables, and hash functions in particular, are crucial to the a. performance and b. security of software applications. <br /><br />
-              The speed of database queries relies heavily on keeping tables of indeces that point to records in sorted order. E-commerce over HTTPS is safe only because hashing functions (MD5, SHA256) get used.
-              
-            <h3>Conclusion</h3>
-              
-              *Linked Lists are optimal for <strong>storage</strong>, and can be made into stacks and queues (linear time).
-              *Hash tables are unmatched for <strong>search</strong> speed (constant time).
-              *Tree structures lie somewhere in the middle (logarithmic time).
-              *Only a graph can portray nature's most complex structures, like the human brain (polynomial time).
-              
-            <h2>Definitions</h2>
-            
-              edge cases <br /><br />
-              helper functions <br /><br />
-              caching mechanisms (javascript) <br /><br />
-
-
-              <h3>Hash function</h3>
-              <p>
-              Hash function - Any function that can be used to map data of arbitrary size to data of a fixed size.<br />
-              The values returned by a hash function are called hash values, hash sums, or simply hashes.
-              </p>
-              
-              <p>One use is a data structure called a hash table, widely used in computer software for rapid data lookup.
-              <br /><br />
-              Hash functions accelerate table or database lookup by detecting duplicated records in a large file.</p>
-
-            
-            <h2>Links</h2>
-              
-              <a href="https://www.youtube.com/watch?v=V6mKVRU1evU" target="_blank">
-              Derek Banas Big O Notations
-              </a>
-              
-
-
-
-
-
-
-
-
-
-            </article>
-            </section>
-
-          <section class="main-section" id="Style">
-            <header>HTML & CSS Style Guide</header>
-            <article> 
-
-            
-
-            </article>
-            </section>                  
-
-
-
-          <section class="main-section" id="VSCode">
-            <header>VS Code</header>
-            <article> 
-              <li><strong>command palette</strong> | cmd + shift + p</li>
-              <li><strong>fold all</strong> | cmd + k + cmd + 0</li>
-            
-              <li><strong>cmd + /</strong> | comment out all selected code</li>
-              <li><strong>h1.foo</strong> | h1 class="foo" </li><br />
-
-              <li><strong>opt+w</strong> | wrap individual lines with abbreviation</li> 
-              <li><strong>cmd+opt+w</strong> | remove tag from selection 
-            (can then make a structure using > to declare more tags,ex. <span class="inline-code"> 
-            div>div>div)</span></li>  
-              <li>**<strong>cmd+shift+v</strong> | markdown preview in side-by-side window</li><br />
-              <li><strong>cmd+opt+k</strong> | set bookmark (extension)</li> 
-              <li><strong>cmd+shift+p</strong> | command palette - find and run all commands </li><br />
-
-              <li><strong> Settings > Text Editor</strong>  | change text editing settings (auto-closing brackets, etc.) </li>
-            
-              <li><strong>f12</strong> | highlight id or class in html; takes you to style in the css. (needs CSS Peek)</li> 
-              <li><strong>optn+f12</strong> | opens a peek window to the css IN THE HTML FILE - can save like normal -  hit esc to leave peak window </li>
-            
-            <br />
-
-            <li><strong>Type with multiple cursors</strong> | <span class="inline-code">opt+click</span> at beginning of each line - this creates a cursor you can type or even copy/paste from
-                
-            <h3>Set key bindings with keyboard shortcuts (for extensions like emmet)</h3>
-
-              1. preferences > keyboards shortcuts > search <br />
-              2. click plus symbol <br />
-              3. enter input for key binding <br />
-              
-            <h3>Use user snippets to generate code</h3>
-
-              1. Preferences > User Snippets <br />
-              2. Search for the language you want to add the snippet for <br /> <br />
-              
-              <strong>prefix</strong> - what will be used to trigger the snippet <br />
-              <strong>body</strong> - what will be inserted in place of the prefix <br />
-              <strong>tab stop ($1, $2)</strong> - tell where the cursor should be using $1 <br /><br />
-              
-              *Changed max memory for large files from 4096 to 2048                          
-
-              
-
-            </article>
-            </section>       
-            
-          <section class="main-section" id="Business">
-            <header>Business Fundamentals</header>
-            <article> 
-
-              <h3>Project Management</h3>
-
-
-              <h4>Basics</h4>
-
-              *The size of the team and the roles needed can vary. <br />
-              *Members on a team can fulfill one role or many.
-              <br /><br />
-              Projects are typically broken down into phases.<br />
-              Each phase outlines the work that needs to be done and who's involved.<br />
-              Typically, in order for a phase to be complete, specific deliverables need to have been completed o handed off.<br />
-              However, some teams implement FAST TRACKING, or when phases overlap.<br />              
-
-              <h4>Management Types</h4>
-
-              <li>Communication management</li>
-              <li>Cost management</li>
-              <li>Human resource management</li>
-              <li>Integration management</li>
-              <li>Procurement management</li>
-              <li>Quality management</li>
-              <li>Risk management</li>
-              <li>Scope management</li>
-              <li>Time management</li>
-
-
-
-
-              <h4>Project Lifecycle</h4>
-              A lifecycle defines the BEGINNING and END of a project - it represents all of the phases together. <br />
-              When defining the project's life cycle, the first phase is noted as step 0: Visioning and conceptualizing of a project. <br /><br />	
-
-              Most projects have four or five phases but some may have more. <br /><br />
-
-              Most common approaches are WATERFALL and AGILE. <br />
-              Whatever your choice, you'll need to incorporate <strong>USER-CENTERED DESIGN (UCD) </strong>best practices and methods.
-
-              <h4>The UCD Process</h4>
-
-              At a high level, UCD includes the following steps: <br /><br />
-
-
-              -Planning <br />
-              -Collecting and analyzing data <br />
-              -Writing content <br />
-              -Designing and developing prototypes of the system <br />
-              -Testing <br />
-
-              <h4>Project Plan and Charter Agreement</h4>
-
-              It's important to come up with a <strong>project plan</strong> the team agrees to upfront so it can serve as a reference point throughout the project. <br /><br />
-
-              Most project plans include: <br /><br />
-
-              -Objectives <br />
-              -Scope, which correlates to the requirements <br />
-              -Resources, including tech, budget, and TEAM ROLES AND RESPONSIBILITIES <br />
-              -Schedule <br />
-              -Assumptions <br />
-              -Dependencies <br />
-              -Risk assessment and management plan <br />
-              -Change control plan (?) <br /><br />
-
-              <p>
-              A <strong>charter agreement</strong> a typically one-page document that has the sponsor of the project sign off that they agree to the work to be done as outlined by the team in the project plan.
-              </p>
-              <p>            
-              <strong>Schedules</strong> reflect the life cycle broken down into specific deliverables and touch points.
-              It defines WHAT NEEDS TO BE DONE and WHO IS THE POINT OF CONTACT RESPONSIBLE FOR THE WORK.
-              </p>
-
-
-              <h2>Links</h2>
-
-              <a href="https://www.usability.gov/how-to-and-tools/methods/project-team.html" target="_blank">
-              Project Team Roles and Responsibilities
-              </a> <br /><br />
-
-              <a href="https://playbook.cio.gov/" target="_blank">
-              Digital Services Playbook
-              </a> <br /><br />
-
-              <a href="https://www.pmi.org/pmbok-guide-standards" target="_blank">
-              Project Management Global Standards
-              </a>
-
-            </article>
-            </section>                  
-                      
-
-          <section class="main-section" id="Misc">
-            <header>Miscellaneous</header>
-            <article> 
-            <h2>macOS</h2>
-              <li> <b>cmd+shift+.</b>	|	show hidden files in current folder</li>
-
-            <h2>Tips</h2>
-              <p>
-              To save time in the future: <br />
-              <li>Always check package versions</li>
-              <li>Use <strong>--save</strong> or <strong>--save-dev</strong> to save to the package.json</li>
-              <li>Can use <strong>--unsafe-perm</strong> to install problematic packages only if absolutely necessary</li>        
-              </p>
-
-            <h2>Package Management</h2>
-
-
-                <h3>Ruby Gems vs npm Packages</h3>
-
-                A Gemfile is Ruby's equivalent to package.json. newline
-
-                Rubygems has an extension in the form of <strong>Bundler</strong>, whose sole purpose is dependency management. <br /><br />
-
-                Instead of locally, dependencies are managed globally. Bundler also creates a Gemfile.lock, which lists every specific version of libraries. <br /><br />
-
-                This way, version conflicts are taken care of, so when you need to recreate the environment for another developer or deployment, it's guaranteed to reinstall in pristine conditions (similar to package.json and package-lock). <br /><br />
-
-                npm however installs locally, with nested dependencies. If you want npm to be global like Rubygems you can use <span class="inline-code">npm link</span>.
-                <br /><br />
-
-                <strong>Bundler</strong> - provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions needed. It's about solving dependency hell, ensuring the gems needed are present in development, staging, and production.
-
-                <h3>Homebrew extensions</h3>
-
-                <p>Homebrew installs packages to their own directory, then symlinks (symbolic links) their files into /usr/local.</p>
-
-                <a href="https://brew.sh/" target="_blank">List of Homebrew extensions</a> <br /> <br/>
-
-            <h2>Site Performance</h2>
-
-                <h4>Summary</h4>
-                Sites have more features now than ever before, however many sites now struggle to achieve a high level of performance across a variety of network conditions and advices. <br /><br />
-                
-                Performance issues vary: at best, they might create small delays that are only briefly annoying to the end user. At worst, they can make the website completely inaccessible, unresponsive to user input, or both. <br />
-                
-                <h4>Retaining users</h4>
-                
-                Page speed has a massive impact, and low performance can have a negative impact on a business's goals.
-                
-                <h4>Improving conversions</h4>
-                
-                *DoubleClick found that publishers whose sites loaded within five seconds earned up to twice as much ad revenue than sites loading within 19 seconds.
-                
-                <h4>The user experience</h4>
-                
-                When sites ship a lot of code, browsers must use megabytes of the user's data plan in order to download code. Mobile devices have limited CPU power and memory, and often get overwhelmed with what we might consider unoptimized code.
-                
-                <h4>People</h4>
-                
-                Total page side has been steadily increasing since at least 2011. As the typical page sends more data, users must replenish their metered data plans more often, costing them money.
-                
-                <h4>Performance Metrics</h4>
-                
-                <strong>bounce rates</strong>
-                <strong>pages per session</strong>
-                <strong>page load time</strong>
-                <strong>session-based conversion</strong>
-                
-                <h4>Common Solutions</h4>
-                
-                <li>Eliminate render-blocking resources</li>
-                <li>Reduce Javascript execution time</li>
-                <li>Minify Javascript</li>
-                <li>Defer offscreen images</li>
-                <li>Serve static assets with an efficient cache policy</li>
-                <br />
-                <a href="https://www.thinkwithgoogle.com/feature/testmysite" target="_blank">
-                Speed Scorecard tool
-                </a> <br />
-                [scorecard graphic]
-                <br /><br />
-                
-                Measure Performance with the RAIL Model <br />
-                Loading Performance <br />
-                Rendering Performance <br />
-                Audit your site <br /> <br />
-                
-                <a href="https://developers.google.com/web/fundamentals/performance/why-performance-matters/" target="_blank">
-                Site Performance Guide</a><br /><br />
-
-
-
-            <h2>Semantic versioning</h2>
-
-                Major, minor, patch.  <br />
-                2.0.0 <br />
-                M m p <br /><br />
-                
-                <strong>Major </strong>- when you make incompatible API changes (as in, changes so severe there's no backwards compatibility with anything - you need this version) <br />
-                  <strong>Minor</strong>- When you add functionallity in a backwards compatible manner (as in, 2.1.0 is still backwards compatible with 2.0.0). <br />
-                    <strong>Patch</strong> - When you make backwards-compatible bug fixes.
-                A bug fix is defined as an internal change that fixes incorrect behavior. <br /><br />
-                
-                <strong>
-                Without compliance to some sort of formal spec like maj-min-patch format, version numbers are essentially useless for dependency mgmt.</strong> <br /><br />
-                
-                Version 1.0.0 defines the public API. <br />
-                Release 1.0.0 software when it is being used in production 
-                <br />
-                
-
-            <h2>JS Engines</h2>
-
-                <strong>CHROME v8</strong> - a Javascript engine. JS engines are mostly used in web browsers.
-                
-                <strong>javascript engines</strong> - embedded in browsers and web servers (i.e. Node - what v8 is used in) to allow <strong>run-time compilation and execution of JS code</strong> (a.k.a. <strong>async</strong>.
-                <br /><br />
-                
-                <strong>Node </strong> is a server-side execution environment built on <strong>Chrome's V8 JS runtime</strong>. <br /><br />
-                
-                <strong>just-in-time compilation</strong> - improves app performance at  <strong>
-                runtime</strong> ( like a JIT *compiler*, which is what javascript engines, and therefore V8, and therefore Node, utilize). <br />
-                JIT drawbacks - it does require processing time and memory usage. <br /><br />
-                
-                JVM (Java) for example calls THOUSANDS of methods when it first starts up.
-                <br /><br />
-                
-                Node is an extension or next-level version of the  v8 engine in Chrome basically.
-                <br />
-                
-                <h3>List of JS engines</h3>
-                <li>Google Chrome V8</li>
-                <li>NodeJS</li>
-                <li>Chakra (Edge)</li>
-                <li>Microsoft Edge Chakra Octane 2.0</li>
-                <li>etc sub engines like for specific browsers (NodeJS chakra core octane etc)</li>
-                <li>JScript (IE )</li>
 
 
             </article>
